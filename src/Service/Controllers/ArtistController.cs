@@ -18,53 +18,53 @@ namespace LMS.Service.Controllers
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-        //[HttpGet()]
-        //[Route("category/list", Name = "GetCategoryList")]
-        //public IHttpActionResult GetCategoryList()
-        //{
-        //    Log.Info("HTTP GET api/inventory/category/list");
+        [HttpGet()]
+        [Route("artist/list", Name = "List")]
+        public IHttpActionResult List()
+        {
+            Log.Info("HTTP GET api/artist/list");
 
-        //    try
-        //    {
-        //        IRepository<Category> repository = RepositoryFactory<Category>.Create();
-        //        List<Category> categories = repository.Find(null);
-        //        if (categories != null)
-        //            return Ok(categories);
-        //        else
-        //            return NotFound();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+            try
+            {
+                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                List<Artist> artists = repository.Find(null);
+                if (artists != null)
+                    return Ok(artists);
+                else
+                    return NotFound();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
 
-        //[HttpGet()]
-        //[Route("category/{id}", Name = "GetCategory")]
-        //public IHttpActionResult GetCategory(int id)
-        //{
-        //    Log.Info(String.Format("HTTP GET api/inventory/category/{0}", id));
+        [HttpGet()]
+        [Route("artist/{id}", Name = "Read")]
+        public IHttpActionResult Read(int id)
+        {
+            Log.Info(String.Format("HTTP GET api/artist/{0}", id));
 
-        //    try
-        //    {
-        //        IRepository<Category> repository = RepositoryFactory<Category>.Create();
-        //        Category category = repository.Get(id);
-        //        if (category != null)
-        //            return Ok(category);
-        //        else
-        //            return NotFound();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+            try
+            {
+                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                Artist artist = repository.Get(id);
+                if (artist != null)
+                    return Ok(artist);
+                else
+                    return NotFound();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
 
         [HttpPost()]
-        [Route("artist", Name = "AddArtist")]
-        public IHttpActionResult AddArtist([FromBody] Artist artist)
+        [Route("artist", Name = "Create")]
+        public IHttpActionResult Create([FromBody] Artist artist)
         {
             Log.Info("HTTP POST api/artist");
 

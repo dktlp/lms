@@ -76,222 +76,183 @@ namespace LMS.Data
 
         public override List<Artist> Find(Artist query)
         {
-            //Log.Info(String.Format("Query for resource '{0}'; Merchant={1}", TypeName, MerchantIdentifier));
+            Log.Info(String.Format("Query for resource '{0}'; Tenant={1}", TypeName, TenantIdentifier));
 
-            //List<Category> result = new List<Category>();
+            List<Artist> result = new List<Artist>();
 
-            //try
-            //{
-            //    Connection.Open();
+            try
+            {
+                Connection.Open();
 
-            //    MySqlCommand command = (MySqlCommand)CreateCommand(false);
+                MySqlCommand command = (MySqlCommand)CreateCommand(false);
 
-            //    if (query == null || (query != null && query.PartOf != null))
-            //    {
-            //        command.CommandText = "SELECT * FROM category WHERE `merchant_id`=@merchant_id AND `parent_id`=@parent_id;";
-            //        command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
-            //        command.Parameters.AddWithValue("@parent_id", ((query != null && query.PartOf != null) ? query.PartOf.Id : 0));
-            //    }
-            //    else
-            //    {
-            //        Dictionary<string, object> parameters = new Dictionary<string, object>();
-            //        StringBuilder sql = new StringBuilder();
-            //        sql.Append("SELECT * FROM category WHERE `merchant_id`=@merchant_id");
+                if (query == null)
+                {
+                    command.CommandText = "SELECT * FROM artist WHERE `tenant_id`=@tenant_id;";
+                    command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                }
+                else
+                {
+                    //Dictionary<string, object> parameters = new Dictionary<string, object>();
+                    //StringBuilder sql = new StringBuilder();
+                    //sql.Append("SELECT * FROM category WHERE `merchant_id`=@merchant_id");
 
-            //        // Dynamically build sql statement and list of parameters
-            //        if (query.Name != null)
-            //        {
-            //            sql.Append(" AND `name` LIKE @name");
-            //            parameters.Add("@name", "%" + query.Name + "%");
-            //        }
+                    //// Dynamically build sql statement and list of parameters
+                    //if (query.Name != null)
+                    //{
+                    //    sql.Append(" AND `name` LIKE @name");
+                    //    parameters.Add("@name", "%" + query.Name + "%");
+                    //}
 
-            //        sql.Append(" AND `active`=@active");
-            //        parameters.Add("@active", query.Active);                    
+                    //sql.Append(" AND `active`=@active");
+                    //parameters.Add("@active", query.Active);
 
-            //        sql.Append(";");
+                    //sql.Append(";");
 
-            //        command.CommandText = sql.ToString();
-            //        command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
+                    //command.CommandText = sql.ToString();
+                    //command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
 
-            //        // Add parameters to sql command
-            //        foreach (KeyValuePair<string, object> parameter in parameters)
-            //        {
-            //            command.Parameters.AddWithValue(parameter.Key, parameter.Value);
-            //        }
-            //    }
+                    //// Add parameters to sql command
+                    //foreach (KeyValuePair<string, object> parameter in parameters)
+                    //{
+                    //    command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                    //}
+                }
 
-            //    using (IDataReader reader = command.ExecuteReader())
-            //    {
-            //        while (reader.Read())
-            //        {
-            //            Category item = new Category()
-            //            {
-            //                Id = reader.GetInt32(reader.GetOrdinal("id")),
-            //                Name = reader.GetString(reader.GetOrdinal("name")),
-            //                Active = reader.GetBoolean(reader.GetOrdinal("active")),
-            //                Period = null,
-            //                PartOf = null,
-            //                Subcategories = null
-            //            };
+                using (IDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Artist item = new Artist()
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("id")),
+                            StageName = reader.GetString(reader.GetOrdinal("stage_name")),
+                            Email = reader.GetString(reader.GetOrdinal("email")),
+                            Name = new HumanName(),
+                            Address = new Address()
+                        };
 
-            //            if (!reader.IsDBNull(reader.GetOrdinal("period_start")) && !reader.IsDBNull(reader.GetOrdinal("period_end")))
-            //            {
-            //                item.Period = new Period()
-            //                {
-            //                    Start = reader.GetDateTime(reader.GetOrdinal("period_start")),
-            //                    End = reader.GetDateTime(reader.GetOrdinal("period_end"))
-            //                };
-            //            }
+                        string givenName = reader.GetString(reader.GetOrdinal("given_name"));
+                        string familyName = reader.GetString(reader.GetOrdinal("family_name"));
 
-            //            Log.Debug(String.Format("Category.Id={0} found", item.Id));
+                        if (givenName != null)
+                            item.Name.Given = givenName.Split(' ');
+                        if (familyName != null)
+                            item.Name.Family = familyName.Split(' ');
 
-            //            result.Add(item);
-            //        }
-            //    }                
-            //}
-            //catch (Exception e)
-            //{
-            //    Log.Error(e);
+                        if (!reader.IsDBNull(reader.GetOrdinal("address")))
+                        {
+                            string address = reader.GetString(reader.GetOrdinal("address"));
+                            if (address != null)
+                                item.Address.Line = address.Split(';');
+                        }
 
-            //    throw;
-            //}
-            //finally
-            //{
-            //    Connection.Close();
-            //}
+                        if (!reader.IsDBNull(reader.GetOrdinal("postalcode")))
+                            item.Address.PostalCode = reader.GetString(reader.GetOrdinal("postalcode"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("city")))
+                            item.Address.City = reader.GetString(reader.GetOrdinal("city"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("district")))
+                            item.Address.District = reader.GetString(reader.GetOrdinal("district"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("state")))
+                            item.Address.State = reader.GetString(reader.GetOrdinal("state"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("country")))
+                            item.Address.Country = reader.GetString(reader.GetOrdinal("country"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("telecom")))
+                            item.Address.Country = reader.GetString(reader.GetOrdinal("telecom"));
 
-            //// Load all subcategories recursively
-            //foreach (Category category in result)
-            //{
-            //    Log.Debug(String.Format("Load subcategories for Category.Id={0}", category.Id));
+                        Log.Debug(String.Format("Artist.Id={0} found", item.Id));
 
-            //    // Get all children and add to subcategories on parent.
-            //    List<Category> subcategories = Find(new Category() { PartOf = new Category() { Id = category.Id } });
-            //    if (subcategories != null && subcategories.Count > 0)
-            //    {
-            //        category.Subcategories = subcategories.ToArray();
+                        result.Add(item);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
 
-            //        // Set partOf of child to parent
-            //        foreach (Category subcategory in category.Subcategories)
-            //        {
-            //            subcategory.PartOf = new Category()
-            //            {
-            //                Id = category.Id,
-            //                Name = category.Name,
-            //                Active = category.Active,
-            //                Period = category.Period
-            //            };
-            //        }
-            //    }
-            //}
+                throw;
+            }
+            finally
+            {
+                Connection.Close();
+            }
 
-            //return result;
-
-            throw new NotImplementedException();
+            return result;
         }
                 
         public override Artist Get(int id)
         {
-            //Log.Info(String.Format("Get resource '{0}'; Category.Id={1}, Merchant={2}", TypeName, id, MerchantIdentifier));
+            Log.Info(String.Format("Get resource '{0}'; Tenant={1}", TypeName, id, TenantIdentifier));
 
-            //Category item = null;
+            Artist item = null;
 
-            //try
-            //{
-            //    Connection.Open();
+            try
+            {
+                Connection.Open();
 
-            //    MySqlCommand command = (MySqlCommand)CreateCommand(false);
+                MySqlCommand command = (MySqlCommand)CreateCommand(false);
 
-            //    command.CommandText = "SELECT * FROM category WHERE `merchant_id`=@merchant_id AND `id`=@id;";
-            //    command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
-            //    command.Parameters.AddWithValue("@id", id);
+                command.CommandText = "SELECT * FROM artist WHERE `tenant_id`=@tenant_id AND `id`=@id;";
+                command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                command.Parameters.AddWithValue("@id", id);
 
-            //    using (IDataReader reader = command.ExecuteReader())
-            //    {
-            //        if (reader.Read())
-            //        {
-            //            item = new Category()
-            //            {
-            //                Id = reader.GetInt32(reader.GetOrdinal("id")),
-            //                Name = reader.GetString(reader.GetOrdinal("name")),
-            //                Active = reader.GetBoolean(reader.GetOrdinal("active")),
-            //                Period = null,
-            //                PartOf = null,
-            //                Subcategories = null
-            //            };
+                using (IDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        item = new Artist()
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("id")),
+                            StageName = reader.GetString(reader.GetOrdinal("stage_name")),
+                            Email = reader.GetString(reader.GetOrdinal("email")),
+                            Name = new HumanName(),
+                            Address = new Address()
+                        };
 
-            //            if (!reader.IsDBNull(reader.GetOrdinal("period_start")) && !reader.IsDBNull(reader.GetOrdinal("period_end")))
-            //            {
-            //                item.Period = new Period()
-            //                {
-            //                    Start = reader.GetDateTime(reader.GetOrdinal("period_start")),
-            //                    End = reader.GetDateTime(reader.GetOrdinal("period_end"))
-            //                };
-            //            }
+                        string givenName = reader.GetString(reader.GetOrdinal("given_name"));
+                        string familyName = reader.GetString(reader.GetOrdinal("family_name"));
 
-            //            if (reader.GetInt32(reader.GetOrdinal("parent_id")) > 0)
-            //            {
-            //                item.PartOf = new Category()
-            //                {
-            //                    Id = reader.GetInt32(reader.GetOrdinal("parent_id"))
-            //                };
-            //            }
+                        if (givenName != null)
+                            item.Name.Given = givenName.Split(' ');
+                        if (familyName != null)
+                            item.Name.Family = familyName.Split(' ');
 
-            //            Log.Debug(String.Format("Category.Id={0} found", item.Id));
-            //        }
-            //    }
-            //}
-            //catch (Exception e)
-            //{
-            //    Log.Error(e);
+                        if (!reader.IsDBNull(reader.GetOrdinal("address")))
+                        {
+                            string address = reader.GetString(reader.GetOrdinal("address"));
+                            if (address != null)
+                                item.Address.Line = address.Split(';');
+                        }
 
-            //    throw;
-            //}
-            //finally
-            //{
-            //    Connection.Close();
-            //}
+                        if (!reader.IsDBNull(reader.GetOrdinal("postalcode")))
+                            item.Address.PostalCode = reader.GetString(reader.GetOrdinal("postalcode"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("city")))
+                            item.Address.City = reader.GetString(reader.GetOrdinal("city"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("district")))
+                            item.Address.District = reader.GetString(reader.GetOrdinal("district"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("state")))
+                            item.Address.State = reader.GetString(reader.GetOrdinal("state"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("country")))
+                            item.Address.Country = reader.GetString(reader.GetOrdinal("country"));
+                        if (!reader.IsDBNull(reader.GetOrdinal("telecom")))
+                            item.Address.Country = reader.GetString(reader.GetOrdinal("telecom"));
 
-            //// Load subcategories
-            //if (item != null)
-            //{
-            //    Log.Debug(String.Format("Load subcategories for Category.Id={0}", item.Id));
+                        Log.Debug(String.Format("Category.Id={0} found", item.Id));
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
 
-            //    // Get all children and add to subcategories on parent.
-            //    List<Category> subcategories = Find(new Category() { PartOf = new Category() { Id = item.Id } });
-            //    if (subcategories != null && subcategories.Count > 0)
-            //    {
-            //        item.Subcategories = subcategories.ToArray();
+                throw;
+            }
+            finally
+            {
+                Connection.Close();
+            }            
 
-            //        // Set partOf of child to parent
-            //        foreach (Category subcategory in item.Subcategories)
-            //        {
-            //            subcategory.PartOf = new Category()
-            //            {
-            //                Id = item.Id,
-            //                Name = item.Name,
-            //                Active = item.Active,
-            //                Period = item.Period
-            //            };
-            //        }
-            //    }
-
-            //    // Get parent and set partOf
-            //    if (item.PartOf != null)
-            //    {
-            //        Category parent = Get(item.PartOf.Id);
-            //        if (parent != null)
-            //        {
-            //            item.PartOf.Name = parent.Name;
-            //            item.Active = parent.Active;
-            //            item.Period = parent.Period;
-            //        }
-            //    }
-            //}
-
-            //return item;
-
-            throw new NotImplementedException();
+            return item;
         }
 
         public override void Remove(int id)
