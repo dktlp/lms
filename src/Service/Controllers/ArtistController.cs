@@ -89,79 +89,77 @@ namespace LMS.Service.Controllers
             }
         }
 
-        //[HttpDelete()]
-        //[Route("category/{id}", Name = "DeleteCategory")]
-        //public IHttpActionResult DeleteCategory(int id)
-        //{
-        //    Log.Info(String.Format("HTTP DELETE api/inventory/category/{0}", id));
+        [HttpDelete()]
+        [Route("artist/{id}", Name = "Delete")]
+        public IHttpActionResult Delete(int id)
+        {
+            Log.Info(String.Format("HTTP DELETE api/artist/{0}", id));
 
-        //    try
-        //    {
-        //        IRepository<Category> repository = RepositoryFactory<Category>.Create();
-        //        repository.Remove(id);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
+            try
+            {
+                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                repository.Remove(id);
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
 
-        //    return Ok();
-        //}
+            return Ok();
+        }
 
-        //[HttpPut()]
-        //[Route("category", Name = "UpdateCategory")]
-        //public IHttpActionResult UpdateCategory([FromBody] Category category)
-        //{
-        //    Log.Info("HTTP PUT api/inventory/category");
+        [HttpPut()]
+        [Route("artist", Name = "Update")]
+        public IHttpActionResult Update([FromBody] Artist artist)
+        {
+            Log.Info("HTTP PUT api/artist");
 
-        //    try
-        //    {
-        //        IDataValidator<Category> validator = new CategoryValidator();
-        //        DataValidationResult validationResult = validator.Validate(category);
-        //        if (!validationResult.IsValid)
-        //            return BadRequest(validationResult.Message);
+            try
+            {
+                IDataValidator<Artist> validator = new ArtistValidator();
+                DataValidationResult validationResult = validator.Validate(artist);
+                if (!validationResult.IsValid)
+                    return BadRequest(validationResult.Message);
 
-        //        IRepository<Category> repository = RepositoryFactory<Category>.Create();
-        //        Category result = repository.Update(category);
-        //        if (result != null && result.Id > 0)
-        //            return Ok(category);
-        //        else
-        //            return BadRequest();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                Artist result = repository.Update(artist);
+                if (result != null && result.Id > 0)
+                    return Ok(artist);
+                else
+                    return BadRequest();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
 
-        //[HttpGet()]
-        //[Route("category/search", Name = "SearchCategory")]
-        //public IHttpActionResult SearchCategory([FromUri] string q)
-        //{
-        //    Log.Info(String.Format("HTTP GET api/inventory/category/search/?q={0}", q));
+        [HttpGet()]
+        [Route("artist/search", Name = "Search")]
+        public IHttpActionResult Search([FromUri] string q)
+        {
+            Log.Info(String.Format("HTTP GET api/artist/search/?q={0}", q));
 
-        //    try
-        //    {
-        //        // Search q:
-        //        // q=name|music;active|true
-
-        //        // TODO: Support query parameters in Repository.Find.
-
-        //        QueryByExampleBuilder<Category> queryBuilder = new QueryByExampleBuilder<Category>();
-        //        IRepository<Category> repository = RepositoryFactory<Category>.Create();
-        //        List<Category> categories = repository.Find(queryBuilder.GetQueryExample(q));
-        //        if (categories != null)
-        //            return Ok(categories);
-        //        else
-        //            return NotFound();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+            try
+            {
+                // Search q:
+                // q=stageName|tomtek;paramName|value
+                
+                QueryByExampleBuilder<Artist> queryBuilder = new QueryByExampleBuilder<Artist>();
+                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                List<Artist> artists = repository.Find(queryBuilder.GetQueryExample(q));
+                if (artists != null)
+                    return Ok(artists);
+                else
+                    return NotFound();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
     }
 }

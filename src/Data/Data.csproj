@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="ArtistRepository.cs" />
     <Compile Include="ArtistValidator.cs" />
+    <Compile Include="Cloud\Tenant.cs" />
     <Compile Include="DataValidationResult.cs" />
     <Compile Include="DataValidator.cs" />
     <Compile Include="IDataValidator.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="QueryByExampleBuilder.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="RepositoryFactory.cs" />
+    <Compile Include="Cloud\TenantRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

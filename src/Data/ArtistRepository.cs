@@ -93,30 +93,27 @@ namespace LMS.Data
                 }
                 else
                 {
-                    //Dictionary<string, object> parameters = new Dictionary<string, object>();
-                    //StringBuilder sql = new StringBuilder();
-                    //sql.Append("SELECT * FROM category WHERE `merchant_id`=@merchant_id");
+                    Dictionary<string, object> parameters = new Dictionary<string, object>();
+                    StringBuilder sql = new StringBuilder();
+                    sql.Append("SELECT * FROM artist WHERE `tenant_id`=@tenant_id");
 
-                    //// Dynamically build sql statement and list of parameters
-                    //if (query.Name != null)
-                    //{
-                    //    sql.Append(" AND `name` LIKE @name");
-                    //    parameters.Add("@name", "%" + query.Name + "%");
-                    //}
+                    // Dynamically build sql statement and list of parameters
+                    if (query.StageName != null)
+                    {
+                        sql.Append(" AND `stage_name` LIKE @stage_name");
+                        parameters.Add("@stage_name", "%" + query.StageName + "%");
+                    }
 
-                    //sql.Append(" AND `active`=@active");
-                    //parameters.Add("@active", query.Active);
+                    sql.Append(";");
 
-                    //sql.Append(";");
+                    command.CommandText = sql.ToString();
+                    command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
 
-                    //command.CommandText = sql.ToString();
-                    //command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
-
-                    //// Add parameters to sql command
-                    //foreach (KeyValuePair<string, object> parameter in parameters)
-                    //{
-                    //    command.Parameters.AddWithValue(parameter.Key, parameter.Value);
-                    //}
+                    // Add parameters to sql command
+                    foreach (KeyValuePair<string, object> parameter in parameters)
+                    {
+                        command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                    }
                 }
 
                 using (IDataReader reader = command.ExecuteReader())
@@ -182,7 +179,7 @@ namespace LMS.Data
                 
         public override Artist Get(int id)
         {
-            Log.Info(String.Format("Get resource '{0}'; Tenant={1}", TypeName, id, TenantIdentifier));
+            Log.Info(String.Format("Get resource '{0}'; Tenant={1}; Id={2}", TypeName, TenantIdentifier, id));
 
             Artist item = null;
 
@@ -237,7 +234,7 @@ namespace LMS.Data
                         if (!reader.IsDBNull(reader.GetOrdinal("telecom")))
                             item.Address.Country = reader.GetString(reader.GetOrdinal("telecom"));
 
-                        Log.Debug(String.Format("Category.Id={0} found", item.Id));
+                        Log.Debug(String.Format("Tenant.Id={0} found", item.Id));
                     }
                 }
             }
@@ -257,77 +254,79 @@ namespace LMS.Data
 
         public override void Remove(int id)
         {
-            //Log.Info(String.Format("Remove resource '{0}'; Category.Id={1}, Merchant={2}", TypeName, id, MerchantIdentifier));
+            Log.Info(String.Format("Remove resource '{0}'; Tenant={1}; Id={2}", TypeName, TenantIdentifier, id));
 
-            //try
-            //{
-            //    Connection.Open();
+            try
+            {
+                Connection.Open();
 
-            //    MySqlCommand command = (MySqlCommand)CreateCommand(true);
+                MySqlCommand command = (MySqlCommand)CreateCommand(true);
 
-            //    command.CommandText = "DELETE FROM category WHERE `merchant_id`=@merchant_id AND `id`=@id;";
-            //    command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
-            //    command.Parameters.AddWithValue("@id", id);
-            //    command.ExecuteNonQuery();
+                command.CommandText = "DELETE FROM artist WHERE `tenant_id`=@tenant_id AND `id`=@id;";
+                command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                command.Parameters.AddWithValue("@id", id);
+                command.ExecuteNonQuery();
 
-            //    Transaction.Commit();
-            //}
-            //catch (Exception e)
-            //{
-            //    if (Transaction != null)
-            //        Transaction.Rollback();
+                Transaction.Commit();
+            }
+            catch (Exception e)
+            {
+                if (Transaction != null)
+                    Transaction.Rollback();
 
-            //    Log.Error(e);
+                Log.Error(e);
 
-            //    throw;
-            //}
-            //finally
-            //{
-            //    Connection.Close();
-            //}
-
-            throw new NotImplementedException();
+                throw;
+            }
+            finally
+            {
+                Connection.Close();
+            }            
         }
 
         public override Artist Update(Artist item)
         {
-            //Log.Info(String.Format("Update resource '{0}'; Category.Id={1}, Category.PartOf={2}, Merchant={3}", TypeName, item.Id, ((item.PartOf != null) ? item.PartOf.Id : 0), MerchantIdentifier));
+            Log.Info(String.Format("Update resource '{0}'; Tenant={1}; Id={2}", TypeName, TenantIdentifier, item.Id));
 
-            //try
-            //{
-            //    Connection.Open();
+            try
+            {
+                Connection.Open();
 
-            //    MySqlCommand command = (MySqlCommand)CreateCommand(true);
+                MySqlCommand command = (MySqlCommand)CreateCommand(true);
 
-            //    command.CommandText = "UPDATE category SET `parent_id`=@parent_id,`name`=@name,`active`=@active,`period_start`=@period_start,`period_end`=@period_end WHERE `merchant_id`=@merchant_id AND `id`=@id";
-            //    command.Parameters.AddWithValue("@merchant_id", MerchantIdentifier);
-            //    command.Parameters.AddWithValue("@id", item.Id);
-            //    command.Parameters.AddWithValue("@parent_id", ((item.PartOf != null) ? item.PartOf.Id : 0));
-            //    command.Parameters.AddWithValue("@name", item.Name);
-            //    command.Parameters.AddWithValue("@active", item.Active);
-            //    command.Parameters.AddWithValue("@period_start", ((item.Period != null) ? item.Period.Start : null));
-            //    command.Parameters.AddWithValue("@period_end", ((item.Period != null) ? item.Period.End : null));
-            //    command.ExecuteNonQuery();                
+                command.CommandText = "UPDATE artist SET `stage_name`=@stage_name,`given_name`=@given_name,`family_name`=@family_name,`address`=@address,`city`=@city,`district`=@district,`state`=@state,`postalcode`=@postalcode,`country`=@country,`email`=@email,`telecom`=@telecom WHERE `tenant_id`=@tenant_id AND `id`=@id;";
+                command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                command.Parameters.AddWithValue("@id", item.Id);
+                command.Parameters.AddWithValue("@stage_name", item.StageName);
+                command.Parameters.AddWithValue("@given_name", string.Join(" ", item.Name.Given));
+                command.Parameters.AddWithValue("@family_name", string.Join(" ", item.Name.Family));
+                command.Parameters.AddWithValue("@address", ((item.Address != null && item.Address.Line != null) ? string.Join(";", item.Address.Line) : null));
+                command.Parameters.AddWithValue("@city", ((item.Address != null) ? item.Address.City : null));
+                command.Parameters.AddWithValue("@district", ((item.Address != null) ? item.Address.District : null));
+                command.Parameters.AddWithValue("@state", ((item.Address != null) ? item.Address.State : null));
+                command.Parameters.AddWithValue("@postalcode", ((item.Address != null) ? item.Address.PostalCode : null));
+                command.Parameters.AddWithValue("@country", ((item.Address != null) ? item.Address.Country : null));
+                command.Parameters.AddWithValue("@email", item.Email);
+                command.Parameters.AddWithValue("@telecom", item.Telecom);
+                command.ExecuteNonQuery();
 
-            //    Transaction.Commit();
-            //}
-            //catch (Exception e)
-            //{
-            //    if (Transaction != null)
-            //        Transaction.Rollback();
+                Transaction.Commit();
+            }
+            catch (Exception e)
+            {
+                if (Transaction != null)
+                    Transaction.Rollback();
 
-            //    Log.Error(e);
+                Log.Error(e);
 
-            //    throw;
-            //}
-            //finally
-            //{
-            //    Connection.Close();
-            //}
+                throw;
+            }
+            finally
+            {
+                Connection.Close();
+            }
 
-            //return item;
-
-            throw new NotImplementedException();
+            return item;
         }
     }
 }
