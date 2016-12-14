@@ -14,22 +14,22 @@ using LMS.Data;
 namespace LMS.Service.Controllers
 {
     [RoutePrefix("api")]
-    public class ArtistController : ApiController
+    public class LabelController : ApiController
     {
         private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         [HttpGet()]
-        [Route("artist/list", Name = "Artist.List")]
+        [Route("label/list", Name = "Label.List")]
         public IHttpActionResult List()
         {
-            Log.Info("HTTP GET api/artist/list");
+            Log.Info("HTTP GET api/label/list");
 
             try
             {
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
-                List<Artist> artists = repository.Find(null);
-                if (artists != null)
-                    return Ok(artists);
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
+                List<Label> labels = repository.Find(null);
+                if (labels != null)
+                    return Ok(labels);
                 else
                     return NotFound();
             }
@@ -41,17 +41,17 @@ namespace LMS.Service.Controllers
         }
 
         [HttpGet()]
-        [Route("artist/{id}", Name = "Artist.Read")]
+        [Route("label/{id}", Name = "Label.Read")]
         public IHttpActionResult Read(int id)
         {
-            Log.Info(String.Format("HTTP GET api/artist/{0}", id));
+            Log.Info(String.Format("HTTP GET api/label/{0}", id));
 
             try
             {
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
-                Artist artist = repository.Get(id);
-                if (artist != null)
-                    return Ok(artist);
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
+                Label label = repository.Get(id);
+                if (label != null)
+                    return Ok(label);
                 else
                     return NotFound();
             }
@@ -63,22 +63,22 @@ namespace LMS.Service.Controllers
         }
 
         [HttpPost()]
-        [Route("artist", Name = "Artist.Create")]
-        public IHttpActionResult Create([FromBody] Artist artist)
+        [Route("label", Name = "Label.Create")]
+        public IHttpActionResult Create([FromBody] Label label)
         {
-            Log.Info("HTTP POST api/artist");
+            Log.Info("HTTP POST api/label");
 
             try
             {
-                IDataValidator<Artist> validator = new ArtistValidator();
-                DataValidationResult validationResult = validator.Validate(artist);
+                IDataValidator<Label> validator = new LabelValidator();
+                DataValidationResult validationResult = validator.Validate(label);
                 if (!validationResult.IsValid)
                     return BadRequest(validationResult.Message);
 
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
-                Artist result = repository.Add(artist);
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
+                Label result = repository.Add(label);
                 if (result != null && result.Id > 0)
-                    return Ok(artist);
+                    return Ok(label);
                 else
                     return BadRequest();
             }
@@ -90,14 +90,14 @@ namespace LMS.Service.Controllers
         }
 
         [HttpDelete()]
-        [Route("artist/{id}", Name = "Artist.Delete")]
+        [Route("label/{id}", Name = "Label.Delete")]
         public IHttpActionResult Delete(int id)
         {
-            Log.Info(String.Format("HTTP DELETE api/artist/{0}", id));
+            Log.Info(String.Format("HTTP DELETE api/label/{0}", id));
 
             try
             {
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
                 repository.Remove(id);
             }
             catch (Exception e)
@@ -110,22 +110,22 @@ namespace LMS.Service.Controllers
         }
 
         [HttpPut()]
-        [Route("artist", Name = "Artist.Update")]
-        public IHttpActionResult Update([FromBody] Artist artist)
+        [Route("label", Name = "Label.Update")]
+        public IHttpActionResult Update([FromBody] Label label)
         {
-            Log.Info("HTTP PUT api/artist");
+            Log.Info("HTTP PUT api/label");
 
             try
             {
-                IDataValidator<Artist> validator = new ArtistValidator();
-                DataValidationResult validationResult = validator.Validate(artist);
+                IDataValidator<Label> validator = new LabelValidator();
+                DataValidationResult validationResult = validator.Validate(label);
                 if (!validationResult.IsValid)
                     return BadRequest(validationResult.Message);
 
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
-                Artist result = repository.Update(artist);
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
+                Label result = repository.Update(label);
                 if (result != null && result.Id > 0)
-                    return Ok(artist);
+                    return Ok(label);
                 else
                     return BadRequest();
             }
@@ -137,21 +137,21 @@ namespace LMS.Service.Controllers
         }
 
         [HttpGet()]
-        [Route("artist/search", Name = "Artist.Search")]
+        [Route("label/search", Name = "Label.Search")]
         public IHttpActionResult Search([FromUri] string q)
         {
-            Log.Info(String.Format("HTTP GET api/artist/search/?q={0}", q));
+            Log.Info(String.Format("HTTP GET api/label/search/?q={0}", q));
 
             try
             {
                 // Search q:
-                // q=stageName|tomtek;paramName|value
-                
-                QueryByExampleBuilder<Artist> queryBuilder = new QueryByExampleBuilder<Artist>();
-                IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
-                List<Artist> artists = repository.Find(queryBuilder.GetQueryExample(q));
-                if (artists != null)
-                    return Ok(artists);
+                // q=name|kill;paramName|value
+
+                QueryByExampleBuilder<Label> queryBuilder = new QueryByExampleBuilder<Label>();
+                IRepository<Label> repository = RepositoryFactory<Label>.Create();
+                List<Label> labels = repository.Find(queryBuilder.GetQueryExample(q));
+                if (labels != null)
+                    return Ok(labels);
                 else
                     return NotFound();
             }

@@ -60,6 +60,8 @@
     <Compile Include="DataValidator.cs" />
     <Compile Include="IDataValidator.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="LabelRepository.cs" />
+    <Compile Include="LabelValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryByExampleBuilder.cs" />
     <Compile Include="Repository.cs" />

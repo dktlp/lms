@@ -54,6 +54,7 @@
     <Compile Include="DomainResource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource\Artist.cs" />
+    <Compile Include="Resource\Label.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

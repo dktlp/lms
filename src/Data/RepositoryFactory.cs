@@ -16,10 +16,12 @@ namespace LMS.Data
         {
             IRepository<T> repository = null;
 
-            if (typeof(T).Name == ArtistRepository.TypeName)
-                repository = (IRepository<T>)Activator.CreateInstance<ArtistRepository>();
             if (typeof(T).Name == TenantRepository.TypeName)
                 repository = (IRepository<T>)Activator.CreateInstance<TenantRepository>();
+            if (typeof(T).Name == ArtistRepository.TypeName)
+                repository = (IRepository<T>)Activator.CreateInstance<ArtistRepository>();
+            if (typeof(T).Name == LabelRepository.TypeName)
+                repository = (IRepository<T>)Activator.CreateInstance<LabelRepository>();
 
             if (repository == null)
                 throw new Exception(String.Format("Unable to locate repository for type '{0}'.", typeof(T).Name));
