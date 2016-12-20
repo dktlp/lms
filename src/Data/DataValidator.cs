@@ -10,7 +10,7 @@ namespace LMS.Data
 {
     public abstract class DataValidator<T> : IDataValidator<T>
     {
-        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogManager.GetLogger("Trace");
 
         public const string ErrFieldRequired = "Field '{0}' is mandatory.";
         public const string ErrFieldLength = "Field '{0}' cannot exceed {1} characters.";

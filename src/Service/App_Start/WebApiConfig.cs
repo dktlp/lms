@@ -5,7 +5,7 @@ using System.Net.Http.Formatting;
 using System.Web.Http;
 
 using LMS.Service;
-using LMS.Service.Security;
+using LMS.Service.Handlers;
 
 namespace LMS.Service
 {
@@ -31,6 +31,7 @@ namespace LMS.Service
             );
 
             // Web API message handlers
+            config.MessageHandlers.Add(new AuditLogMessageHandler());
             config.MessageHandlers.Add(new AuthenticationMessageHandler());
         }
     }

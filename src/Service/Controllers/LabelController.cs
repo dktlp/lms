@@ -16,7 +16,7 @@ namespace LMS.Service.Controllers
     [RoutePrefix("api")]
     public class LabelController : ApiController
     {
-        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogManager.GetLogger("Trace");
 
         [HttpGet()]
         [Route("label/list", Name = "Label.List")]

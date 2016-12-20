@@ -9,7 +9,7 @@ namespace LMS.Data
 {
     public abstract class Repository<T> : IRepository<T>
     {
-        protected static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        protected static readonly ILog Log = LogManager.GetLogger("Trace");
 
         public IDbConnection Connection { get; set; }
         public IDbTransaction Transaction { get; set; }

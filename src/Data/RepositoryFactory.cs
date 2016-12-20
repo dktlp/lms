@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Web.Configuration;
 
 using MySql.Data.MySqlClient;
 
@@ -7,6 +6,7 @@ using LMS.Model;
 using LMS.Model.Resource;
 using LMS.Data;
 using LMS.Data.Cloud;
+using LMS.Configuration;
 
 namespace LMS.Data
 {
@@ -22,11 +22,14 @@ namespace LMS.Data
                 repository = (IRepository<T>)Activator.CreateInstance<ArtistRepository>();
             if (typeof(T).Name == LabelRepository.TypeName)
                 repository = (IRepository<T>)Activator.CreateInstance<LabelRepository>();
+            if (typeof(T).Name == AccountRepository.TypeName)
+                repository = (IRepository<T>)Activator.CreateInstance<AccountRepository>();
 
             if (repository == null)
                 throw new Exception(String.Format("Unable to locate repository for type '{0}'.", typeof(T).Name));
 
-            repository.Connection = new MySqlConnection(WebConfigurationManager.AppSettings["DatabaseConnection"]);
+            //repository.Connection = new MySqlConnection(WebConfigurationManager.AppSettings["DatabaseConnection"]);
+            repository.Connection = new MySqlConnection(ConfigurationManager.Database.ToString());
             repository.Transaction = null;
 
             return repository;

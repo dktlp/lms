@@ -14,11 +14,11 @@ using log4net;
 using LMS.Data;
 using LMS.Data.Cloud;
 
-namespace LMS.Service.Security
+namespace LMS.Service.Handlers
 {
     public class AuthenticationMessageHandler : DelegatingHandler
     {
-        private static readonly ILog Log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        private static readonly ILog Log = LogManager.GetLogger("Trace");
 
         const string HEADER_TENANT_IDENTIFIER = "lms.tenant.identifier";
 
@@ -30,13 +30,15 @@ namespace LMS.Service.Security
             if (requestAuthorized)
             {
                 Log.Debug(String.Format("Verify tenant identifier '{0}'", tenantIdentifier));
-
+                
                 // Verify tenant identifier
                 IRepository<Tenant> repository = RepositoryFactory<Tenant>.Create();
                 Tenant tenant = repository.Get(int.Parse(tenantIdentifier));
                 if (tenant == null || tenant.Id != int.Parse(tenantIdentifier))
                     requestAuthorized = false;
             }
+
+            // TODO: Verify that the calling app is valid (name, version, api-key)
 
             if (requestAuthorized)
             {
