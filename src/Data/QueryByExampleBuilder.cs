@@ -36,8 +36,13 @@ namespace LMS.Data
                 foreach (KeyValuePair<string, string> qp in queryParameters)
                 {
                     PropertyInfo prop = typeof(T).GetProperty(qp.Key);
-                    if (prop != null)                  
-                        prop.SetValue(query, Convert.ChangeType(qp.Value, prop.PropertyType), null);
+                    if (prop != null)
+                    {
+                        if (prop.PropertyType.IsEnum)
+                            prop.SetValue(query, Enum.Parse(prop.PropertyType, qp.Value), null);
+                        else
+                            prop.SetValue(query, Convert.ChangeType(qp.Value, prop.PropertyType), null);
+                    }
                 }
             }
 

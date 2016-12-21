@@ -19,7 +19,7 @@ namespace LMS.Data
         {
         }
 
-        public DataValidationResult Validate(T item)
+        public virtual DataValidationResult Validate(T item)
         {
             Log.Info(String.Format("Validate resource of type '{0}'.", typeof(T).Name));
 

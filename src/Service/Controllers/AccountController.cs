@@ -89,77 +89,104 @@ namespace LMS.Service.Controllers
             }
         }
 
-        //[HttpDelete()]
-        //[Route("label/{id}", Name = "Label.Delete")]
-        //public IHttpActionResult Delete(int id)
-        //{
-        //    Log.Info(String.Format("HTTP DELETE api/label/{0}", id));
+        [HttpDelete()]
+        [Route("account/{id}", Name = "Account.Delete")]
+        public IHttpActionResult Delete(int id)
+        {
+            Log.Info(String.Format("HTTP DELETE api/account/{0}", id));
 
-        //    try
-        //    {
-        //        IRepository<Label> repository = RepositoryFactory<Label>.Create();
-        //        repository.Remove(id);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
+            try
+            {
+                IRepository<Account> repository = RepositoryFactory<Account>.Create();
+                repository.Remove(id);
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
 
-        //    return Ok();
-        //}
+            return Ok();
+        }
 
-        //[HttpPut()]
-        //[Route("label", Name = "Label.Update")]
-        //public IHttpActionResult Update([FromBody] Label label)
-        //{
-        //    Log.Info("HTTP PUT api/label");
+        [HttpPut()]
+        [Route("account", Name = "Account.Update")]
+        public IHttpActionResult Update([FromBody] Account account)
+        {
+            Log.Info("HTTP PUT api/account");
 
-        //    try
-        //    {
-        //        IDataValidator<Label> validator = new LabelValidator();
-        //        DataValidationResult validationResult = validator.Validate(label);
-        //        if (!validationResult.IsValid)
-        //            return BadRequest(validationResult.Message);
+            try
+            {
+                IDataValidator<Account> validator = new AccountValidator();
+                DataValidationResult validationResult = validator.Validate(account);
+                if (!validationResult.IsValid)
+                    return BadRequest(validationResult.Message);
 
-        //        IRepository<Label> repository = RepositoryFactory<Label>.Create();
-        //        Label result = repository.Update(label);
-        //        if (result != null && result.Id > 0)
-        //            return Ok(label);
-        //        else
-        //            return BadRequest();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+                IRepository<Account> repository = RepositoryFactory<Account>.Create();
+                Account result = repository.Update(account);
+                if (result != null && result.Id > 0)
+                    return Ok(account);
+                else
+                    return BadRequest();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
 
-        //[HttpGet()]
-        //[Route("label/search", Name = "Label.Search")]
-        //public IHttpActionResult Search([FromUri] string q)
-        //{
-        //    Log.Info(String.Format("HTTP GET api/label/search/?q={0}", q));
+        [HttpGet()]
+        [Route("account/search", Name = "Account.Search")]
+        public IHttpActionResult Search([FromUri] string q)
+        {
+            Log.Info(String.Format("HTTP GET api/account/search/?q={0}", q));
 
-        //    try
-        //    {
-        //        // Search q:
-        //        // q=name|kill;paramName|value
+            try
+            {
+                // Search q:
+                // q=name|ctx001;status|1;paramName|value
 
-        //        QueryByExampleBuilder<Label> queryBuilder = new QueryByExampleBuilder<Label>();
-        //        IRepository<Label> repository = RepositoryFactory<Label>.Create();
-        //        List<Label> labels = repository.Find(queryBuilder.GetQueryExample(q));
-        //        if (labels != null)
-        //            return Ok(labels);
-        //        else
-        //            return NotFound();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Log.Error(e);
-        //        return InternalServerError(e);
-        //    }
-        //}
+                QueryByExampleBuilder<Account> queryBuilder = new QueryByExampleBuilder<Account>();
+                IRepository<Account> repository = RepositoryFactory<Account>.Create();
+                List<Account> accounts = repository.Find(queryBuilder.GetQueryExample(q));
+                if (accounts != null)
+                    return Ok(accounts);
+                else
+                    return NotFound();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
+
+        [HttpPost()]
+        [Route("account/transaction", Name = "Transaction.Create")]
+        public IHttpActionResult Create([FromBody] Transaction transaction)
+        {
+            Log.Info("HTTP POST api/account/transaction");
+
+            try
+            {
+                IDataValidator<Transaction> validator = new TransactionValidator();
+                DataValidationResult validationResult = validator.Validate(transaction);
+                if (!validationResult.IsValid)
+                    return BadRequest(validationResult.Message);
+
+                IRepository<Transaction> repository = RepositoryFactory<Transaction>.Create();
+                Transaction result = repository.Add(transaction);
+                if (result != null && result.Id > 0)
+                    return Ok(transaction);
+                else
+                    return BadRequest();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e);
+                return InternalServerError(e);
+            }
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace LMS.Data
         {
         }
 
-        public new DataValidationResult Validate(Account item)
+        public override DataValidationResult Validate(Account item)
         {
             return base.Validate(item);
         }

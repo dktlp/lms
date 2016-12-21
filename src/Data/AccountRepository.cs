@@ -89,27 +89,32 @@ namespace LMS.Data
                 }
                 else
                 {
-                    //Dictionary<string, object> parameters = new Dictionary<string, object>();
-                    //StringBuilder sql = new StringBuilder();
-                    //sql.Append("SELECT * FROM artist WHERE `tenant_id`=@tenant_id");
+                    Dictionary<string, object> parameters = new Dictionary<string, object>();
+                    StringBuilder sql = new StringBuilder();
+                    sql.Append("SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id");
 
-                    //// Dynamically build sql statement and list of parameters
-                    //if (query.StageName != null)
-                    //{
-                    //    sql.Append(" AND `stage_name` LIKE @stage_name");
-                    //    parameters.Add("@stage_name", "%" + query.StageName + "%");
-                    //}
+                    // Dynamically build sql statement and list of parameters
+                    if (query.Name != null)
+                    {
+                        sql.Append(" AND account.`name` LIKE @name");
+                        parameters.Add("@name", "%" + query.Name + "%");
+                    }
+                    if (query.Status > 0)
+                    {
+                        sql.Append(" AND account.`status`=@status");
+                        parameters.Add("@status", query.Status);
+                    }
 
-                    //sql.Append(";");
+                    sql.Append(";");
 
-                    //command.CommandText = sql.ToString();
-                    //command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                    command.CommandText = sql.ToString();
+                    command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
 
-                    //// Add parameters to sql command
-                    //foreach (KeyValuePair<string, object> parameter in parameters)
-                    //{
-                    //    command.Parameters.AddWithValue(parameter.Key, parameter.Value);
-                    //}
+                    // Add parameters to sql command
+                    foreach (KeyValuePair<string, object> parameter in parameters)
+                    {
+                        command.Parameters.AddWithValue(parameter.Key, parameter.Value);
+                    }
                 }
 
                 using (IDataReader reader = command.ExecuteReader())
@@ -122,7 +127,7 @@ namespace LMS.Data
                             Label = new Reference(Reference.LabelUri, reader.GetInt32(reader.GetOrdinal("label_id"))),
                             Artist = new Reference(Reference.ArtistUri, reader.GetInt32(reader.GetOrdinal("artist_id"))),
                             Name = reader.GetString(reader.GetOrdinal("name")),
-                            Status = (AccountStatus)reader.GetInt16(reader.GetOrdinal("status")),
+                            Status = (AccountStatus)reader.GetByte(reader.GetOrdinal("status")),
                             Balance = reader.GetDouble(reader.GetOrdinal("balance"))
                         };
 
@@ -157,7 +162,7 @@ namespace LMS.Data
 
                 MySqlCommand command = (MySqlCommand)CreateCommand(false);
 
-                command.CommandText = "SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id AND `id`=@id;";
+                command.CommandText = "SELECT account.`id`, account.`label_id`, account.`artist_id`, account.`name`, account.`status`, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id AND `id`=@id;";
                 command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
                 command.Parameters.AddWithValue("@id", id);
 
@@ -171,7 +176,7 @@ namespace LMS.Data
                             Label = new Reference(Reference.LabelUri, reader.GetInt32(reader.GetOrdinal("label_id"))),
                             Artist = new Reference(Reference.ArtistUri, reader.GetInt32(reader.GetOrdinal("artist_id"))),
                             Name = reader.GetString(reader.GetOrdinal("name")),
-                            Status = (AccountStatus)reader.GetInt16(reader.GetOrdinal("status")),
+                            Status = (AccountStatus)reader.GetByte(reader.GetOrdinal("status")),
                             Balance = reader.GetDouble(reader.GetOrdinal("balance"))
                         };
 
@@ -197,8 +202,8 @@ namespace LMS.Data
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("id")),
                                 EffectiveTime = reader.GetDateTime(reader.GetOrdinal("effective_time")),
-                                Status = (TransactionStatus)reader.GetInt16(reader.GetOrdinal("status")),
-                                Type = (TransactionType)reader.GetInt16(reader.GetOrdinal("type")),
+                                Status = (TransactionStatus)reader.GetByte(reader.GetOrdinal("status")),
+                                Type = (TransactionType)reader.GetByte(reader.GetOrdinal("type")),
                                 Amount = reader.GetDouble(reader.GetOrdinal("amount")),
                                 Quarter = reader.GetString(reader.GetOrdinal("quarter"))
                             };
@@ -240,12 +245,12 @@ namespace LMS.Data
 
                 MySqlCommand command = (MySqlCommand)CreateCommand(true);
 
-                //command.CommandText = "DELETE FROM artist WHERE `tenant_id`=@tenant_id AND `id`=@id;";
-                //command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
-                //command.Parameters.AddWithValue("@id", id);
-                //command.ExecuteNonQuery();
+                command.CommandText = "DELETE FROM account WHERE `tenant_id`=@tenant_id AND `id`=@id; DELETE FROM transaction WHERE `tenant_id`=@tenant_id AND `account_id`=@id;";
+                command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                command.Parameters.AddWithValue("@id", id);
+                command.ExecuteNonQuery();
 
-                //Transaction.Commit();
+                Transaction.Commit();
             }
             catch (Exception e)
             {
@@ -272,23 +277,14 @@ namespace LMS.Data
 
                 MySqlCommand command = (MySqlCommand)CreateCommand(true);
 
-                //command.CommandText = "UPDATE artist SET `stage_name`=@stage_name,`given_name`=@given_name,`family_name`=@family_name,`address`=@address,`city`=@city,`district`=@district,`state`=@state,`postalcode`=@postalcode,`country`=@country,`email`=@email,`telecom`=@telecom WHERE `tenant_id`=@tenant_id AND `id`=@id;";
-                //command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
-                //command.Parameters.AddWithValue("@id", item.Id);
-                //command.Parameters.AddWithValue("@stage_name", item.StageName);
-                //command.Parameters.AddWithValue("@given_name", string.Join(" ", item.Name.Given));
-                //command.Parameters.AddWithValue("@family_name", string.Join(" ", item.Name.Family));
-                //command.Parameters.AddWithValue("@address", ((item.Address != null && item.Address.Line != null) ? string.Join(";", item.Address.Line) : null));
-                //command.Parameters.AddWithValue("@city", ((item.Address != null) ? item.Address.City : null));
-                //command.Parameters.AddWithValue("@district", ((item.Address != null) ? item.Address.District : null));
-                //command.Parameters.AddWithValue("@state", ((item.Address != null) ? item.Address.State : null));
-                //command.Parameters.AddWithValue("@postalcode", ((item.Address != null) ? item.Address.PostalCode : null));
-                //command.Parameters.AddWithValue("@country", ((item.Address != null) ? item.Address.Country : null));
-                //command.Parameters.AddWithValue("@email", item.Email);
-                //command.Parameters.AddWithValue("@telecom", item.Telecom);
-                //command.ExecuteNonQuery();
+                command.CommandText = "UPDATE account SET `name`=@name,`status`=@status WHERE `tenant_id`=@tenant_id AND `id`=@id;";
+                command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
+                command.Parameters.AddWithValue("@id", item.Id);
+                command.Parameters.AddWithValue("@name", item.Name);
+                command.Parameters.AddWithValue("@status", item.Status);
+                command.ExecuteNonQuery();
 
-                //Transaction.Commit();
+                Transaction.Commit();
             }
             catch (Exception e)
             {

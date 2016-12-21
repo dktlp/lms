@@ -39,3 +39,26 @@ CREATE TABLE `label` (
   `telecom` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `account` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(11) NOT NULL,
+  `label_id` int(11) NOT NULL,
+  `artist_id` int(11) NOT NULL,
+  `name` varchar(32) NOT NULL,
+  `status` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `transaction` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(11) NOT NULL,
+  `account_id` int(11) NOT NULL,
+  `statement_id` int(11) DEFAULT NULL,
+  `effective_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `type` tinyint(1) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `amount` double NOT NULL,
+  `quarter` varchar(7) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;

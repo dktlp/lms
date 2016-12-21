@@ -71,6 +71,7 @@
     <Compile Include="RepositoryFactory.cs" />
     <Compile Include="Cloud\TenantRepository.cs" />
     <Compile Include="TransactionRepository.cs" />
+    <Compile Include="TransactionValidator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -19,6 +19,13 @@ namespace LMS.Model.Resource
         public Reference Statement { get; set; }
 
         /// <summary>
+        /// Gets or sets a reference to the account which the transaction occured on.
+        /// </summary>
+        [JsonProperty(PropertyName = "account")]
+        [Required]
+        public Reference Account { get; set; }
+
+        /// <summary>
         /// Gets or sets the status of the transaction.
         /// </summary>
         [JsonProperty(PropertyName = "status")]
