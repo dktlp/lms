@@ -36,7 +36,6 @@ namespace LMS.Model.Resource
         /// Gets or sets the specific date/time where the transaction was created.
         /// </summary>
         [JsonProperty(PropertyName = "effectiveTime")]
-        [Required]
         public DateTime EffectiveTime { get; set; }
 
         /// <summary>

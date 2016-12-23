@@ -80,3 +80,13 @@ CREATE TABLE `statement` (
   `invoice_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `invoice` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(11) NOT NULL,
+  `effective_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `invoice_number` varchar(16) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `paypal_address` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

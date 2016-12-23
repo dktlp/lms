@@ -68,7 +68,7 @@ namespace LMS.Service.Controllers
         public IHttpActionResult Create([FromBody] Statement statement)
         {
             Log.Info("HTTP POST api/statement");
-            
+
             try
             {
                 IDataValidator<Statement> validator = new StatementValidator();
@@ -86,7 +86,7 @@ namespace LMS.Service.Controllers
                 });
 
                 // Find all relevant transactions for each account (statement_id=null and status=committed).
-                foreach(Account account in accounts)
+                foreach (Account account in accounts)
                 {
                     account.Transactions = transactionRepository.Find(new Transaction()
                     {
@@ -99,9 +99,9 @@ namespace LMS.Service.Controllers
                         statement.Amount += transaction.Amount;
                     }
                 }
-                
+
                 statement.Data = accounts.ToArray();
-                
+
                 IRepository<Statement> repository = RepositoryFactory<Statement>.Create();
                 Statement result = repository.Add(statement);
                 if (result != null && result.Id > 0)

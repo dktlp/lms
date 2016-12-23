@@ -28,6 +28,8 @@ namespace LMS.Data
                 repository = (IRepository<T>)Activator.CreateInstance<TransactionRepository>();
             if (typeof(T).Name == StatementRepository.TypeName)
                 repository = (IRepository<T>)Activator.CreateInstance<StatementRepository>();
+            if (typeof(T).Name == InvoiceRepository.TypeName)
+                repository = (IRepository<T>)Activator.CreateInstance<InvoiceRepository>();
 
             if (repository == null)
                 throw new Exception(String.Format("Unable to locate repository for type '{0}'.", typeof(T).Name));

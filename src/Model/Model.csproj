@@ -59,6 +59,7 @@
     <Compile Include="Resource\Account.cs" />
     <Compile Include="Resource\Enums\AccountStatus.cs" />
     <Compile Include="Resource\Artist.cs" />
+    <Compile Include="Resource\Enums\InvoiceStatus.cs" />
     <Compile Include="Resource\Enums\StatementStatus.cs" />
     <Compile Include="Resource\Enums\TransactionStatus.cs" />
     <Compile Include="Resource\Enums\TransactionType.cs" />

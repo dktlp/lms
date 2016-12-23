@@ -62,6 +62,8 @@
     <Compile Include="DataValidationResult.cs" />
     <Compile Include="DataValidator.cs" />
     <Compile Include="IDataValidator.cs" />
+    <Compile Include="InvoiceRepository.cs" />
+    <Compile Include="InvoiceValidator.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="LabelRepository.cs" />
     <Compile Include="LabelValidator.cs" />
