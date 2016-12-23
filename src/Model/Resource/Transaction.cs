@@ -61,6 +61,13 @@ namespace LMS.Model.Resource
         public string Quarter { get; set; }
 
         /// <summary>
+        /// Gets or sets the description of the transaction.
+        /// </summary>
+        [JsonProperty(PropertyName = "description")]
+        [StringLength(128)]
+        public string Description { get; set; }
+
+        /// <summary>
         /// Create instance of class.
         /// </summary>
         public Transaction()

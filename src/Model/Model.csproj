@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,8 +59,10 @@
     <Compile Include="Resource\Account.cs" />
     <Compile Include="Resource\Enums\AccountStatus.cs" />
     <Compile Include="Resource\Artist.cs" />
+    <Compile Include="Resource\Enums\StatementStatus.cs" />
     <Compile Include="Resource\Enums\TransactionStatus.cs" />
     <Compile Include="Resource\Enums\TransactionType.cs" />
+    <Compile Include="Resource\Invoice.cs" />
     <Compile Include="Resource\Label.cs" />
     <Compile Include="Resource\Logging\AuditEvent.cs" />
     <Compile Include="Resource\Logging\Event.cs" />

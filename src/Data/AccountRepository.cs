@@ -84,14 +84,14 @@ namespace LMS.Data
 
                 if (query == null)
                 {
-                    command.CommandText = "SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id;";
+                    command.CommandText = "SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id AND transaction.`status`=1), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id;";
                     command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
                 }
                 else
                 {
                     Dictionary<string, object> parameters = new Dictionary<string, object>();
                     StringBuilder sql = new StringBuilder();
-                    sql.Append("SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id");
+                    sql.Append("SELECT account.*, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id AND transaction.`status`=1), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id");
 
                     // Dynamically build sql statement and list of parameters
                     if (query.Name != null)
@@ -103,6 +103,16 @@ namespace LMS.Data
                     {
                         sql.Append(" AND account.`status`=@status");
                         parameters.Add("@status", query.Status);
+                    }
+                    if (query.Artist != null)
+                    {
+                        sql.Append(" AND account.`artist_id`=@artist_id");
+                        parameters.Add("@artist_id", query.Artist.GetId());
+                    }
+                    if (query.Label != null)
+                    {
+                        sql.Append(" AND account.`label_id`=@label_id");
+                        parameters.Add("@label_id", query.Label.GetId());
                     }
 
                     sql.Append(";");
@@ -162,7 +172,7 @@ namespace LMS.Data
 
                 MySqlCommand command = (MySqlCommand)CreateCommand(false);
 
-                command.CommandText = "SELECT account.`id`, account.`label_id`, account.`artist_id`, account.`name`, account.`status`, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id AND `id`=@id;";
+                command.CommandText = "SELECT account.`id`, account.`label_id`, account.`artist_id`, account.`name`, account.`status`, IFNULL((SELECT SUM(transaction.`amount`) FROM transaction WHERE account.`id`= transaction.`account_id` AND transaction.`tenant_id`=@tenant_id AND transaction.`status`=1), 0) AS 'balance' FROM account WHERE account.`tenant_id`=@tenant_id AND `id`=@id;";
                 command.Parameters.AddWithValue("@tenant_id", TenantIdentifier);
                 command.Parameters.AddWithValue("@id", id);
 
@@ -207,6 +217,9 @@ namespace LMS.Data
                                 Amount = reader.GetDouble(reader.GetOrdinal("amount")),
                                 Quarter = reader.GetString(reader.GetOrdinal("quarter"))
                             };
+
+                            if (!reader.IsDBNull(reader.GetOrdinal("description")))
+                                transaction.Description = reader.GetString(reader.GetOrdinal("description"));
 
                             if (!reader.IsDBNull(reader.GetOrdinal("statement_id")))
                                 transaction.Statement = new Reference(Reference.StatementUri, reader.GetInt32(reader.GetOrdinal("statement_id")));

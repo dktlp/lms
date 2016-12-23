@@ -1,5 +1,7 @@
 ﻿using Newtonsoft.Json;
+
 using System;
+using System.Web;
 
 using LMS.Model;
 using LMS.Model.Annotation;
@@ -13,11 +15,12 @@ namespace LMS.Model.Composite
         public const string AccountUri = UriPrefix + "/account";
         public const string LabelUri = UriPrefix + "/label";
         public const string StatementUri = UriPrefix + "/statement";
+        public const string InvoiceUri = UriPrefix + "/invoice";
 
         /// <summary>
         /// Gets or sets the uri (reference) to the resource.
         /// </summary>
-        [JsonProperty(PropertyName = "reference")]
+        [JsonProperty(PropertyName = "uri")]
         [Required]
         public string Uri { get; set; }
 
@@ -34,7 +37,11 @@ namespace LMS.Model.Composite
         public Reference(string uri, int id)
             : base()
         {
-            Uri = String.Format("{0}/{1}", uri, id);
+            string server = null;
+            if (HttpContext.Current != null)
+                server = String.Format("http://{0}:{1}", HttpContext.Current.Request.Url.Host, HttpContext.Current.Request.Url.Port);
+
+            Uri = String.Format("{0}{1}/{2}", server ?? "", uri, id);
         }
 
         public Reference(string value)

@@ -62,3 +62,21 @@ CREATE TABLE `transaction` (
   `quarter` varchar(7) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+ALTER TABLE `lms`.`transaction` 
+ADD COLUMN `description` VARCHAR(128) NULL AFTER `quarter`;
+
+CREATE TABLE `statement` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(11) NOT NULL,
+  `artist_id` int(11) NOT NULL,
+  `label_id` int(11) NOT NULL,
+  `quarter` varchar(7) NOT NULL,
+  `effective_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `reference` varchar(32) NOT NULL,
+  `amount` double NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `data` json DEFAULT NULL,
+  `invoice_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
