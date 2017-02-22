@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Labeleaze</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <link rel="stylesheet" href="content/angular-material.min.css" />
+    <link rel="stylesheet" href="content/angular-material.layouts.min.css" />
+    <link rel="stylesheet" href="content/angular-material.layout-attributes.min.css" />
+
+    <link rel="stylesheet" href="content/app.css" />
+
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular-animate/angular-animate.min.js"></script>
+    <script src="scripts/angular-aria/angular-aria.min.js"></script>
+    <script src="scripts/angular-material/angular-material.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/controllers/user.controller.js"></script>
+
+</head>
+<body ng-cloak md-colors="{background: 'BlueGrey-900'}" layout="column" layout-align="center center" flex>
+
+    <section ng-controller="userController" layout="column" layout-align="start center" style="max-width: 525px;">
+        <img style="width: inherit;" src="content/images/labeleaze_logo.png" />
+        <md-content flex layout-padding>
+            <h1 class="md-title">Login</h1>
+            <form>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Email</label>
+                    <input type="email" ng-model="email" required autofocus>
+                </md-input-container>
+                <md-input-container class="md-block" flex-gt-sm>
+                    <label>Password</label>
+                    <input type="password" ng-model="password" required>
+                </md-input-container>
+                <div layout="row" flex>
+                    <md-button class="md-primary md-raised" ng-click="login()">Login</md-button>
+                    <span flex></span>
+                    <md-button ng-click="null">Forgot your password?</md-button>
+                </div>
+            </form>            
+            
+            <p class="app-small-text">By signing in, you agree to our <a href="#">Terms of Use</a>.</p>
+            <p class="app-small-text">All unauthorized access is prohibited. Please notice that all attempts to login, and actions performed in the system are logged.</p>
+        </md-content>
+    </section>   
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Labeleaze</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <link rel="stylesheet" href="content/angular-material.min.css" />
+    <link rel="stylesheet" href="content/angular-material.layouts.min.css" />
+    <link rel="stylesheet" href="content/angular-material.layout-attributes.min.css" />
+
+    <link rel="stylesheet" href="content/app.css" />
+
+    <script src="scripts/angular/angular.min.js"></script>
+    <script src="scripts/angular-animate/angular-animate.min.js"></script>
+    <script src="scripts/angular-aria/angular-aria.min.js"></script>
+    <script src="scripts/angular-material/angular-material.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/controllers/dialog.controller.js"></script>
+    <script src="app/controllers/artist.controller.js"></script>
+
+</head>
+<body ng-cloak layout="column" flex>
+
+    <section layout="column">
+
+        <md-toolbar md-colors="{background: 'BlueGrey-900'}" layout-align="center center">
+            <div class="md-toolbar-tools" style="max-width: 1024px;">
+                <img style="width: 200px;" src="content/images/labeleaze_logo.png" />
+
+                <md-button href="#/" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">dashboard</md-icon><br />Dashboard</md-button>
+                <md-button href="#/artists" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">person</md-icon><br />Artist Management</md-button>
+                <md-button href="#/accounting" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">payment</md-icon><br />Accounting</md-button>
+
+                <span flex></span>
+
+                <md-button href="#/user" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">account_circle</md-icon><br />User</md-button>
+                <md-button href="#/settings" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">settings</md-icon><br />Settings</md-button>
+            </div>
+        </md-toolbar>
+        <div md-colors="{background: 'BlueGrey-500'}" style="height: 4px;" flex></div>
+
+    </section>
+
+    <section layout="row" layout-align="center start" flex>
+
+        <md-content flex layout-padding style="max-width: 1024px;">
+            <ng-view />
+        </md-content>
+
+    </section>
+
+    <section layout="row" layout-align="center end" flex>
+        <md-content class="md-caption">&copy; 2017 Labeleaze.</md-content>
+    </section>
+
+</body>
+</html>
