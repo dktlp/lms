@@ -15,7 +15,7 @@ CREATE TABLE `artist` (
   `email` varchar(128) NOT NULL,
   `telecom` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `tenant` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -38,7 +38,7 @@ CREATE TABLE `label` (
   `email` varchar(128) DEFAULT NULL,
   `telecom` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `account` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -48,7 +48,7 @@ CREATE TABLE `account` (
   `name` varchar(32) NOT NULL,
   `status` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `transaction` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -60,11 +60,9 @@ CREATE TABLE `transaction` (
   `status` tinyint(1) NOT NULL,
   `amount` double NOT NULL,
   `quarter` varchar(7) NOT NULL,
+  `description` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
-
-ALTER TABLE `lms`.`transaction` 
-ADD COLUMN `description` VARCHAR(128) NULL AFTER `quarter`;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `statement` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -79,7 +77,7 @@ CREATE TABLE `statement` (
   `data` json DEFAULT NULL,
   `invoice_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `invoice` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -89,4 +87,12 @@ CREATE TABLE `invoice` (
   `status` tinyint(1) NOT NULL,
   `paypal_address` varchar(128) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `tenant_id` int(11) NOT NULL,
+  `uid` varchar(128) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
