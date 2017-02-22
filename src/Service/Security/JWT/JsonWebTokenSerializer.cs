@@ -70,14 +70,13 @@ namespace LMS.Service.Security.JWT
                 var decodedSignature = Convert.ToBase64String(signature);
 
                 if (decodedCrypto != decodedSignature)
-                    throw new Exception("Invalid Json Web Token. Unable to verify signature.");
+                    token.SignatureVerified = false;
 
                 double expires = Convert.ToDouble(token.Data.ExpirationTime);
                 double epoch = Math.Round((DateTime.UtcNow - UnixEpoch).TotalSeconds);
                 if (epoch >= expires)
-                    throw new Exception("Invalid Json Web Token. The token has expired.");
+                    token.Expired = true;
             }
-
 
             return token;
         }

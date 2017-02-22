@@ -17,6 +17,7 @@ using LMS.Service.Logging;
 using LMS.Model.Resource.Logging;
 using LMS.Model.Resource;
 using LMS.Model.Composite;
+using LMS.Service.Security.JWT;
 
 namespace LMS.Service.Handlers
 {
@@ -64,10 +65,9 @@ namespace LMS.Service.Handlers
             if (int.TryParse(url[url.Length - 1], out resourceId))
                 resourceRef += "/" + resourceId;
 
-
-            // TODO: Get username via the JWT-Token.
-
-
+            JsonWebToken token = null;
+            if (request.Headers.Authorization != null && request.Headers.Authorization.Scheme == "Bearer")
+                token = JsonWebTokenSerializer.Decode(request.Headers.Authorization.Parameter);
 
             AuditLog.Log(new AuditEvent()
             {
@@ -83,7 +83,7 @@ namespace LMS.Service.Handlers
                 },
                 User = new User()
                 {
-                    Username = "username_undefined"
+                    Username = (token != null) ? token.Data.Username : "username_undefined"
                 },
                 Event = new Event()
                 {

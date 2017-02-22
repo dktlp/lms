@@ -13,6 +13,7 @@ using log4net;
 
 using LMS.Data;
 using LMS.Data.Cloud;
+using LMS.Service.Security.JWT;
 
 namespace LMS.Service.Handlers
 {
@@ -40,20 +41,23 @@ namespace LMS.Service.Handlers
 
             // TODO: Verify that the calling app is valid (name, version, api-key)
 
-            if (requestAuthorized)
+            if (requestAuthorized && !request.RequestUri.AbsolutePath.Contains("/auth/"))
             {
                 Log.Debug(String.Format("Verify JWT token '{0}'", ((request.Headers.Authorization!= null)? request.Headers.Authorization.ToString() : "no_token_provided")));
 
                 // Verify JWT based authentication token
                 if (request.Headers.Authorization != null)
                 {
-                    // TODO: Implement JWT security.
+                    if (request.Headers.Authorization.Scheme == "Bearer")
+                    {
+                        JsonWebToken token = JsonWebTokenSerializer.Decode(request.Headers.Authorization.Parameter);
+                        requestAuthorized = (token.SignatureVerified && !token.Expired);
 
-
-
-
-
+                        Log.Info(String.Format("JWT signature verified '{0}'; JWT expired '{1}'", token.SignatureVerified, token.Expired));
+                    }
                 }
+                else
+                    requestAuthorized = false;
             }
 
             if (requestAuthorized)
