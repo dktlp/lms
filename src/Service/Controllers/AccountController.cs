@@ -97,6 +97,14 @@ namespace LMS.Service.Controllers
 
             try
             {
+                // If account has any related resources, then artist cannot be deleted.
+                // Related resource; Transaction
+                IRepository<Transaction> transactionRepository = RepositoryFactory<Transaction>.Create();
+                List<Transaction> transactions = transactionRepository.Find(new Transaction() { Account = new Reference(Reference.AccountUri, id) });
+                if (transactions != null && transactions.Count > 0)
+                    return BadRequest("Account cannot be deleted; the account is not empty.");
+
+                // Delete account resource.
                 IRepository<Account> repository = RepositoryFactory<Account>.Create();
                 repository.Remove(id);
             }

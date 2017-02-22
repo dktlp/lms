@@ -22,6 +22,7 @@ namespace LMS.Test
         public IRepository<Transaction> TransactionRepository { get; set; }
         public IRepository<Statement> StatementRepository { get; set; }
         public IRepository<Invoice> InvoiceRepository { get; set; }
+        public IRepository<User> UserRepository { get; set; }
 
         public UnitTestContext()
         {
@@ -34,6 +35,7 @@ namespace LMS.Test
             TransactionRepository = RepositoryFactory<Transaction>.Create();
             StatementRepository = RepositoryFactory<Statement>.Create();
             InvoiceRepository = RepositoryFactory<Invoice>.Create();
+            UserRepository = RepositoryFactory<User>.Create();
         }
     }
 }

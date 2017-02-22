@@ -130,7 +130,15 @@ namespace LMS.Service.Controllers
                 if (existingStatement != null && existingStatement.Status != StatementStatus.Cancelled)
                     return BadRequest("Statement can only be deleted if it has been cancelled.");
 
+                // Delete statement resource.
                 repository.Remove(id);
+
+                // Delete referenced invoice resource.
+                if (existingStatement != null && existingStatement.Invoice != null)
+                {
+                    IRepository<Invoice> invoiceRepository = RepositoryFactory<Invoice>.Create();
+                    invoiceRepository.Remove(existingStatement.Invoice.GetId());
+                }
             }
             catch (Exception e)
             {

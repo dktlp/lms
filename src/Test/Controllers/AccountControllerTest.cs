@@ -184,6 +184,31 @@ namespace LMS.Test.Controllers
 
             IHttpActionResult resultNotFound = controller.Read(account.Id);
             Assert.IsTrue(resultNotFound is NotFoundResult);
+
+            // Test that account cannot be deleted, if any related resources are found.
+
+            account = Context.Template;
+
+            resultOK = controller.Create(account) as OkNegotiatedContentResult<Account>;
+            Context.TestData.Add(resultOK.Content);
+
+            account = resultOK.Content;
+
+            Transaction transaction = new Transaction()
+            {
+                Account = new Reference(Reference.AccountUri, Context.TestData.Find(m => m is Account).Id),
+                Amount = -10,
+                Description = "Advance payment.",
+                Quarter = "Q4-2016",
+                Status = TransactionStatus.Committed,
+                Type = TransactionType.Advance
+            };
+
+            transaction = Context.TransactionRepository.Add(transaction);
+            Context.TestData.Add(transaction);
+
+            IHttpActionResult resultBadRequest = controller.Delete(account.Id);
+            Assert.IsTrue(resultBadRequest is BadRequestErrorMessageResult);
         }
 
         [TestMethod]

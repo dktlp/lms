@@ -76,6 +76,7 @@
     <Compile Include="StatementValidator.cs" />
     <Compile Include="TransactionRepository.cs" />
     <Compile Include="TransactionValidator.cs" />
+    <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

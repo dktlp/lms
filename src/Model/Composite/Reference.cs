@@ -16,6 +16,7 @@ namespace LMS.Model.Composite
         public const string LabelUri = UriPrefix + "/label";
         public const string StatementUri = UriPrefix + "/statement";
         public const string InvoiceUri = UriPrefix + "/invoice";
+        public const string UserUri = UriPrefix + "/user";
 
         /// <summary>
         /// Gets or sets the uri (reference) to the resource.

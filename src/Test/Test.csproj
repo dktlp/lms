@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Controllers\ArtistControllerTest.cs" />
     <Compile Include="Controllers\AccountControllerTest.cs" />
+    <Compile Include="Controllers\AuthenticationControllerTest.cs" />
     <Compile Include="Controllers\StatementControllerTest.cs" />
     <Compile Include="Controllers\InvoiceControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

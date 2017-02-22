@@ -12,6 +12,7 @@ using LMS.Model;
 using LMS.Model.Resource;
 using LMS.Model.Composite;
 using LMS.Data;
+using LMS.Model.Resource.Enums;
 
 namespace LMS.Test.Controllers
 {
@@ -44,14 +45,40 @@ namespace LMS.Test.Controllers
                 Email = "thomas@ktrecordings.com",
                 Telecom = "+45 41990756"
             };
+
+            Context.TestData.Add(Context.LabelRepository.Add(new Label()
+            {
+                Name = "lplabelgroup",
+                Address = new Address()
+                {
+                    Line = new string[] { "Skansegade 1D", "Vorup" },
+                    PostalCode = "8940",
+                    City = "Randers SV",
+                    Country = "Denmark",
+                    District = "-",
+                    State = "-"
+                },
+                Email = "mail@lplabelgroup.com",
+                Telecom = "+4541990756"
+            }));
+
         }
 
         [TestCleanup]
         public void TestCleanup()
         {
-            foreach (Artist data in Context.TestData)
+            foreach (DomainResource data in Context.TestData)
             {
-                Context.ArtistRepository.Remove(data.Id);
+                if (data is Label)
+                    Context.LabelRepository.Remove(data.Id);
+                if (data is Artist)
+                    Context.ArtistRepository.Remove(data.Id);
+                if (data is Account)
+                    Context.AccountRepository.Remove(data.Id);
+                if (data is Transaction)
+                    Context.TransactionRepository.Remove(data.Id);
+                if (data is Statement)
+                    Context.StatementRepository.Remove(data.Id);
             }
         }
 
@@ -169,6 +196,30 @@ namespace LMS.Test.Controllers
 
             IHttpActionResult resultNotFound = controller.Read(artist.Id);
             Assert.IsTrue(resultNotFound is NotFoundResult);
+
+            // Test that artist cannot be delated if any related resources are found.
+
+            artist = Context.Template;
+
+            resultOK = controller.Create(artist) as OkNegotiatedContentResult<Artist>;
+            Context.TestData.Add(resultOK.Content);
+
+            artist = resultOK.Content;
+
+            Account account = new Account()
+            {
+                Name = "XXR001",
+                Status = AccountStatus.Open,
+                Transactions = null,
+                Artist = new Reference(Reference.ArtistUri, artist.Id),
+                Label = new Reference(Reference.LabelUri, Context.TestData.Find(m => m is Label).Id)
+            };
+
+            account = Context.AccountRepository.Add(account);
+            Context.TestData.Add(account);
+
+            IHttpActionResult resultBadRequest = controller.Delete(artist.Id);
+            Assert.IsTrue(resultBadRequest is BadRequestErrorMessageResult);
         }
 
         [TestMethod]
