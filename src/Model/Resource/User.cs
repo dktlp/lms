@@ -27,6 +27,13 @@ namespace LMS.Model.Resource
         public string Password { get; set; }
 
         /// <summary>
+        /// Gets or sets the password of the user.
+        /// </summary>
+        /// <remarks>Password used for user authenticiation.</remarks>
+        [JsonProperty(PropertyName = "tenantIdentifier")]
+        public int TenantId { get; set; }
+
+        /// <summary>
         /// Create an instance of the class.
         /// </summary>
         public User()

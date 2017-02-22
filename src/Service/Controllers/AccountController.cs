@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 using log4net;
 
@@ -13,7 +14,7 @@ using LMS.Model.Composite;
 
 namespace LMS.Service.Controllers
 {
-    [RoutePrefix("api")]
+    [RoutePrefix("api")]    
     public class AccountController : ApiController
     {
         private static readonly ILog Log = LogManager.GetLogger("Trace");

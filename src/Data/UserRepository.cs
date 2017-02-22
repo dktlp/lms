@@ -86,16 +86,17 @@ namespace LMS.Data
                 {
                     Dictionary<string, object> parameters = new Dictionary<string, object>();
                     StringBuilder sql = new StringBuilder();
-                    sql.Append("SELECT * FROM user WHERE `tenant_id`=@tenant_id");
 
                     // Dynamically build sql statement and list of parameters
                     if (query.Username != null && query.Password != null)
                     {
-                        sql.Append(" AND `uid`=@uid");
+                        sql.Append("SELECT * FROM user WHERE `uid`=@uid AND `password`=md5(@password)");
                         parameters.Add("@uid", query.Username);
-
-                        sql.Append(" AND `password`=md5(@password)");
                         parameters.Add("@password", query.Password);
+                    }
+                    else
+                    {
+                        sql.Append("SELECT * FROM user WHERE `tenant_id`=@tenant_id");
                     }
 
                     sql.Append(";");
@@ -117,6 +118,7 @@ namespace LMS.Data
                         User item = new User()
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("id")),
+                            TenantId = reader.GetInt32(reader.GetOrdinal("tenant_id")),
                             Username = reader.GetString(reader.GetOrdinal("uid"))
                         };                        
 

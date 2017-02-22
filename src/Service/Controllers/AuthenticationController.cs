@@ -44,6 +44,7 @@ namespace LMS.Service.Controllers
                             Audience = "http://labeleaze.com/api",
                             Subject = new Reference(Reference.UserUri, result[0].Id).Uri,
                             Username = result[0].Username,
+                            TenantId = result[0].TenantId.ToString(),
                             ExpirationTime = DateTime.Now.AddMinutes(60).Subtract(new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc)).TotalSeconds.ToString()
                         }
                     });

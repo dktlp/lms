@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 using LMS.Service;
 using LMS.Service.Handlers;
@@ -23,6 +24,12 @@ namespace LMS.Service
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            cors.SupportsCredentials = false;
+            config.EnableCors(cors);
+
+            config.EnableCors();
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

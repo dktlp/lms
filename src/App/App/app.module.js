@@ -1,7 +1,7 @@
 ﻿(function () {
     "use strict";
 
-    var app = angular.module("app", ["ngMaterial", "ngRoute"]);
+    var app = angular.module("app", ["ngMaterial", "ngRoute", "ngMessages"]);
     
     app.config(function($routeProvider) {
         $routeProvider

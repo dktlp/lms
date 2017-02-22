@@ -11,6 +11,12 @@
     margin: 0px;
 }
 
+.app-error-text {
+    font-size: 0.85em;
+    color: #e12a2a;
+    padding-bottom: 12px;
+}
+
 .app-input-hint {
     font-size: 0.75em;
     margin-top: 6px;

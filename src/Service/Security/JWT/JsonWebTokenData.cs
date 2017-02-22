@@ -22,6 +22,9 @@ namespace LMS.Service.Security.JWT
         [JsonProperty(PropertyName = "name")]
         public string Username { get; set; }
 
+        [JsonProperty(PropertyName = "tenant")]
+        public string TenantId { get; set; }
+
         public JsonWebTokenData()
         {
         }
