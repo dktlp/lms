@@ -25,9 +25,9 @@ namespace LMS.Service
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
-            cors.SupportsCredentials = false;
-            config.EnableCors(cors);
+            //EnableCorsAttribute cors = new EnableCorsAttribute("*", "*", "*");
+            //cors.SupportsCredentials = true;
+            //config.EnableCors(cors);
 
             config.EnableCors();
 

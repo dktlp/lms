@@ -22,15 +22,15 @@
                     <md-button class="md-fab md-mini md-primary" md-colors="{background: 'Green-400'}" ng-controller="dialogController" ng-click="showDialog('dialog-create-artist')"><md-icon style="color:#ffffff;">add</md-icon></md-button>
                 </md-card-header-text>
             </md-card-header>
-            <md-card-content>
+            <md-card-content id="artist-list">
                 <md-list flex>
                     <md-subheader class="md-no-sticky">{{artists.length}} artist(s) found.</md-subheader>
-                    <md-list-item class="md-3-line" ng-repeat="artist in artists" ng-click="null">
+                    <md-list-item class="md-3-line" ng-repeat="artist in artists | orderBy: 'stageName'" ng-click="null">
                         <div class="md-list-item-text" layout="column">
                             <h3>{{artist.stageName}}</h3>
                             <h4>{{artist.name.text}} ({{artist.address.country}})</h4>
                             <p>Email: {{artist.email}}</p>
-                            <md-button class="md-secondary" md-colors="{background: 'Red-700'}" ng-click="delete(artist.id)"><md-icon style="color:#ffffff;">delete</md-icon></md-button>
+                            <md-button class="md-secondary" md-colors="{background: 'Red-700'}" ng-click="delete($event, artist.identifier)"><md-icon style="color:#ffffff;">delete</md-icon></md-button>
                         </div>
                     </md-list-item>
                     <md-divider></md-divider>
@@ -67,17 +67,17 @@
                                 <section layout="row" flex>
                                     <md-input-container class="md-block" flex="45">
                                         <label>Firstname</label>
-                                        <input type="text" ng-model="artist.name.given[0]" required>
+                                        <input type="text" ng-model="artist.givenName" required>
                                     </md-input-container>
                                     <md-input-container class="md-block" flex="45">
                                         <label>Lastname</label>
-                                        <input type="text" ng-model="artist.name.family[0]" required>
+                                        <input type="text" ng-model="artist.familyName" required>
                                     </md-input-container>
                                 </section>
                                 <section layout="column" flex="90">
                                     <md-input-container class="md-block">
                                         <label>Country</label>
-                                        <input type="text" ng-model="artist.address.country" required>
+                                        <input type="text" ng-model="artist.country" required>
                                     </md-input-container>
                                 </section>
                                 <section layout="column" flex="90">

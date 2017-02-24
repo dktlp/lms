@@ -47,14 +47,14 @@ namespace LMS.Model.Composite
         /// Gets or sets the values of address line, fx street name, number, direction, etc.
         /// </summary>
         [JsonProperty(PropertyName = "line")]
-        [Required, ArrayStringLength(96)]
+        [ArrayStringLength(96)]
         public string[] Line { get; set; }
 
         /// <summary>
         /// Gets or sets the value for city, fx name of city, town, etc.
         /// </summary>
         [JsonProperty(PropertyName = "city")]
-        [Required, StringLength(32)]
+        [StringLength(32)]
         public string City { get; set; }
 
         /// <summary>
@@ -75,7 +75,7 @@ namespace LMS.Model.Composite
         /// Gets or sets the value for postal code.
         /// </summary>
         [JsonProperty(PropertyName = "postalCode")]
-        [Required, StringLength(16)]
+        [StringLength(16)]
         public string PostalCode { get; set; }
 
         /// <summary>

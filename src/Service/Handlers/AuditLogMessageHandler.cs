@@ -25,8 +25,8 @@ namespace LMS.Service.Handlers
     {
         private static readonly ILog Log = LogManager.GetLogger("Trace");
 
-        const string HEADER_APP_NAME = "lms.app.name";
-        const string HEADER_APP_VERSION = "lms.app.version";
+        const string HEADER_APP_NAME = "LMS-App-Name";
+        const string HEADER_APP_VERSION = "LMS-App-Version";
 
         protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {

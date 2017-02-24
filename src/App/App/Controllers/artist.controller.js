@@ -3,56 +3,86 @@
 
     angular.module("app").controller("artistController", artistController);
 
-    function artistController($scope, $mdDialog) {
+    function artistController($scope, $http, $mdDialog) {
+        $scope.artists = [];
 
-        $scope.artists = [
-            {
-                "id": 1,
-                "stageName": "Tomtek",
-                "name": { "text": "Thomas Lykke Petersen" },
-                "address": {"country": "Denmark"},
-                "email": "thomas@ktrecordings.com"
-            },
-            {
-                "id": 2,
-                "stageName": "Axiom",
-                "name": { "text": "Lukas Kozelka" },
-                "address": { "country": "Switzerland" },
-                "email": "axiom23@hotmail.com"
-            },
-            {
-                "id": 3,
-                "stageName": "NickBee",
-                "name": { "text": "Mykola Bogomolov" },
-                "address": { "country": "Ukraine" },
-                "email": "nickbee2007@gmail.com"
-            }
-        ];
+        $scope.init = function () {
+            $scope.find(null);
+        }
 
         $scope.find = function (q) {
-            // TODO: Implement method.
-            alert("artistController.find('" + q + "')");
+            var url = (q == null) ? "/api/artist/list" : "/api/artist/search/?q=stageName|" + q;
+            var request = httpRequestBuilder("GET", url, null);
+            $http(request).then(function (response) {
+                $scope.artists = response.data;
+            }, function (response) {
+                httpErrorHandler(response);
+            });
         }
 
-        $scope.delete = function (id) {
-            alert("artistController.delete(" + id + ")");
+        $scope.delete = function (event, id) {
+            var confirm = $mdDialog.confirm()
+                  .title("Would you like to delete the artist?")
+                  .textContent("The artist and all related data will be deleted. Please notice that this action can not be undone.")
+                  .ariaLabel("Confirm")
+                  .targetEvent(event)
+                  .ok("Yes")
+                  .cancel("No");
 
-            // TODO: Implement method.
+            $mdDialog.show(confirm).then(function () {
+                var request = httpRequestBuilder("DELETE", "/api/artist/" + id, null);
+                $http(request).then(function (response) {
+                    $scope.find($scope.q);
+                }, function (response) {
+                    if (response.status == 409)
+                    {
+                        var alert = $mdDialog.alert()
+                            .title("Alert")
+                            .textContent("The artist can not be deleted. Please make sure that no accounts, invoices or statements are associated to artist and try again.")
+                            .ok("OK");
+
+                        $mdDialog
+                            .show(alert)
+                            .finally(function () {
+                                alert = null;
+                            });
+                    }
+                    else
+                        httpErrorHandler(response);
+                });
+            });
         }
 
-        $scope.create = function (a) {
-            // TODO: Implement method.
+        $scope.create = function (artist) {
+            if ($scope.artistForm.$invalid)
+                return;
 
-            a.id = 0;
-            a.name.text = a.name.given[0] + " " + a.name.family[0];
-            $scope.artists.push(a);
+            var data = {
+                "stageName": artist.stageName,
+                "name": {
+                    "given": artist.givenName.split(" "),
+                    "family": artist.familyName.split(" ")
+                },
+                "address": {
+                    "country": artist.country
+                },
+                "email": artist.email
+            }
 
-            // TODO: This is too hard a reset of the object state as it results in all required-fields being flagged in the UI.
-            $scope.artist = null;
+            var request = httpRequestBuilder("POST", "/api/artist/", data);
+            $http(request).then(function (response) {
+                $scope.artists.push(response.data);
+                $mdDialog.hide();
 
-            $mdDialog.hide();
+                $scope.artist = null;
+                $scope.artistForm.$setPristine();
+                $scope.artistForm.$setUntouched();
+            }, function (response) {
+                httpErrorHandler(response);
+            });
         }
 
+        $scope.init();
     }
 
 })();

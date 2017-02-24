@@ -7,16 +7,9 @@
     {
         $scope.login = function ()
         {
-            var request = {
-                method: "POST",
-                url: "http://localhost:50231/api/auth/login",
-                headers: {
-                    "Content-Type": "application/json",
-                    "lms.tenant.identifier": "0"
-                },
-                data: $scope.user
-            }
+            window.sessionStorage.clear();
 
+            var request = httpRequestBuilder("POST", "/api/auth/login", $scope.user);
             $http(request).then(function (response)
             {
                 var base64Url = response.data.split('.')[1];
@@ -31,13 +24,16 @@
 
                 window.sessionStorage.setItem("session-id", session);
                 window.sessionStorage.setItem("auth-token", response.data);
-                window.sessionStorage.setItem("token", token);
+                window.sessionStorage.setItem("tenant", token.tenant);
 
                 window.location.href = "index.html?z=" + session;
 
             }, function (response)
             {
-                $scope.loginForm.$error.auth = true;
+                if (response.status == 401)
+                    $scope.loginForm.$error.auth = true;
+                else
+                    httpErrorHandler(response);
             });
         }
 

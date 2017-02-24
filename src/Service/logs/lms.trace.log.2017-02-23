@@ -1,0 +1,1434 @@
+2017-02-23 08:58:10,643 [9] DEBUG - Event appended to audit log
+2017-02-23 08:58:10,645 [9] INFO  - HTTP AUTH OK
+2017-02-23 08:58:10,848 [9] INFO  - HTTP POST api/auth/login
+2017-02-23 08:58:10,867 [9] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 08:58:15,757 [8] DEBUG - Event appended to audit log
+2017-02-23 08:58:15,757 [8] INFO  - HTTP AUTH OK
+2017-02-23 08:58:15,758 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 08:58:15,758 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 08:58:15,761 [8] DEBUG - User.Id=11 found
+2017-02-23 09:02:49,869 [10] DEBUG - Event appended to audit log
+2017-02-23 09:02:49,869 [10] INFO  - HTTP AUTH OK
+2017-02-23 09:02:49,869 [10] INFO  - HTTP POST api/auth/login
+2017-02-23 09:02:49,869 [10] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:02:51,049 [7] DEBUG - Event appended to audit log
+2017-02-23 09:02:51,049 [7] INFO  - HTTP AUTH OK
+2017-02-23 09:02:51,049 [7] INFO  - HTTP POST api/auth/login
+2017-02-23 09:02:51,049 [7] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:02:51,065 [10] DEBUG - User.Id=11 found
+2017-02-23 09:02:51,659 [14] DEBUG - Event appended to audit log
+2017-02-23 09:02:51,659 [14] INFO  - HTTP AUTH OK
+2017-02-23 09:02:51,659 [14] INFO  - HTTP POST api/auth/login
+2017-02-23 09:02:51,659 [14] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:02:51,659 [14] DEBUG - User.Id=11 found
+2017-02-23 09:03:07,196 [7] DEBUG - Event appended to audit log
+2017-02-23 09:03:07,196 [7] INFO  - HTTP AUTH OK
+2017-02-23 09:03:07,196 [7] INFO  - HTTP POST api/auth/login
+2017-02-23 09:03:07,196 [7] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:03:31,445 [10] DEBUG - Event appended to audit log
+2017-02-23 09:03:31,445 [10] INFO  - HTTP AUTH OK
+2017-02-23 09:03:31,460 [10] INFO  - HTTP POST api/auth/login
+2017-02-23 09:03:31,460 [10] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:04:42,601 [11] DEBUG - Event appended to audit log
+2017-02-23 09:04:42,601 [11] INFO  - HTTP AUTH OK
+2017-02-23 09:04:42,602 [11] INFO  - HTTP POST api/auth/login
+2017-02-23 09:04:42,602 [11] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:04:51,010 [10] DEBUG - Event appended to audit log
+2017-02-23 09:04:51,010 [10] INFO  - HTTP AUTH OK
+2017-02-23 09:04:51,010 [10] INFO  - HTTP POST api/auth/login
+2017-02-23 09:04:51,010 [10] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:05:29,022 [7] DEBUG - Event appended to audit log
+2017-02-23 09:05:29,022 [7] INFO  - HTTP AUTH OK
+2017-02-23 09:05:29,022 [7] INFO  - HTTP POST api/auth/login
+2017-02-23 09:05:29,022 [7] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:05:34,143 [10] DEBUG - Event appended to audit log
+2017-02-23 09:05:34,143 [10] INFO  - HTTP AUTH OK
+2017-02-23 09:05:34,143 [10] INFO  - HTTP POST api/auth/login
+2017-02-23 09:05:34,143 [10] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:05:34,145 [10] DEBUG - User.Id=11 found
+2017-02-23 09:07:00,698 [13] DEBUG - Event appended to audit log
+2017-02-23 09:07:00,698 [13] INFO  - HTTP AUTH OK
+2017-02-23 09:07:00,699 [13] INFO  - HTTP POST api/auth/login
+2017-02-23 09:07:00,699 [13] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:09:01,269 [11] DEBUG - Event appended to audit log
+2017-02-23 09:09:01,269 [11] INFO  - HTTP AUTH OK
+2017-02-23 09:09:01,269 [11] INFO  - HTTP POST api/auth/login
+2017-02-23 09:09:01,270 [11] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:09:21,651 [11] DEBUG - Event appended to audit log
+2017-02-23 09:09:21,651 [11] INFO  - HTTP AUTH OK
+2017-02-23 09:09:21,651 [11] INFO  - HTTP POST api/auth/login
+2017-02-23 09:09:21,651 [11] INFO  - Query for resource 'User'; Tenant=
+2017-02-23 09:09:51,072 [11] DEBUG - Event appended to audit log
+2017-02-23 09:09:51,072 [11] INFO  - HTTP AUTH OK
+2017-02-23 09:09:51,072 [11] INFO  - HTTP POST api/auth/login
+2017-02-23 09:09:51,072 [11] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:10:35,473 [26] DEBUG - Event appended to audit log
+2017-02-23 09:10:35,473 [26] INFO  - HTTP AUTH OK
+2017-02-23 09:10:35,474 [26] INFO  - HTTP POST api/auth/login
+2017-02-23 09:10:35,474 [26] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:11:21,892 [23] DEBUG - Event appended to audit log
+2017-02-23 09:11:21,892 [23] INFO  - HTTP AUTH OK
+2017-02-23 09:11:21,894 [23] INFO  - HTTP POST api/auth/login
+2017-02-23 09:11:21,894 [23] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:11:37,239 [23] DEBUG - Event appended to audit log
+2017-02-23 09:11:37,239 [23] INFO  - HTTP AUTH OK
+2017-02-23 09:11:37,239 [23] INFO  - HTTP POST api/auth/login
+2017-02-23 09:11:37,239 [23] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 09:11:37,241 [23] DEBUG - User.Id=11 found
+2017-02-23 12:56:38,159 [8] DEBUG - Event appended to audit log
+2017-02-23 12:56:38,228 [8] INFO  - HTTP AUTH OK
+2017-02-23 12:56:38,429 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 12:56:38,498 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 12:56:38,643 [8] DEBUG - User.Id=11 found
+2017-02-23 13:06:00,399 [14] DEBUG - Event appended to audit log
+2017-02-23 13:06:00,399 [14] INFO  - HTTP AUTH OK
+2017-02-23 13:06:00,399 [14] INFO  - HTTP POST api/auth/login
+2017-02-23 13:06:00,399 [14] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:06:00,471 [14] DEBUG - User.Id=11 found
+2017-02-23 13:09:05,763 [14] DEBUG - Event appended to audit log
+2017-02-23 13:09:05,764 [14] INFO  - HTTP AUTH OK
+2017-02-23 13:09:05,764 [14] INFO  - HTTP POST api/auth/login
+2017-02-23 13:09:05,764 [14] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:09:05,766 [14] DEBUG - User.Id=11 found
+2017-02-23 13:10:42,364 [5] DEBUG - Event appended to audit log
+2017-02-23 13:10:42,368 [5] INFO  - HTTP AUTH OK
+2017-02-23 13:10:42,564 [5] INFO  - HTTP POST api/auth/login
+2017-02-23 13:10:42,582 [5] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:10:42,715 [5] DEBUG - User.Id=11 found
+2017-02-23 13:20:59,944 [16] DEBUG - Event appended to audit log
+2017-02-23 13:20:59,944 [16] INFO  - HTTP AUTH OK
+2017-02-23 13:20:59,944 [16] INFO  - HTTP POST api/auth/login
+2017-02-23 13:20:59,945 [16] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:21:00,000 [16] DEBUG - User.Id=11 found
+2017-02-23 13:21:44,413 [15] DEBUG - Event appended to audit log
+2017-02-23 13:21:44,413 [15] INFO  - HTTP AUTH OK
+2017-02-23 13:21:44,415 [15] INFO  - HTTP POST api/auth/login
+2017-02-23 13:21:44,415 [15] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:21:44,417 [15] DEBUG - User.Id=11 found
+2017-02-23 13:23:55,380 [6] DEBUG - Event appended to audit log
+2017-02-23 13:23:55,383 [6] INFO  - HTTP AUTH OK
+2017-02-23 13:23:55,574 [6] INFO  - HTTP POST api/auth/login
+2017-02-23 13:23:55,595 [6] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:23:55,728 [6] DEBUG - User.Id=11 found
+2017-02-23 13:25:16,219 [6] DEBUG - Event appended to audit log
+2017-02-23 13:25:16,219 [6] DEBUG - Verify tenant identifier '1'
+2017-02-23 13:25:16,220 [6] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 13:25:16,223 [6] DEBUG - Tenant.Id=1 found
+2017-02-23 13:25:16,223 [6] DEBUG - Verify JWT token 'no_token_provided'
+2017-02-23 13:25:16,223 [6] WARN  - HTTP AUTH ERROR
+2017-02-23 13:26:14,355 [6] DEBUG - Event appended to audit log
+2017-02-23 13:26:24,970 [6] DEBUG - Verify tenant identifier '1'
+2017-02-23 13:26:25,793 [6] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 13:26:25,794 [6] DEBUG - Tenant.Id=1 found
+2017-02-23 13:26:30,249 [6] DEBUG - Verify JWT token 'no_token_provided'
+2017-02-23 13:27:09,321 [6] WARN  - HTTP AUTH ERROR
+2017-02-23 13:28:06,461 [7] DEBUG - Event appended to audit log
+2017-02-23 13:29:12,105 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 13:29:12,106 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 13:29:12,107 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 13:29:12,107 [7] DEBUG - Verify JWT token 'no_token_provided'
+2017-02-23 13:29:12,107 [7] WARN  - HTTP AUTH ERROR
+2017-02-23 13:31:34,237 [6] DEBUG - Event appended to audit log
+2017-02-23 13:31:35,703 [6] INFO  - HTTP AUTH OK
+2017-02-23 13:31:35,834 [6] INFO  - HTTP POST api/auth/login
+2017-02-23 13:31:35,850 [6] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:32:19,856 [7] DEBUG - Event appended to audit log
+2017-02-23 13:32:21,352 [7] INFO  - HTTP AUTH OK
+2017-02-23 13:32:21,352 [7] INFO  - HTTP POST api/auth/login
+2017-02-23 13:32:21,353 [7] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:32:26,589 [8] DEBUG - Event appended to audit log
+2017-02-23 13:32:28,597 [8] INFO  - HTTP AUTH OK
+2017-02-23 13:32:28,599 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 13:32:28,600 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 13:32:28,606 [8] DEBUG - User.Id=11 found
+2017-02-23 13:32:31,844 [7] DEBUG - Event appended to audit log
+2017-02-23 13:32:39,043 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 13:32:39,044 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 13:32:39,051 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 13:32:39,051 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NjAzNDgsNjEyMjQiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.pqXvsiD_1RYo7y4OAX8LmHMUuWdjkzlKFHeOnMTLXQE'
+2017-02-23 13:32:39,051 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 13:32:39,052 [7] INFO  - HTTP AUTH OK
+2017-02-23 13:32:39,056 [7] INFO  - HTTP GET api/artist/list
+2017-02-23 13:32:39,062 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 13:32:39,067 [7] DEBUG - Artist.Id=1 found
+2017-02-23 13:32:39,067 [7] DEBUG - Artist.Id=2 found
+2017-02-23 15:31:14,689 [59] DEBUG - Event appended to audit log
+2017-02-23 15:31:14,689 [59] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:31:14,689 [59] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:31:14,776 [59] DEBUG - Tenant.Id=1 found
+2017-02-23 15:31:14,776 [59] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NjAzNDgsNjEyMjQiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.pqXvsiD_1RYo7y4OAX8LmHMUuWdjkzlKFHeOnMTLXQE'
+2017-02-23 15:31:14,778 [59] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:31:14,778 [59] INFO  - HTTP AUTH OK
+2017-02-23 15:31:14,778 [59] INFO  - HTTP GET api/artist/list
+2017-02-23 15:31:14,778 [59] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:31:14,780 [59] DEBUG - Artist.Id=1 found
+2017-02-23 15:31:14,781 [59] DEBUG - Artist.Id=2 found
+2017-02-23 15:33:12,726 [60] DEBUG - Event appended to audit log
+2017-02-23 15:33:14,261 [60] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:33:14,262 [60] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:33:14,264 [60] DEBUG - Tenant.Id=1 found
+2017-02-23 15:33:14,265 [60] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NjAzNDgsNjEyMjQiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.pqXvsiD_1RYo7y4OAX8LmHMUuWdjkzlKFHeOnMTLXQE'
+2017-02-23 15:33:14,265 [60] INFO  - JWT signature verified 'True'; JWT expired 'True'
+2017-02-23 15:33:14,265 [60] WARN  - HTTP AUTH ERROR
+2017-02-23 15:33:36,120 [60] DEBUG - Event appended to audit log
+2017-02-23 15:33:39,400 [60] INFO  - HTTP AUTH OK
+2017-02-23 15:33:39,401 [60] INFO  - HTTP POST api/auth/login
+2017-02-23 15:33:39,401 [60] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 15:33:39,402 [60] DEBUG - User.Id=11 found
+2017-02-23 15:33:41,890 [61] DEBUG - Event appended to audit log
+2017-02-23 15:34:35,244 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:34:35,244 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:34:35,247 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:34:35,247 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:34:35,248 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:34:35,248 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:34:35,248 [61] INFO  - HTTP GET api/artist/list
+2017-02-23 15:34:35,248 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:34:35,251 [61] DEBUG - Artist.Id=1 found
+2017-02-23 15:34:35,251 [61] DEBUG - Artist.Id=2 found
+2017-02-23 15:34:36,765 [61] DEBUG - Event appended to audit log
+2017-02-23 15:34:38,432 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:34:38,432 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:34:38,443 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:34:38,447 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:34:38,447 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:34:38,447 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:34:38,448 [61] INFO  - HTTP GET api/artist/list
+2017-02-23 15:34:38,464 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:34:38,468 [61] DEBUG - Artist.Id=1 found
+2017-02-23 15:34:38,468 [61] DEBUG - Artist.Id=2 found
+2017-02-23 15:36:31,310 [61] DEBUG - Event appended to audit log
+2017-02-23 15:36:32,838 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:36:32,838 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:36:32,838 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:36:32,838 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:36:32,838 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:36:32,838 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:36:32,838 [61] INFO  - HTTP GET api/artist/list
+2017-02-23 15:36:32,838 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:36:32,853 [61] DEBUG - Artist.Id=1 found
+2017-02-23 15:36:32,853 [61] DEBUG - Artist.Id=2 found
+2017-02-23 15:36:36,364 [61] DEBUG - Event appended to audit log
+2017-02-23 15:36:40,742 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:36:40,742 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:36:40,742 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:36:40,742 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:36:40,742 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:36:40,742 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:36:44,605 [61] INFO  - HTTP GET api/artist/search/?q=stageName|tt
+2017-02-23 15:36:44,605 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:36:50,691 [62] DEBUG - Event appended to audit log
+2017-02-23 15:36:50,691 [62] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:36:50,691 [62] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:36:50,692 [62] DEBUG - Tenant.Id=1 found
+2017-02-23 15:36:50,692 [62] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:36:50,692 [62] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:36:50,692 [62] INFO  - HTTP AUTH OK
+2017-02-23 15:36:50,693 [62] INFO  - HTTP GET api/artist/search/?q=stageName|tom
+2017-02-23 15:36:50,693 [62] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:36:50,694 [62] DEBUG - Artist.Id=1 found
+2017-02-23 15:36:50,694 [62] DEBUG - Artist.Id=2 found
+2017-02-23 15:37:10,099 [61] DEBUG - Event appended to audit log
+2017-02-23 15:37:10,099 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:37:10,099 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:37:10,100 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:37:10,100 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:37:10,100 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:37:10,100 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:37:10,100 [61] INFO  - HTTP GET api/artist/list
+2017-02-23 15:37:10,101 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:37:10,102 [61] DEBUG - Artist.Id=1 found
+2017-02-23 15:37:10,102 [61] DEBUG - Artist.Id=2 found
+2017-02-23 15:37:13,051 [61] DEBUG - Event appended to audit log
+2017-02-23 15:37:13,052 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:37:13,052 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:37:13,052 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 15:37:13,053 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:37:13,053 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:37:13,053 [61] INFO  - HTTP AUTH OK
+2017-02-23 15:37:13,053 [61] INFO  - HTTP GET api/artist/search/?q=stageName|xx
+2017-02-23 15:37:13,053 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:37:13,057 [61] DEBUG - Artist.Id=2 found
+2017-02-23 15:37:18,226 [60] DEBUG - Event appended to audit log
+2017-02-23 15:37:18,226 [60] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:37:18,227 [60] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:37:18,228 [60] DEBUG - Tenant.Id=1 found
+2017-02-23 15:37:18,228 [60] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:37:18,228 [60] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:37:18,228 [60] INFO  - HTTP AUTH OK
+2017-02-23 15:37:18,229 [60] INFO  - HTTP GET api/artist/search/?q=stageName|tom
+2017-02-23 15:37:18,229 [60] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:37:18,230 [60] DEBUG - Artist.Id=1 found
+2017-02-23 15:37:18,230 [60] DEBUG - Artist.Id=2 found
+2017-02-23 15:39:57,089 [60] DEBUG - Event appended to audit log
+2017-02-23 15:39:57,090 [60] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:39:57,120 [60] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:39:57,162 [60] DEBUG - Tenant.Id=1 found
+2017-02-23 15:39:57,162 [60] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:39:57,163 [60] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:39:57,163 [60] INFO  - HTTP AUTH OK
+2017-02-23 15:39:57,199 [60] INFO  - HTTP GET api/artist/list
+2017-02-23 15:39:57,202 [60] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:39:57,204 [60] DEBUG - Artist.Id=1 found
+2017-02-23 15:39:57,204 [60] DEBUG - Artist.Id=2 found
+2017-02-23 15:40:00,128 [71] DEBUG - Event appended to audit log
+2017-02-23 15:40:00,128 [71] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:40:00,128 [71] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:40:00,130 [71] DEBUG - Tenant.Id=1 found
+2017-02-23 15:40:00,130 [71] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:40:00,130 [71] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:40:00,130 [71] INFO  - HTTP AUTH OK
+2017-02-23 15:40:00,174 [71] INFO  - HTTP GET api/artist/search/?q=stageName|x
+2017-02-23 15:40:00,175 [71] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:40:00,176 [71] DEBUG - Artist.Id=2 found
+2017-02-23 15:40:04,661 [71] DEBUG - Event appended to audit log
+2017-02-23 15:40:04,661 [71] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:40:04,661 [71] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:40:04,662 [71] DEBUG - Tenant.Id=1 found
+2017-02-23 15:40:04,663 [71] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:40:04,663 [71] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:40:04,663 [71] INFO  - HTTP AUTH OK
+2017-02-23 15:40:04,663 [71] INFO  - HTTP GET api/artist/search/?q=stageName|Tom
+2017-02-23 15:40:04,663 [71] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:40:04,665 [71] DEBUG - Artist.Id=1 found
+2017-02-23 15:40:04,665 [71] DEBUG - Artist.Id=2 found
+2017-02-23 15:41:40,134 [70] DEBUG - Event appended to audit log
+2017-02-23 15:41:40,134 [70] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:41:40,134 [70] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:41:40,136 [70] DEBUG - Tenant.Id=1 found
+2017-02-23 15:41:40,136 [70] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:41:40,136 [70] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:41:40,136 [70] INFO  - HTTP AUTH OK
+2017-02-23 15:41:40,136 [70] INFO  - HTTP GET api/artist/list
+2017-02-23 15:41:40,136 [70] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:41:40,137 [70] DEBUG - Artist.Id=1 found
+2017-02-23 15:41:40,137 [70] DEBUG - Artist.Id=2 found
+2017-02-23 15:41:54,770 [70] DEBUG - Event appended to audit log
+2017-02-23 15:41:54,770 [70] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:41:54,770 [70] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:41:54,771 [70] DEBUG - Tenant.Id=1 found
+2017-02-23 15:41:54,772 [70] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:41:54,772 [70] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:41:54,772 [70] INFO  - HTTP AUTH OK
+2017-02-23 15:41:54,772 [70] INFO  - HTTP GET api/artist/list
+2017-02-23 15:41:54,772 [70] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:41:54,773 [70] DEBUG - Artist.Id=1 found
+2017-02-23 15:41:54,773 [70] DEBUG - Artist.Id=2 found
+2017-02-23 15:41:58,907 [60] DEBUG - Event appended to audit log
+2017-02-23 15:41:58,907 [60] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:41:58,907 [60] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:41:58,911 [60] DEBUG - Tenant.Id=1 found
+2017-02-23 15:41:58,911 [60] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:41:58,911 [60] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:41:58,911 [60] INFO  - HTTP AUTH OK
+2017-02-23 15:41:58,912 [60] INFO  - HTTP GET api/artist/search/?q=stageName|t
+2017-02-23 15:41:58,912 [60] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:41:58,913 [60] DEBUG - Artist.Id=1 found
+2017-02-23 15:41:58,913 [60] DEBUG - Artist.Id=2 found
+2017-02-23 15:42:06,037 [60] DEBUG - Event appended to audit log
+2017-02-23 15:42:06,037 [60] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:42:06,037 [60] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:42:06,038 [60] DEBUG - Tenant.Id=1 found
+2017-02-23 15:42:06,038 [60] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:42:06,038 [60] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:42:06,038 [60] INFO  - HTTP AUTH OK
+2017-02-23 15:42:06,038 [60] INFO  - HTTP GET api/artist/search/?q=stageName|ex
+2017-02-23 15:42:06,039 [60] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:42:06,039 [60] DEBUG - Artist.Id=2 found
+2017-02-23 15:42:15,608 [70] DEBUG - Event appended to audit log
+2017-02-23 15:42:15,608 [70] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:42:15,609 [70] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:42:15,610 [70] DEBUG - Tenant.Id=1 found
+2017-02-23 15:42:15,610 [70] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:42:15,610 [70] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:42:15,610 [70] INFO  - HTTP AUTH OK
+2017-02-23 15:42:15,610 [70] INFO  - HTTP GET api/artist/list
+2017-02-23 15:42:15,610 [70] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:42:15,612 [70] DEBUG - Artist.Id=1 found
+2017-02-23 15:42:15,612 [70] DEBUG - Artist.Id=2 found
+2017-02-23 15:47:53,750 [65] DEBUG - Event appended to audit log
+2017-02-23 15:47:53,750 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:47:53,750 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:47:53,827 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:47:53,827 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:47:53,827 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:47:53,827 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:47:53,828 [65] INFO  - HTTP GET api/artist/list
+2017-02-23 15:47:53,828 [65] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:47:53,831 [65] DEBUG - Artist.Id=1 found
+2017-02-23 15:47:53,831 [65] DEBUG - Artist.Id=2 found
+2017-02-23 15:48:23,118 [65] DEBUG - Event appended to audit log
+2017-02-23 15:48:23,118 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:48:23,118 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:48:23,120 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:48:23,120 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:48:23,120 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:48:23,120 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:48:23,213 [65] INFO  - HTTP POST api/artist
+2017-02-23 15:48:23,214 [65] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:49:31,932 [65] DEBUG - Event appended to audit log
+2017-02-23 15:49:31,932 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:49:31,932 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:49:31,933 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:49:31,933 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:49:31,934 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:49:31,934 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:49:31,934 [65] INFO  - HTTP GET api/artist/list
+2017-02-23 15:49:31,934 [65] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:49:31,935 [65] DEBUG - Artist.Id=1 found
+2017-02-23 15:49:31,935 [65] DEBUG - Artist.Id=2 found
+2017-02-23 15:49:34,324 [65] DEBUG - Event appended to audit log
+2017-02-23 15:49:34,325 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:49:34,325 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:49:34,326 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:49:34,326 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:49:34,326 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:49:34,326 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:49:34,327 [65] INFO  - HTTP POST api/artist
+2017-02-23 15:49:34,327 [65] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:49:34,370 [65] ERROR - System.Reflection.TargetException: Non-static method requires a target.
+   at System.Reflection.RuntimeMethodInfo.CheckConsistency(Object target)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, BindingFlags invokeAttr, Binder binder, Object[] index, CultureInfo culture)
+   at System.Reflection.RuntimePropertyInfo.GetValue(Object obj, Object[] index)
+   at System.Reflection.PropertyInfo.GetValue(Object obj)
+   at LMS.Data.DataValidator`1.ValidateAttributes(Object item, PropertyInfo prop) in C:\Development\Github\lms\src\Data\DataValidator.cs:line 53
+   at LMS.Data.DataValidator`1.Validate(T item) in C:\Development\Github\lms\src\Data\DataValidator.cs:line 32
+   at LMS.Data.ArtistValidator.Validate(Artist item) in C:\Development\Github\lms\src\Data\ArtistValidator.cs:line 17
+   at LMS.Service.Controllers.ArtistController.Create(Artist artist) in C:\Development\Github\lms\src\Service\Controllers\ArtistController.cs:line 75
+2017-02-23 15:49:54,101 [64] DEBUG - Event appended to audit log
+2017-02-23 15:49:54,101 [64] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:49:54,101 [64] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:49:54,102 [64] DEBUG - Tenant.Id=1 found
+2017-02-23 15:49:54,102 [64] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:49:54,102 [64] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:49:54,103 [64] INFO  - HTTP AUTH OK
+2017-02-23 15:49:54,119 [64] INFO  - HTTP POST api/artist
+2017-02-23 15:49:54,119 [64] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:50:12,295 [65] DEBUG - Event appended to audit log
+2017-02-23 15:50:12,295 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:50:12,295 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:50:12,296 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:50:12,296 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:50:12,296 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:50:12,296 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:50:12,297 [65] INFO  - HTTP GET api/artist/list
+2017-02-23 15:50:12,297 [65] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:50:12,298 [65] DEBUG - Artist.Id=1 found
+2017-02-23 15:50:12,298 [65] DEBUG - Artist.Id=2 found
+2017-02-23 15:50:25,897 [63] DEBUG - Event appended to audit log
+2017-02-23 15:50:25,897 [63] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:50:25,897 [63] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:50:25,898 [63] DEBUG - Tenant.Id=1 found
+2017-02-23 15:50:25,898 [63] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:50:25,898 [63] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:50:25,898 [63] INFO  - HTTP AUTH OK
+2017-02-23 15:50:25,915 [63] INFO  - HTTP POST api/artist
+2017-02-23 15:50:25,915 [63] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:50:50,152 [64] DEBUG - Event appended to audit log
+2017-02-23 15:50:50,153 [64] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:50:50,153 [64] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:50:50,155 [64] DEBUG - Tenant.Id=1 found
+2017-02-23 15:50:50,155 [64] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:50:50,155 [64] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:50:50,155 [64] INFO  - HTTP AUTH OK
+2017-02-23 15:50:50,155 [64] INFO  - HTTP GET api/artist/list
+2017-02-23 15:50:50,155 [64] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:50:50,156 [64] DEBUG - Artist.Id=1 found
+2017-02-23 15:50:50,157 [64] DEBUG - Artist.Id=2 found
+2017-02-23 15:51:05,001 [64] DEBUG - Event appended to audit log
+2017-02-23 15:51:05,001 [64] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:51:05,002 [64] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:51:05,004 [64] DEBUG - Tenant.Id=1 found
+2017-02-23 15:51:05,004 [64] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:51:05,004 [64] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:51:05,004 [64] INFO  - HTTP AUTH OK
+2017-02-23 15:51:05,041 [64] INFO  - HTTP POST api/artist
+2017-02-23 15:51:05,041 [64] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:51:44,876 [65] DEBUG - Event appended to audit log
+2017-02-23 15:51:44,876 [65] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:51:44,876 [65] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:51:44,877 [65] DEBUG - Tenant.Id=1 found
+2017-02-23 15:51:44,877 [65] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:51:44,877 [65] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:51:44,877 [65] INFO  - HTTP AUTH OK
+2017-02-23 15:51:44,918 [65] INFO  - HTTP POST api/artist
+2017-02-23 15:51:49,779 [65] INFO  - Validate resource of type 'Artist'.
+2017-02-23 15:55:41,706 [64] DEBUG - Event appended to audit log
+2017-02-23 15:55:41,706 [64] DEBUG - Verify tenant identifier '1'
+2017-02-23 15:55:41,707 [64] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 15:55:41,770 [64] DEBUG - Tenant.Id=1 found
+2017-02-23 15:55:41,770 [64] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 15:55:41,770 [64] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 15:55:41,770 [64] INFO  - HTTP AUTH OK
+2017-02-23 15:55:41,771 [64] INFO  - HTTP GET api/artist/list
+2017-02-23 15:55:41,771 [64] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 15:55:41,774 [64] DEBUG - Artist.Id=1 found
+2017-02-23 15:55:41,774 [64] DEBUG - Artist.Id=2 found
+2017-02-23 16:01:18,365 [61] DEBUG - Event appended to audit log
+2017-02-23 16:01:18,365 [61] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:01:18,365 [61] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:01:18,479 [61] DEBUG - Tenant.Id=1 found
+2017-02-23 16:01:18,479 [61] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:01:18,479 [61] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:01:18,479 [61] INFO  - HTTP AUTH OK
+2017-02-23 16:01:18,480 [61] INFO  - HTTP GET api/artist/list
+2017-02-23 16:01:18,480 [61] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 16:01:18,482 [61] DEBUG - Artist.Id=1 found
+2017-02-23 16:01:18,482 [61] DEBUG - Artist.Id=2 found
+2017-02-23 16:01:47,613 [53] DEBUG - Event appended to audit log
+2017-02-23 16:01:47,613 [53] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:01:47,613 [53] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:01:47,614 [53] DEBUG - Tenant.Id=1 found
+2017-02-23 16:01:47,615 [53] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:01:47,615 [53] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:01:47,615 [53] INFO  - HTTP AUTH OK
+2017-02-23 16:01:47,615 [53] INFO  - HTTP GET api/artist/list
+2017-02-23 16:01:47,615 [53] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 16:01:47,616 [53] DEBUG - Artist.Id=1 found
+2017-02-23 16:01:47,617 [53] DEBUG - Artist.Id=2 found
+2017-02-23 16:01:59,047 [51] DEBUG - Event appended to audit log
+2017-02-23 16:01:59,047 [51] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:01:59,047 [51] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:01:59,050 [51] DEBUG - Tenant.Id=1 found
+2017-02-23 16:01:59,050 [51] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:01:59,050 [51] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:01:59,050 [51] INFO  - HTTP AUTH OK
+2017-02-23 16:01:59,068 [51] INFO  - HTTP POST api/artist
+2017-02-23 16:01:59,068 [51] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:05:23,348 [49] DEBUG - Event appended to audit log
+2017-02-23 16:05:23,351 [49] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:05:23,395 [49] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:05:23,442 [49] DEBUG - Tenant.Id=1 found
+2017-02-23 16:05:23,442 [49] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:05:23,442 [49] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:05:23,442 [49] INFO  - HTTP AUTH OK
+2017-02-23 16:05:23,484 [49] INFO  - HTTP GET api/artist/list
+2017-02-23 16:05:23,486 [49] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 16:05:23,489 [49] DEBUG - Artist.Id=1 found
+2017-02-23 16:05:23,489 [49] DEBUG - Artist.Id=2 found
+2017-02-23 16:05:33,011 [52] DEBUG - Event appended to audit log
+2017-02-23 16:05:33,011 [52] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:05:33,011 [52] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:05:33,013 [52] DEBUG - Tenant.Id=1 found
+2017-02-23 16:05:33,013 [52] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:05:33,013 [52] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:05:33,013 [52] INFO  - HTTP AUTH OK
+2017-02-23 16:05:33,113 [52] INFO  - HTTP POST api/artist
+2017-02-23 16:05:33,113 [52] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:06:51,610 [52] DEBUG - Event appended to audit log
+2017-02-23 16:06:51,610 [52] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:06:51,610 [52] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:06:51,611 [52] DEBUG - Tenant.Id=1 found
+2017-02-23 16:06:51,611 [52] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:06:51,611 [52] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:06:51,611 [52] INFO  - HTTP AUTH OK
+2017-02-23 16:06:51,630 [52] INFO  - HTTP POST api/artist
+2017-02-23 16:06:51,630 [52] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:07:13,147 [46] DEBUG - Event appended to audit log
+2017-02-23 16:07:13,147 [46] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:07:13,147 [46] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:07:13,148 [46] DEBUG - Tenant.Id=1 found
+2017-02-23 16:07:13,148 [46] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:07:13,148 [46] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:07:13,148 [46] INFO  - HTTP AUTH OK
+2017-02-23 16:07:13,161 [46] INFO  - HTTP POST api/artist
+2017-02-23 16:07:20,615 [46] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:08:45,160 [51] DEBUG - Event appended to audit log
+2017-02-23 16:08:45,160 [51] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:08:45,161 [51] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:08:45,162 [51] DEBUG - Tenant.Id=1 found
+2017-02-23 16:08:45,162 [51] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:08:45,162 [51] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:08:45,162 [51] INFO  - HTTP AUTH OK
+2017-02-23 16:08:45,174 [51] INFO  - HTTP POST api/artist
+2017-02-23 16:09:07,558 [51] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:14:08,045 [46] DEBUG - Event appended to audit log
+2017-02-23 16:14:08,045 [46] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:14:08,046 [46] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:14:08,047 [46] DEBUG - Tenant.Id=1 found
+2017-02-23 16:14:08,047 [46] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:14:08,047 [46] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:14:08,047 [46] INFO  - HTTP AUTH OK
+2017-02-23 16:14:08,047 [46] INFO  - HTTP GET api/artist/list
+2017-02-23 16:14:08,048 [46] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 16:14:08,049 [46] DEBUG - Artist.Id=1 found
+2017-02-23 16:14:08,049 [46] DEBUG - Artist.Id=2 found
+2017-02-23 16:14:26,271 [46] DEBUG - Event appended to audit log
+2017-02-23 16:14:26,271 [46] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:14:26,271 [46] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:14:26,272 [46] DEBUG - Tenant.Id=1 found
+2017-02-23 16:14:26,272 [46] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:14:26,272 [46] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:14:26,272 [46] INFO  - HTTP AUTH OK
+2017-02-23 16:14:26,284 [46] INFO  - HTTP POST api/artist
+2017-02-23 16:14:53,072 [46] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:16:03,131 [36] DEBUG - Event appended to audit log
+2017-02-23 16:16:03,131 [36] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:16:03,131 [36] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:16:03,137 [36] DEBUG - Tenant.Id=1 found
+2017-02-23 16:16:03,137 [36] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:16:03,137 [36] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:16:03,138 [36] INFO  - HTTP AUTH OK
+2017-02-23 16:16:03,138 [36] INFO  - HTTP POST api/artist
+2017-02-23 16:16:03,138 [36] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:16:49,150 [38] DEBUG - Event appended to audit log
+2017-02-23 16:16:49,150 [38] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:16:49,150 [38] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:16:49,151 [38] DEBUG - Tenant.Id=1 found
+2017-02-23 16:16:49,151 [38] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:16:49,151 [38] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:16:49,151 [38] INFO  - HTTP AUTH OK
+2017-02-23 16:16:49,151 [38] INFO  - HTTP GET api/artist/list
+2017-02-23 16:16:49,151 [38] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 16:16:49,152 [38] DEBUG - Artist.Id=1 found
+2017-02-23 16:16:49,152 [38] DEBUG - Artist.Id=2 found
+2017-02-23 16:16:58,031 [38] DEBUG - Event appended to audit log
+2017-02-23 16:16:58,031 [38] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:16:58,031 [38] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:16:58,035 [38] DEBUG - Tenant.Id=1 found
+2017-02-23 16:16:58,035 [38] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:16:58,035 [38] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:16:58,035 [38] INFO  - HTTP AUTH OK
+2017-02-23 16:16:58,035 [38] INFO  - HTTP POST api/artist
+2017-02-23 16:16:58,036 [38] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:17:01,976 [46] DEBUG - Event appended to audit log
+2017-02-23 16:17:01,976 [46] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:17:01,976 [46] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:17:01,977 [46] DEBUG - Tenant.Id=1 found
+2017-02-23 16:17:01,977 [46] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:17:01,977 [46] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:17:01,977 [46] INFO  - HTTP AUTH OK
+2017-02-23 16:17:01,982 [46] INFO  - HTTP POST api/artist
+2017-02-23 16:17:01,982 [46] INFO  - Validate resource of type 'Artist'.
+2017-02-23 16:17:20,569 [36] DEBUG - Event appended to audit log
+2017-02-23 16:17:20,570 [36] DEBUG - Verify tenant identifier '1'
+2017-02-23 16:17:20,570 [36] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 16:17:20,571 [36] DEBUG - Tenant.Id=1 found
+2017-02-23 16:17:20,571 [36] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4Njc2MTksNDAyMDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.ihC-AbPnayvdLw1kWApU18RnxEGFykR8uwGlzlJKZDo'
+2017-02-23 16:17:20,571 [36] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 16:17:20,571 [36] INFO  - HTTP AUTH OK
+2017-02-23 16:17:20,572 [36] INFO  - HTTP POST api/artist
+2017-02-23 16:17:20,572 [36] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:17:26,590 [9] DEBUG - Event appended to audit log
+2017-02-23 17:17:26,592 [9] INFO  - HTTP AUTH OK
+2017-02-23 17:17:26,785 [9] INFO  - HTTP POST api/auth/login
+2017-02-23 17:17:26,803 [9] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 17:20:13,341 [9] DEBUG - Event appended to audit log
+2017-02-23 17:20:13,341 [9] INFO  - HTTP AUTH OK
+2017-02-23 17:20:13,341 [9] INFO  - HTTP POST api/auth/login
+2017-02-23 17:20:13,341 [9] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 17:21:39,156 [8] DEBUG - Event appended to audit log
+2017-02-23 17:21:39,166 [8] INFO  - HTTP AUTH OK
+2017-02-23 17:21:39,446 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 17:21:39,481 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 17:21:58,431 [7] DEBUG - Event appended to audit log
+2017-02-23 17:21:58,431 [7] INFO  - HTTP AUTH OK
+2017-02-23 17:21:58,431 [7] INFO  - HTTP POST api/auth/login
+2017-02-23 17:21:58,431 [7] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 17:21:58,434 [7] DEBUG - User.Id=11 found
+2017-02-23 17:22:02,778 [7] DEBUG - Event appended to audit log
+2017-02-23 17:22:02,778 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:22:02,782 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:22:02,785 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 17:22:02,785 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:22:02,785 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:22:02,785 [7] INFO  - HTTP AUTH OK
+2017-02-23 17:22:02,788 [7] INFO  - HTTP GET api/artist/list
+2017-02-23 17:22:02,791 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:22:02,794 [7] DEBUG - Artist.Id=1 found
+2017-02-23 17:22:02,795 [7] DEBUG - Artist.Id=2 found
+2017-02-23 17:22:14,600 [7] DEBUG - Event appended to audit log
+2017-02-23 17:22:14,600 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:22:14,600 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:22:14,602 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 17:22:14,602 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:22:14,602 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:22:14,602 [7] INFO  - HTTP AUTH OK
+2017-02-23 17:22:14,650 [7] INFO  - HTTP GET api/artist/search/?q=stageName|x
+2017-02-23 17:22:14,652 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:22:14,655 [7] DEBUG - Artist.Id=2 found
+2017-02-23 17:22:28,106 [9] DEBUG - Event appended to audit log
+2017-02-23 17:22:28,106 [9] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:22:28,107 [9] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:22:28,107 [9] DEBUG - Tenant.Id=1 found
+2017-02-23 17:22:28,108 [9] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:22:28,108 [9] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:22:28,108 [9] INFO  - HTTP AUTH OK
+2017-02-23 17:22:28,121 [9] INFO  - HTTP POST api/artist
+2017-02-23 17:22:28,122 [9] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:24:58,586 [8] DEBUG - Event appended to audit log
+2017-02-23 17:24:58,590 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:24:58,657 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:24:58,733 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 17:24:58,733 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:24:58,734 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:24:58,734 [8] INFO  - HTTP AUTH OK
+2017-02-23 17:24:58,772 [8] INFO  - HTTP GET api/artist/list
+2017-02-23 17:24:58,774 [8] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:24:58,778 [8] DEBUG - Artist.Id=1 found
+2017-02-23 17:24:58,778 [8] DEBUG - Artist.Id=2 found
+2017-02-23 17:25:17,459 [8] DEBUG - Event appended to audit log
+2017-02-23 17:25:17,459 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:25:17,459 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:25:17,460 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 17:25:17,460 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:25:17,460 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:25:17,460 [8] INFO  - HTTP AUTH OK
+2017-02-23 17:25:17,503 [8] INFO  - HTTP POST api/artist
+2017-02-23 17:25:17,503 [8] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:25:17,507 [8] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:25:49,870 [14] DEBUG - Event appended to audit log
+2017-02-23 17:25:49,871 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:25:49,871 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:25:49,872 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 17:25:49,873 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:25:49,873 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:25:49,873 [14] INFO  - HTTP AUTH OK
+2017-02-23 17:25:49,873 [14] INFO  - HTTP POST api/artist
+2017-02-23 17:25:49,873 [14] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:25:49,874 [14] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:27:09,466 [18] DEBUG - Event appended to audit log
+2017-02-23 17:27:09,466 [18] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:27:09,466 [18] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:27:09,466 [18] DEBUG - Tenant.Id=1 found
+2017-02-23 17:27:09,466 [18] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:27:09,466 [18] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:27:09,466 [18] INFO  - HTTP AUTH OK
+2017-02-23 17:27:09,466 [18] INFO  - HTTP GET api/artist/list
+2017-02-23 17:27:09,470 [18] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:27:09,474 [18] DEBUG - Artist.Id=1 found
+2017-02-23 17:27:09,474 [18] DEBUG - Artist.Id=2 found
+2017-02-23 17:27:09,474 [18] DEBUG - Artist.Id=3 found
+2017-02-23 17:27:09,474 [18] DEBUG - Artist.Id=4 found
+2017-02-23 17:27:19,904 [14] DEBUG - Event appended to audit log
+2017-02-23 17:27:19,904 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:27:19,904 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:27:19,904 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 17:27:19,904 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:27:19,904 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:27:19,904 [14] INFO  - HTTP AUTH OK
+2017-02-23 17:27:19,904 [14] INFO  - HTTP POST api/artist
+2017-02-23 17:27:19,904 [14] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:27:19,904 [14] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:31:19,498 [22] DEBUG - Event appended to audit log
+2017-02-23 17:31:19,498 [22] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:31:19,498 [22] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:31:19,554 [22] DEBUG - Tenant.Id=1 found
+2017-02-23 17:31:19,554 [22] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:31:19,554 [22] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:31:19,554 [22] INFO  - HTTP AUTH OK
+2017-02-23 17:31:19,554 [22] INFO  - HTTP GET api/artist/list
+2017-02-23 17:31:19,554 [22] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:31:19,558 [22] DEBUG - Artist.Id=1 found
+2017-02-23 17:31:19,558 [22] DEBUG - Artist.Id=2 found
+2017-02-23 17:31:19,558 [22] DEBUG - Artist.Id=3 found
+2017-02-23 17:31:19,558 [22] DEBUG - Artist.Id=4 found
+2017-02-23 17:31:19,558 [22] DEBUG - Artist.Id=5 found
+2017-02-23 17:31:33,297 [17] DEBUG - Event appended to audit log
+2017-02-23 17:31:33,297 [17] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:31:33,297 [17] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:31:33,297 [17] DEBUG - Tenant.Id=1 found
+2017-02-23 17:31:33,297 [17] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:31:33,297 [17] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:31:33,297 [17] INFO  - HTTP AUTH OK
+2017-02-23 17:31:33,297 [17] INFO  - HTTP POST api/artist
+2017-02-23 17:31:33,297 [17] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:31:33,301 [17] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:32:32,496 [17] DEBUG - Event appended to audit log
+2017-02-23 17:32:32,496 [17] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:32:32,496 [17] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:32:32,496 [17] DEBUG - Tenant.Id=1 found
+2017-02-23 17:32:32,496 [17] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:32:32,496 [17] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:32:32,496 [17] INFO  - HTTP AUTH OK
+2017-02-23 17:32:32,496 [17] INFO  - HTTP GET api/artist/list
+2017-02-23 17:32:32,496 [17] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=1 found
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=2 found
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=3 found
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=4 found
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=5 found
+2017-02-23 17:32:32,496 [17] DEBUG - Artist.Id=6 found
+2017-02-23 17:32:41,438 [20] DEBUG - Event appended to audit log
+2017-02-23 17:32:41,438 [20] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:32:41,438 [20] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:32:41,446 [20] DEBUG - Tenant.Id=1 found
+2017-02-23 17:32:41,446 [20] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:32:41,446 [20] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:32:41,446 [20] INFO  - HTTP AUTH OK
+2017-02-23 17:32:41,446 [20] INFO  - HTTP POST api/artist
+2017-02-23 17:32:41,446 [20] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:32:41,446 [20] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:34:36,731 [21] DEBUG - Event appended to audit log
+2017-02-23 17:34:36,731 [21] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:34:36,731 [21] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:34:36,731 [21] DEBUG - Tenant.Id=1 found
+2017-02-23 17:34:36,731 [21] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:34:36,731 [21] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:34:36,731 [21] INFO  - HTTP AUTH OK
+2017-02-23 17:34:36,731 [21] INFO  - HTTP GET api/artist/list
+2017-02-23 17:34:36,731 [21] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=1 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=2 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=3 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=4 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=5 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=6 found
+2017-02-23 17:34:36,731 [21] DEBUG - Artist.Id=7 found
+2017-02-23 17:35:03,853 [7] DEBUG - Event appended to audit log
+2017-02-23 17:35:03,853 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:35:03,853 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:35:03,853 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 17:35:03,853 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:35:03,857 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:35:03,857 [7] INFO  - HTTP AUTH OK
+2017-02-23 17:35:03,857 [7] INFO  - HTTP GET api/artist/list
+2017-02-23 17:35:03,857 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=1 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=2 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=3 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=4 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=5 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=6 found
+2017-02-23 17:35:03,857 [7] DEBUG - Artist.Id=7 found
+2017-02-23 17:35:37,693 [21] DEBUG - Event appended to audit log
+2017-02-23 17:35:37,693 [21] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:35:37,697 [21] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:35:37,697 [21] DEBUG - Tenant.Id=1 found
+2017-02-23 17:35:37,697 [21] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:35:37,697 [21] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:35:37,697 [21] INFO  - HTTP AUTH OK
+2017-02-23 17:35:37,697 [21] INFO  - HTTP POST api/artist
+2017-02-23 17:35:37,697 [21] INFO  - Validate resource of type 'Artist'.
+2017-02-23 17:35:37,697 [21] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 17:35:54,091 [25] DEBUG - Event appended to audit log
+2017-02-23 17:35:54,091 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:35:54,091 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:35:54,095 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:35:54,095 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:35:54,095 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:35:54,095 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:35:54,131 [25] INFO  - HTTP GET api/artist/search/?q=stageName|ax
+2017-02-23 17:35:54,131 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:35:54,135 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:36:02,656 [25] DEBUG - Event appended to audit log
+2017-02-23 17:36:02,656 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:36:02,656 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:36:02,660 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:36:02,660 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:36:02,660 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:36:02,660 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:36:02,660 [25] INFO  - HTTP GET api/artist/search/?q=stageName|
+2017-02-23 17:36:02,660 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=1 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=2 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=3 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=4 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=5 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=6 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=7 found
+2017-02-23 17:36:02,660 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:38:45,093 [26] DEBUG - Event appended to audit log
+2017-02-23 17:38:45,093 [26] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:38:45,093 [26] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:38:45,093 [26] DEBUG - Tenant.Id=1 found
+2017-02-23 17:38:45,093 [26] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:38:45,093 [26] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:38:45,093 [26] INFO  - HTTP AUTH OK
+2017-02-23 17:38:45,093 [26] INFO  - HTTP GET api/artist/list
+2017-02-23 17:38:45,093 [26] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=1 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=2 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=3 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=4 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=5 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=6 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=7 found
+2017-02-23 17:38:45,097 [26] DEBUG - Artist.Id=8 found
+2017-02-23 17:39:01,692 [25] DEBUG - Event appended to audit log
+2017-02-23 17:39:01,692 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:39:01,692 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:39:01,696 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:39:01,696 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:39:01,696 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:39:01,696 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:39:01,696 [25] INFO  - HTTP GET api/artist/list
+2017-02-23 17:39:01,696 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:39:01,696 [25] DEBUG - Artist.Id=1 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=2 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=3 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=4 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=5 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=6 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=7 found
+2017-02-23 17:39:01,700 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:39:14,602 [27] DEBUG - Event appended to audit log
+2017-02-23 17:39:14,602 [27] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:39:14,602 [27] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:39:14,606 [27] DEBUG - Tenant.Id=1 found
+2017-02-23 17:39:14,606 [27] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:39:14,606 [27] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:39:14,606 [27] INFO  - HTTP AUTH OK
+2017-02-23 17:39:14,606 [27] INFO  - HTTP GET api/artist/list
+2017-02-23 17:39:14,606 [27] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=1 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=2 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=3 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=4 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=5 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=6 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=7 found
+2017-02-23 17:39:14,606 [27] DEBUG - Artist.Id=8 found
+2017-02-23 17:39:22,296 [26] DEBUG - Event appended to audit log
+2017-02-23 17:39:22,296 [26] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:39:22,296 [26] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:39:22,296 [26] DEBUG - Tenant.Id=1 found
+2017-02-23 17:39:22,296 [26] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:39:22,296 [26] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:39:22,296 [26] INFO  - HTTP AUTH OK
+2017-02-23 17:39:22,296 [26] INFO  - HTTP GET api/artist/list
+2017-02-23 17:39:22,296 [26] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=1 found
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=2 found
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=3 found
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=4 found
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=5 found
+2017-02-23 17:39:22,296 [26] DEBUG - Artist.Id=6 found
+2017-02-23 17:39:22,300 [26] DEBUG - Artist.Id=7 found
+2017-02-23 17:39:22,300 [26] DEBUG - Artist.Id=8 found
+2017-02-23 17:40:18,193 [25] DEBUG - Event appended to audit log
+2017-02-23 17:40:18,193 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:40:18,193 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:40:18,193 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:40:18,193 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:40:18,197 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:40:18,197 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:40:18,197 [25] INFO  - HTTP GET api/artist/list
+2017-02-23 17:40:18,197 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=1 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=2 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=3 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=4 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=5 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=6 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=7 found
+2017-02-23 17:40:18,197 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:40:33,877 [30] DEBUG - Event appended to audit log
+2017-02-23 17:40:33,877 [30] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:40:33,877 [30] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:40:33,881 [30] DEBUG - Tenant.Id=1 found
+2017-02-23 17:40:33,881 [30] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:40:33,881 [30] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:40:33,881 [30] INFO  - HTTP AUTH OK
+2017-02-23 17:40:33,881 [30] INFO  - HTTP GET api/artist/list
+2017-02-23 17:40:33,881 [30] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=1 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=2 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=3 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=4 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=5 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=6 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=7 found
+2017-02-23 17:40:33,881 [30] DEBUG - Artist.Id=8 found
+2017-02-23 17:40:41,976 [25] DEBUG - Event appended to audit log
+2017-02-23 17:40:41,976 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:40:41,976 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:40:41,980 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:40:41,980 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:40:41,980 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:40:41,980 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:40:41,980 [25] INFO  - HTTP GET api/artist/list
+2017-02-23 17:40:41,980 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=1 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=2 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=3 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=4 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=5 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=6 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=7 found
+2017-02-23 17:40:41,980 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:40:59,102 [25] DEBUG - Event appended to audit log
+2017-02-23 17:40:59,102 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:40:59,102 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:40:59,106 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 17:40:59,106 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:40:59,106 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:40:59,106 [25] INFO  - HTTP AUTH OK
+2017-02-23 17:40:59,106 [25] INFO  - HTTP GET api/artist/list
+2017-02-23 17:40:59,106 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=1 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=2 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=3 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=4 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=5 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=6 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=7 found
+2017-02-23 17:40:59,106 [25] DEBUG - Artist.Id=8 found
+2017-02-23 17:41:38,857 [31] DEBUG - Event appended to audit log
+2017-02-23 17:41:38,857 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:41:38,857 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:41:38,861 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 17:41:38,861 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:41:38,861 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:41:38,861 [31] INFO  - HTTP AUTH OK
+2017-02-23 17:41:38,861 [31] INFO  - HTTP GET api/artist/list
+2017-02-23 17:41:38,861 [31] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=1 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=2 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=3 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=4 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=5 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=6 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=7 found
+2017-02-23 17:41:38,861 [31] DEBUG - Artist.Id=8 found
+2017-02-23 17:42:08,528 [31] DEBUG - Event appended to audit log
+2017-02-23 17:42:08,528 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:42:08,528 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:42:08,528 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 17:42:08,528 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:42:08,528 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:42:08,528 [31] INFO  - HTTP AUTH OK
+2017-02-23 17:42:08,528 [31] INFO  - HTTP GET api/artist/search/?q=stageName|a
+2017-02-23 17:42:08,528 [31] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:42:08,528 [31] DEBUG - Artist.Id=3 found
+2017-02-23 17:42:08,528 [31] DEBUG - Artist.Id=4 found
+2017-02-23 17:42:08,528 [31] DEBUG - Artist.Id=5 found
+2017-02-23 17:42:08,528 [31] DEBUG - Artist.Id=6 found
+2017-02-23 17:42:08,528 [31] DEBUG - Artist.Id=8 found
+2017-02-23 17:42:14,707 [30] DEBUG - Event appended to audit log
+2017-02-23 17:42:14,707 [30] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:42:14,707 [30] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:42:14,707 [30] DEBUG - Tenant.Id=1 found
+2017-02-23 17:42:14,707 [30] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:42:14,707 [30] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:42:14,707 [30] INFO  - HTTP AUTH OK
+2017-02-23 17:42:14,707 [30] INFO  - HTTP GET api/artist/search/?q=stageName|tom
+2017-02-23 17:42:14,707 [30] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:42:14,707 [30] DEBUG - Artist.Id=1 found
+2017-02-23 17:42:14,711 [30] DEBUG - Artist.Id=2 found
+2017-02-23 17:42:17,947 [28] DEBUG - Event appended to audit log
+2017-02-23 17:42:17,947 [28] DEBUG - Verify tenant identifier '1'
+2017-02-23 17:42:17,947 [28] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 17:42:17,947 [28] DEBUG - Tenant.Id=1 found
+2017-02-23 17:42:17,947 [28] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4NzQxMTgsNDM1MyIsInN1YiI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAyMzEvYXBpL3VzZXIvMTEiLCJhdWQiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkiLCJuYW1lIjoidGhvbWFzQGt0cmVjb3JkaW5ncy5jb20iLCJ0ZW5hbnQiOiIxIn0.8-m-sRNte1d6dE2mBaQig-BI0lqYBw_OE3O5ruu1EVI'
+2017-02-23 17:42:17,947 [28] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 17:42:17,947 [28] INFO  - HTTP AUTH OK
+2017-02-23 17:42:17,947 [28] INFO  - HTTP GET api/artist/search/?q=stageName|
+2017-02-23 17:42:17,947 [28] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=1 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=2 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=3 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=4 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=5 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=6 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=7 found
+2017-02-23 17:42:17,947 [28] DEBUG - Artist.Id=8 found
+2017-02-23 21:09:07,541 [8] DEBUG - Event appended to audit log
+2017-02-23 21:09:07,592 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:09:07,821 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 21:09:07,908 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 21:09:12,211 [8] DEBUG - Event appended to audit log
+2017-02-23 21:09:12,211 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:09:12,211 [8] INFO  - HTTP POST api/auth/login
+2017-02-23 21:09:12,212 [8] INFO  - Query for resource 'User'; Tenant=0
+2017-02-23 21:09:12,215 [8] DEBUG - User.Id=11 found
+2017-02-23 21:09:15,824 [7] DEBUG - Event appended to audit log
+2017-02-23 21:09:15,824 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:09:15,825 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:09:15,827 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:09:15,827 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:09:15,828 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:09:15,828 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:09:15,837 [7] INFO  - HTTP GET api/artist/list
+2017-02-23 21:09:15,841 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:09:15,848 [7] DEBUG - Artist.Id=1 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=2 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=3 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=4 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=5 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=6 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=7 found
+2017-02-23 21:09:15,849 [7] DEBUG - Artist.Id=8 found
+2017-02-23 21:09:19,331 [7] DEBUG - Event appended to audit log
+2017-02-23 21:09:19,331 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:09:19,331 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:09:19,332 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:09:19,332 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:09:19,332 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:09:19,332 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:09:19,355 [7] INFO  - HTTP DELETE api/artist/5
+2017-02-23 21:09:19,357 [7] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:09:19,366 [7] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:09:19,368 [7] INFO  - Remove resource 'Artist'; Tenant=1; Id=5
+2017-02-23 21:09:19,410 [8] DEBUG - Event appended to audit log
+2017-02-23 21:09:19,410 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:09:19,410 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:09:19,411 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 21:09:19,411 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:09:19,411 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:09:19,411 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:09:19,411 [8] INFO  - HTTP GET api/artist/list
+2017-02-23 21:09:19,411 [8] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=1 found
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=2 found
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=3 found
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=4 found
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=6 found
+2017-02-23 21:09:19,411 [8] DEBUG - Artist.Id=7 found
+2017-02-23 21:09:19,412 [8] DEBUG - Artist.Id=8 found
+2017-02-23 21:09:54,390 [7] DEBUG - Event appended to audit log
+2017-02-23 21:09:54,390 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:09:54,390 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:09:54,391 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:09:54,391 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:09:54,391 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:09:54,391 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:09:54,392 [7] INFO  - HTTP DELETE api/artist/6
+2017-02-23 21:09:54,392 [7] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:09:54,394 [7] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:09:54,395 [7] INFO  - Remove resource 'Artist'; Tenant=1; Id=6
+2017-02-23 21:09:54,442 [12] DEBUG - Event appended to audit log
+2017-02-23 21:09:54,442 [12] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:09:54,442 [12] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:09:54,443 [12] DEBUG - Tenant.Id=1 found
+2017-02-23 21:09:54,443 [12] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:09:54,443 [12] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:09:54,443 [12] INFO  - HTTP AUTH OK
+2017-02-23 21:09:54,443 [12] INFO  - HTTP GET api/artist/list
+2017-02-23 21:09:54,443 [12] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=1 found
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=2 found
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=3 found
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=4 found
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=7 found
+2017-02-23 21:09:54,444 [12] DEBUG - Artist.Id=8 found
+2017-02-23 21:10:00,393 [7] DEBUG - Event appended to audit log
+2017-02-23 21:10:00,393 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:00,393 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:00,394 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:00,394 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:00,394 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:00,394 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:10:00,414 [7] INFO  - HTTP GET api/artist/search/?q=stageName|x
+2017-02-23 21:10:00,416 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:10:00,418 [7] DEBUG - Artist.Id=2 found
+2017-02-23 21:10:00,418 [7] DEBUG - Artist.Id=7 found
+2017-02-23 21:10:00,418 [7] DEBUG - Artist.Id=8 found
+2017-02-23 21:10:04,078 [8] DEBUG - Event appended to audit log
+2017-02-23 21:10:04,078 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:04,078 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:04,079 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:04,079 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:04,079 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:04,079 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:10:04,080 [8] INFO  - HTTP DELETE api/artist/7
+2017-02-23 21:10:04,080 [8] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:10:04,081 [8] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:10:04,081 [8] INFO  - Remove resource 'Artist'; Tenant=1; Id=7
+2017-02-23 21:10:04,119 [13] DEBUG - Event appended to audit log
+2017-02-23 21:10:04,119 [13] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:04,119 [13] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:04,120 [13] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:04,120 [13] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:04,120 [13] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:04,120 [13] INFO  - HTTP AUTH OK
+2017-02-23 21:10:04,120 [13] INFO  - HTTP GET api/artist/search/?q=stageName|x
+2017-02-23 21:10:04,121 [13] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:10:04,121 [13] DEBUG - Artist.Id=2 found
+2017-02-23 21:10:04,122 [13] DEBUG - Artist.Id=8 found
+2017-02-23 21:10:07,665 [8] DEBUG - Event appended to audit log
+2017-02-23 21:10:07,665 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:07,665 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:07,666 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:07,666 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:07,666 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:07,666 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:10:07,666 [8] INFO  - HTTP GET api/artist/search/?q=stageName|
+2017-02-23 21:10:07,666 [8] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:10:07,667 [8] DEBUG - Artist.Id=1 found
+2017-02-23 21:10:07,667 [8] DEBUG - Artist.Id=2 found
+2017-02-23 21:10:07,667 [8] DEBUG - Artist.Id=3 found
+2017-02-23 21:10:07,667 [8] DEBUG - Artist.Id=4 found
+2017-02-23 21:10:07,667 [8] DEBUG - Artist.Id=8 found
+2017-02-23 21:10:13,415 [8] DEBUG - Event appended to audit log
+2017-02-23 21:10:13,415 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:13,415 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:13,416 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:13,416 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:13,416 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:13,416 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:10:13,416 [8] INFO  - HTTP DELETE api/artist/4
+2017-02-23 21:10:13,416 [8] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:10:13,417 [8] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:10:13,417 [8] INFO  - Remove resource 'Artist'; Tenant=1; Id=4
+2017-02-23 21:10:13,457 [7] DEBUG - Event appended to audit log
+2017-02-23 21:10:13,457 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:10:13,457 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:10:13,458 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:10:13,458 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:10:13,458 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:10:13,458 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:10:13,458 [7] INFO  - HTTP GET api/artist/search/?q=stageName|
+2017-02-23 21:10:13,458 [7] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:10:13,459 [7] DEBUG - Artist.Id=1 found
+2017-02-23 21:10:13,459 [7] DEBUG - Artist.Id=2 found
+2017-02-23 21:10:13,460 [7] DEBUG - Artist.Id=3 found
+2017-02-23 21:10:13,460 [7] DEBUG - Artist.Id=8 found
+2017-02-23 21:14:23,238 [12] DEBUG - Event appended to audit log
+2017-02-23 21:14:23,238 [12] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:14:23,238 [12] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:14:23,238 [12] DEBUG - Tenant.Id=1 found
+2017-02-23 21:14:23,238 [12] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:14:23,238 [12] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:14:23,238 [12] INFO  - HTTP AUTH OK
+2017-02-23 21:14:23,238 [12] INFO  - HTTP GET api/artist/list
+2017-02-23 21:14:23,238 [12] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:14:23,242 [12] DEBUG - Artist.Id=1 found
+2017-02-23 21:14:23,242 [12] DEBUG - Artist.Id=2 found
+2017-02-23 21:14:23,242 [12] DEBUG - Artist.Id=3 found
+2017-02-23 21:14:23,242 [12] DEBUG - Artist.Id=8 found
+2017-02-23 21:14:31,568 [12] DEBUG - Event appended to audit log
+2017-02-23 21:14:31,568 [12] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:14:31,568 [12] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:14:31,572 [12] DEBUG - Tenant.Id=1 found
+2017-02-23 21:14:31,572 [12] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:14:31,572 [12] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:14:31,572 [12] INFO  - HTTP AUTH OK
+2017-02-23 21:14:31,588 [12] INFO  - HTTP POST api/artist
+2017-02-23 21:14:31,592 [12] INFO  - Validate resource of type 'Artist'.
+2017-02-23 21:14:31,596 [12] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 21:14:34,260 [7] DEBUG - Event appended to audit log
+2017-02-23 21:14:34,260 [7] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:14:34,260 [7] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:14:34,264 [7] DEBUG - Tenant.Id=1 found
+2017-02-23 21:14:34,264 [7] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:14:34,264 [7] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:14:34,264 [7] INFO  - HTTP AUTH OK
+2017-02-23 21:14:34,264 [7] INFO  - HTTP DELETE api/artist/9
+2017-02-23 21:14:34,264 [7] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:14:34,264 [7] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:14:34,264 [7] INFO  - Remove resource 'Artist'; Tenant=1; Id=9
+2017-02-23 21:14:34,320 [12] DEBUG - Event appended to audit log
+2017-02-23 21:14:34,320 [12] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:14:34,320 [12] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:14:34,324 [12] DEBUG - Tenant.Id=1 found
+2017-02-23 21:14:34,324 [12] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:14:34,324 [12] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:14:34,324 [12] INFO  - HTTP AUTH OK
+2017-02-23 21:14:34,324 [12] INFO  - HTTP GET api/artist/list
+2017-02-23 21:14:34,324 [12] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:14:34,324 [12] DEBUG - Artist.Id=1 found
+2017-02-23 21:14:34,324 [12] DEBUG - Artist.Id=2 found
+2017-02-23 21:14:34,324 [12] DEBUG - Artist.Id=3 found
+2017-02-23 21:14:34,324 [12] DEBUG - Artist.Id=8 found
+2017-02-23 21:19:24,255 [21] DEBUG - Event appended to audit log
+2017-02-23 21:19:24,255 [21] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:19:24,255 [21] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:19:24,336 [21] DEBUG - Tenant.Id=1 found
+2017-02-23 21:19:24,336 [21] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:19:24,336 [21] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:19:24,336 [21] INFO  - HTTP AUTH OK
+2017-02-23 21:19:24,336 [21] INFO  - HTTP GET api/artist/list
+2017-02-23 21:19:24,336 [21] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:19:24,338 [21] DEBUG - Artist.Id=1 found
+2017-02-23 21:19:24,338 [21] DEBUG - Artist.Id=2 found
+2017-02-23 21:19:24,338 [21] DEBUG - Artist.Id=3 found
+2017-02-23 21:19:24,338 [21] DEBUG - Artist.Id=8 found
+2017-02-23 21:19:33,844 [18] DEBUG - Event appended to audit log
+2017-02-23 21:19:33,844 [18] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:19:33,844 [18] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:19:33,848 [18] DEBUG - Tenant.Id=1 found
+2017-02-23 21:19:33,848 [18] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:19:33,848 [18] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:19:33,848 [18] INFO  - HTTP AUTH OK
+2017-02-23 21:19:33,848 [18] INFO  - HTTP POST api/artist
+2017-02-23 21:19:33,848 [18] INFO  - Validate resource of type 'Artist'.
+2017-02-23 21:19:33,848 [18] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 21:20:40,124 [14] DEBUG - Event appended to audit log
+2017-02-23 21:20:40,124 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:20:40,124 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:20:40,124 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 21:20:40,124 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:20:40,124 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:20:40,124 [14] INFO  - HTTP AUTH OK
+2017-02-23 21:20:40,128 [14] INFO  - HTTP GET api/artist/list
+2017-02-23 21:20:40,128 [14] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:20:40,128 [14] DEBUG - Artist.Id=1 found
+2017-02-23 21:20:40,128 [14] DEBUG - Artist.Id=2 found
+2017-02-23 21:20:40,128 [14] DEBUG - Artist.Id=3 found
+2017-02-23 21:20:40,128 [14] DEBUG - Artist.Id=8 found
+2017-02-23 21:20:40,128 [14] DEBUG - Artist.Id=10 found
+2017-02-23 21:20:50,577 [22] DEBUG - Event appended to audit log
+2017-02-23 21:20:50,577 [22] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:20:50,577 [22] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:20:50,577 [22] DEBUG - Tenant.Id=1 found
+2017-02-23 21:20:50,577 [22] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:20:50,577 [22] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:20:50,577 [22] INFO  - HTTP AUTH OK
+2017-02-23 21:20:50,577 [22] INFO  - HTTP DELETE api/artist/10
+2017-02-23 21:20:50,577 [22] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:20:50,581 [22] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:20:50,585 [22] INFO  - Remove resource 'Artist'; Tenant=1; Id=10
+2017-02-23 21:20:50,633 [14] DEBUG - Event appended to audit log
+2017-02-23 21:20:50,633 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:20:50,633 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:20:50,637 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 21:20:50,637 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:20:50,637 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:20:50,637 [14] INFO  - HTTP AUTH OK
+2017-02-23 21:20:50,637 [14] INFO  - HTTP GET api/artist/list
+2017-02-23 21:20:50,637 [14] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:20:50,637 [14] DEBUG - Artist.Id=1 found
+2017-02-23 21:20:50,637 [14] DEBUG - Artist.Id=2 found
+2017-02-23 21:20:50,637 [14] DEBUG - Artist.Id=3 found
+2017-02-23 21:20:50,637 [14] DEBUG - Artist.Id=8 found
+2017-02-23 21:22:48,393 [8] DEBUG - Event appended to audit log
+2017-02-23 21:22:48,393 [8] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:22:48,393 [8] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:22:48,397 [8] DEBUG - Tenant.Id=1 found
+2017-02-23 21:22:48,397 [8] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:22:48,397 [8] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:22:48,397 [8] INFO  - HTTP AUTH OK
+2017-02-23 21:22:48,397 [8] INFO  - HTTP GET api/artist/list
+2017-02-23 21:22:48,397 [8] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:22:48,397 [8] DEBUG - Artist.Id=1 found
+2017-02-23 21:22:48,397 [8] DEBUG - Artist.Id=2 found
+2017-02-23 21:22:48,397 [8] DEBUG - Artist.Id=3 found
+2017-02-23 21:22:48,397 [8] DEBUG - Artist.Id=8 found
+2017-02-23 21:23:06,586 [14] DEBUG - Event appended to audit log
+2017-02-23 21:23:06,586 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:23:06,586 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:23:06,586 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 21:23:06,586 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:23:06,590 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:23:06,590 [14] INFO  - HTTP AUTH OK
+2017-02-23 21:23:06,590 [14] INFO  - HTTP POST api/artist
+2017-02-23 21:23:06,590 [14] INFO  - Validate resource of type 'Artist'.
+2017-02-23 21:23:06,590 [14] INFO  - Add new resource 'Artist'; Tenant=1
+2017-02-23 21:23:16,860 [24] DEBUG - Event appended to audit log
+2017-02-23 21:23:16,860 [24] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:23:16,860 [24] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:23:16,860 [24] DEBUG - Tenant.Id=1 found
+2017-02-23 21:23:16,860 [24] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:23:16,860 [24] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:23:16,860 [24] INFO  - HTTP AUTH OK
+2017-02-23 21:23:16,860 [24] INFO  - HTTP DELETE api/artist/11
+2017-02-23 21:23:16,860 [24] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:23:16,860 [24] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:23:16,860 [24] INFO  - Remove resource 'Artist'; Tenant=1; Id=11
+2017-02-23 21:23:16,920 [14] DEBUG - Event appended to audit log
+2017-02-23 21:23:16,920 [14] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:23:16,920 [14] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:23:16,924 [14] DEBUG - Tenant.Id=1 found
+2017-02-23 21:23:16,924 [14] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:23:16,924 [14] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:23:16,924 [14] INFO  - HTTP AUTH OK
+2017-02-23 21:23:16,924 [14] INFO  - HTTP GET api/artist/list
+2017-02-23 21:23:16,924 [14] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:23:16,924 [14] DEBUG - Artist.Id=1 found
+2017-02-23 21:23:16,924 [14] DEBUG - Artist.Id=2 found
+2017-02-23 21:23:16,924 [14] DEBUG - Artist.Id=3 found
+2017-02-23 21:23:16,924 [14] DEBUG - Artist.Id=8 found
+2017-02-23 21:27:02,418 [27] DEBUG - Event appended to audit log
+2017-02-23 21:27:02,418 [27] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:27:02,418 [27] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:27:02,422 [27] DEBUG - Tenant.Id=1 found
+2017-02-23 21:27:02,422 [27] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:27:02,422 [27] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:27:02,422 [27] INFO  - HTTP AUTH OK
+2017-02-23 21:27:02,422 [27] INFO  - HTTP GET api/artist/list
+2017-02-23 21:27:02,422 [27] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:27:02,422 [27] DEBUG - Artist.Id=1 found
+2017-02-23 21:27:02,422 [27] DEBUG - Artist.Id=2 found
+2017-02-23 21:27:02,422 [27] DEBUG - Artist.Id=3 found
+2017-02-23 21:27:02,422 [27] DEBUG - Artist.Id=8 found
+2017-02-23 21:27:23,963 [25] DEBUG - Event appended to audit log
+2017-02-23 21:27:23,963 [25] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:27:23,963 [25] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:27:23,963 [25] DEBUG - Tenant.Id=1 found
+2017-02-23 21:27:23,963 [25] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:27:23,963 [25] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:27:23,963 [25] INFO  - HTTP AUTH OK
+2017-02-23 21:27:23,963 [25] INFO  - HTTP GET api/artist/list
+2017-02-23 21:27:23,963 [25] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:27:23,967 [25] DEBUG - Artist.Id=1 found
+2017-02-23 21:27:23,967 [25] DEBUG - Artist.Id=2 found
+2017-02-23 21:27:23,967 [25] DEBUG - Artist.Id=3 found
+2017-02-23 21:27:23,967 [25] DEBUG - Artist.Id=8 found
+2017-02-23 21:27:46,400 [31] DEBUG - Event appended to audit log
+2017-02-23 21:27:46,400 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:27:46,400 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:27:46,400 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 21:27:46,400 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:27:46,400 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:27:46,400 [31] INFO  - HTTP AUTH OK
+2017-02-23 21:27:46,400 [31] INFO  - HTTP GET api/artist/list
+2017-02-23 21:27:46,400 [31] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:27:46,400 [31] DEBUG - Artist.Id=1 found
+2017-02-23 21:27:46,400 [31] DEBUG - Artist.Id=2 found
+2017-02-23 21:27:46,400 [31] DEBUG - Artist.Id=3 found
+2017-02-23 21:27:46,400 [31] DEBUG - Artist.Id=8 found
+2017-02-23 21:28:04,178 [28] DEBUG - Event appended to audit log
+2017-02-23 21:28:04,178 [28] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:28:04,178 [28] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:28:04,178 [28] DEBUG - Tenant.Id=1 found
+2017-02-23 21:28:04,178 [28] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:28:04,178 [28] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:28:04,178 [28] INFO  - HTTP AUTH OK
+2017-02-23 21:28:04,178 [28] INFO  - HTTP GET api/artist/list
+2017-02-23 21:28:04,178 [28] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:28:04,182 [28] DEBUG - Artist.Id=1 found
+2017-02-23 21:28:04,182 [28] DEBUG - Artist.Id=2 found
+2017-02-23 21:28:04,182 [28] DEBUG - Artist.Id=3 found
+2017-02-23 21:28:04,182 [28] DEBUG - Artist.Id=8 found
+2017-02-23 21:28:15,132 [31] DEBUG - Event appended to audit log
+2017-02-23 21:28:15,132 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:28:15,132 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:28:15,132 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 21:28:15,132 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:28:15,132 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:28:15,136 [31] INFO  - HTTP AUTH OK
+2017-02-23 21:28:15,136 [31] INFO  - HTTP GET api/artist/list
+2017-02-23 21:28:15,136 [31] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:28:15,136 [31] DEBUG - Artist.Id=1 found
+2017-02-23 21:28:15,136 [31] DEBUG - Artist.Id=2 found
+2017-02-23 21:28:15,136 [31] DEBUG - Artist.Id=3 found
+2017-02-23 21:28:15,136 [31] DEBUG - Artist.Id=8 found
+2017-02-23 21:28:23,348 [31] DEBUG - Event appended to audit log
+2017-02-23 21:28:23,348 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:28:23,348 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:28:23,352 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 21:28:23,352 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:28:23,352 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:28:23,352 [31] INFO  - HTTP AUTH OK
+2017-02-23 21:28:23,352 [31] INFO  - HTTP GET api/artist/list
+2017-02-23 21:28:23,352 [31] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:28:23,352 [31] DEBUG - Artist.Id=1 found
+2017-02-23 21:28:23,352 [31] DEBUG - Artist.Id=2 found
+2017-02-23 21:28:23,352 [31] DEBUG - Artist.Id=3 found
+2017-02-23 21:28:23,352 [31] DEBUG - Artist.Id=8 found
+2017-02-23 21:28:27,537 [31] DEBUG - Event appended to audit log
+2017-02-23 21:28:27,537 [31] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:28:27,537 [31] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:28:27,541 [31] DEBUG - Tenant.Id=1 found
+2017-02-23 21:28:27,541 [31] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:28:27,541 [31] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:28:27,541 [31] INFO  - HTTP AUTH OK
+2017-02-23 21:28:27,541 [31] INFO  - HTTP DELETE api/artist/8
+2017-02-23 21:28:27,541 [31] INFO  - Query for resource 'Account'; Tenant=1
+2017-02-23 21:28:27,541 [31] INFO  - Query for resource 'Statement'; Tenant=1
+2017-02-23 21:28:27,541 [31] INFO  - Remove resource 'Artist'; Tenant=1; Id=8
+2017-02-23 21:28:27,585 [30] DEBUG - Event appended to audit log
+2017-02-23 21:28:27,585 [30] DEBUG - Verify tenant identifier '1'
+2017-02-23 21:28:27,585 [30] INFO  - Get resource 'Tenant'; Id=1
+2017-02-23 21:28:27,585 [30] DEBUG - Tenant.Id=1 found
+2017-02-23 21:28:27,585 [30] DEBUG - Verify JWT token 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbGFiZWxlYXplLmNvbS9hcGkvYXV0aC9sb2dpbiIsImV4cCI6IjE0ODc4ODc3NTIsMjE3MDIiLCJzdWIiOiJodHRwOi8vbG9jYWxob3N0OjUwMjMxL2FwaS91c2VyLzExIiwiYXVkIjoiaHR0cDovL2xhYmVsZWF6ZS5jb20vYXBpIiwibmFtZSI6InRob21hc0BrdHJlY29yZGluZ3MuY29tIiwidGVuYW50IjoiMSJ9.claloGf722iPMNsERg9w_MJAb_n31ghaFikW6wJdrpI'
+2017-02-23 21:28:27,585 [30] INFO  - JWT signature verified 'True'; JWT expired 'False'
+2017-02-23 21:28:27,585 [30] INFO  - HTTP AUTH OK
+2017-02-23 21:28:27,585 [30] INFO  - HTTP GET api/artist/list
+2017-02-23 21:28:27,585 [30] INFO  - Query for resource 'Artist'; Tenant=1
+2017-02-23 21:28:27,589 [30] DEBUG - Artist.Id=1 found
+2017-02-23 21:28:27,589 [30] DEBUG - Artist.Id=2 found
+2017-02-23 21:28:27,589 [30] DEBUG - Artist.Id=3 found

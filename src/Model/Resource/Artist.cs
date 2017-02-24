@@ -42,7 +42,7 @@ namespace LMS.Model.Resource
         /// Gets or sets the telephone number for the artist.
         /// </summary>
         [JsonProperty(PropertyName = "telecom")]
-        [Required, StringLength(32)]
+        [StringLength(32)]
         public string Telecom { get; set; }
 
         /// <summary>

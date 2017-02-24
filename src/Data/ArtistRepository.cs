@@ -155,7 +155,7 @@ namespace LMS.Data
                         if (!reader.IsDBNull(reader.GetOrdinal("country")))
                             item.Address.Country = reader.GetString(reader.GetOrdinal("country"));
                         if (!reader.IsDBNull(reader.GetOrdinal("telecom")))
-                            item.Address.Country = reader.GetString(reader.GetOrdinal("telecom"));
+                            item.Telecom = reader.GetString(reader.GetOrdinal("telecom"));
 
                         Log.Debug(String.Format("Artist.Id={0} found", item.Id));
 

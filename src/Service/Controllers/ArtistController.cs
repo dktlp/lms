@@ -103,14 +103,14 @@ namespace LMS.Service.Controllers
                 IRepository<Account> accountRepository = RepositoryFactory<Account>.Create();
                 List<Account> accounts = accountRepository.Find(new Account() { Artist = new Reference(Reference.ArtistUri, id) });
                 if (accounts != null && accounts.Count > 0)
-                    return BadRequest("Artist cannot be deleted; one or more accounts are related to artist.");
+                    return Conflict();
 
                 // Related resource; Statement
                 IRepository<Statement> statementRepository = RepositoryFactory<Statement>.Create();
                 List<Statement> statements = statementRepository.Find(new Statement() { Artist = new Reference(Reference.ArtistUri, id) });
                 if (statements != null && statements.Count > 0)
-                    return BadRequest("Artist cannot be deleted; one or more statements are related to artist.");
-
+                    return Conflict();
+                
                 // Delete artist resource.
                 IRepository<Artist> repository = RepositoryFactory<Artist>.Create();
                 repository.Remove(id);

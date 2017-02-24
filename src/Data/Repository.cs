@@ -19,7 +19,7 @@ namespace LMS.Data
             get
             {
                 if (HttpContext.Current != null)
-                    return HttpContext.Current.Request.Headers["lms.tenant.identifier"];
+                    return HttpContext.Current.Request.Headers["LMS-Tenant-Identifier"];
                 else
                     return "0";
             }

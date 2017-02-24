@@ -17,13 +17,14 @@ namespace LMS.Service
 
         protected void Application_BeginRequest()
         {
+            Response.AppendHeader("Access-Control-Allow-Origin", Request.Headers.GetValues("Origin")[0]);
+            Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept, Authorization, LMS-Tenant-Identifier, LMS-App-Name, LMS-App-Version");
+            Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+            Response.AppendHeader("Access-Control-Allow-Credentials", "true");
+
             if (Request.HttpMethod == "OPTIONS")
             {
                 Response.StatusCode = (int)HttpStatusCode.OK;
-                Response.AppendHeader("Access-Control-Allow-Origin", Request.Headers.GetValues("Origin")[0]);
-                Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept, lms.tenant.identifier");
-                Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-                Response.AppendHeader("Access-Control-Allow-Credentials", "false");
                 Response.End();
             }
         }
