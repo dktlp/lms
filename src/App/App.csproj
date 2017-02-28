@@ -70,6 +70,9 @@
     <Content Include="App\Controllers\artist.controller.js" />
     <Content Include="App\Controllers\dialog.controller.js" />
     <Content Include="App\Controllers\auth.controller.js" />
+    <Content Include="App\Controllers\menu.controller.js" />
+    <Content Include="App\Views\Artist\artist_overview.html" />
+    <Content Include="App\Views\Artist\Dialogs\artist_add.html" />
     <Content Include="error.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
@@ -90,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\app.module.js" />
-    <Content Include="artists.html" />
+    <Content Include="App\Views\Artist\artist_list.html" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />
     <Content Include="Content\angular-material.layout-attributes.min.css" />
