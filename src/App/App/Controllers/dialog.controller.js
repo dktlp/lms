@@ -3,17 +3,22 @@
 
     angular.module("app").controller("dialogController", dialogController);
 
-    function dialogController($scope, $mdDialog) {
+    function dialogController($scope, $mdDialog, $route) {
         
-        $scope.showDialog = function(id)
+        $scope.showDialog = function(event, url)
         {
             $mdDialog.show({
-                contentElement: "#" + id
-            });
+                templateUrl: url,
+                parent: angular.element(document.body),
+                targetEvent: event,
+                clickOutsideToClose: false
+            }).then(function() {
+                $route.reload();
+            });            
         }
 
         $scope.closeDialog = function () {
-            $mdDialog.hide();
+            $mdDialog.hide();            
         };
         
     }

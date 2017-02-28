@@ -21,3 +21,17 @@
     font-size: 0.75em;
     margin-top: 6px;
 }
+
+.app-table-details {
+    width: 100%;
+}
+
+.app-table-details-label {
+    width: 30%;
+    vertical-align: text-top;
+}
+
+.app-table-details-data {
+    width: auto;
+    vertical-align: text-top;
+}

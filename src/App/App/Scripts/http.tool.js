@@ -24,9 +24,24 @@
 }
 
 function httpErrorHandler(response) {
+    if (response.status == 401) {
+        window.location.href = "login.html"
+        return;
+    }
+
     if (REST_REDIRECT_ON_ERROR)
         window.location.replace("error.html?status=" + status);
     else {
         alert("HTTP " + response.status + " " + response.statusText + " // " + ((response.data != null) ? response.data.Message : ""));
+    }
+}
+
+function getQueryString(param) {
+    var url = location.href.slice(window.location.href.lastIndexOf('?') + 1).split('&');
+    for (var i = 0; i < url.length; i++) {
+        var urlparam = url[i].split('=');
+        if (urlparam[0] == param) {
+            return urlparam[1];
+        }
     }
 }

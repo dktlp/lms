@@ -26,16 +26,16 @@ namespace LMS.Model.Composite
                 if (Line != null)
                 {
                     foreach (string l in Line)
-                        text += l + Environment.NewLine;
+                        text += l + ", ";
                 }
 
                 if (District != null)
-                    text += District + Environment.NewLine;
+                    text += District + ", ";
                 if (PostalCode != null && City != null)
-                    text += PostalCode + " " + City + Environment.NewLine;
+                    text += PostalCode + " " + City + ", ";
                 
                 if (State != null)
-                    text += State + Environment.NewLine;
+                    text += State + ", ";
                 if (Country != null)
                     text += Country;
 

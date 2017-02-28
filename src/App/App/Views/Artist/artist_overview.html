@@ -1,0 +1,77 @@
+﻿<div ng-controller="artistController" ng-init="init()">
+
+    <div layout="row" flex>
+
+        <md-card flex>
+            <md-card-header>
+                <md-card-header-text layout="row" flex>
+                    <span class="md-title">{{context.stageName}}</span>
+                    <span flex></span>
+                    <md-button class="md-fab md-mini" md-colors="{background: 'BlueGrey-400'}" ng-controller="dialogController" ng-click="showDialog($event, '/app/views/artist/dialogs/artist_edit.html')"><md-icon style="color:#ffffff;">edit</md-icon></md-button>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-content>
+                <table class="app-table-details">
+                    <tbody>
+                        <tr>
+                            <td class="app-table-details-label">Name</td>
+                            <td class="app-table-details-data">{{context.name.text}}</td>
+                        </tr>
+                        <tr>
+                            <td class="app-table-details-label">Address</td>
+                            <td class="app-table-details-data">
+                                <span ng-repeat="l in context.address.line">{{l}}, </span>
+                                <span ng-if="context.address.district != null">{{context.address.district}}, </span>
+                                <span ng-if="context.address.postalCode != null">{{context.address.postalCode}} </span>
+                                <span ng-if="context.address.city != null">{{context.address.city}}</span>
+                                <span ng-if="context.address.state != null">, {{context.address.state}}</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="app-table-details-label">Country</td>
+                            <td class="app-table-details-data">{{context.address.country}}</td>
+                        </tr>
+                        <tr>
+                            <td class="app-table-details-label">Email</td>
+                            <td class="app-table-details-data">{{context.email}}</td>
+                        </tr>
+                        <tr>
+                            <td class="app-table-details-label">Telecom</td>
+                            <td class="app-table-details-data">{{context.telecom}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </md-card-content>
+        </md-card>
+
+        <md-card flex="35">
+            <md-card-header>
+                <md-card-header-text layout="row" flex>
+                    <span class="md-title">Accounts</span>
+                    <span flex></span>
+                    <md-button class="md-fab md-mini" md-colors="{background: 'Green-400'}" ng-controller="dialogController" ng-click="showDialog($event, '/app/views/artist/dialogs/account_add.html')"><md-icon style="color:#ffffff;">add</md-icon></md-button>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-content>
+                Xyz ... [get-data-from-account-controller]
+            </md-card-content>
+        </md-card>        
+
+    </div>
+
+    <div layout="row" flex>
+
+        <md-card flex>
+            <md-card-header>
+                <md-card-header-text layout="row" flex>
+                    <span class="md-title">Invoices</span>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-content>
+                Xyz ... [get-data-from-invoice-controller]
+            </md-card-content>
+        </md-card>
+
+    </div>
+
+</div>

@@ -4,10 +4,15 @@
     angular.module("app").controller("artistController", artistController);
 
     function artistController($scope, $http, $mdDialog) {
+        $scope.context = null;
         $scope.artists = [];
 
         $scope.init = function () {
-            $scope.find(null);
+            var id = getQueryString("id");
+            if (id)
+                $scope.get(id);
+            else
+                $scope.find(null);
         }
 
         $scope.find = function (q) {
@@ -15,6 +20,16 @@
             var request = httpRequestBuilder("GET", url, null);
             $http(request).then(function (response) {
                 $scope.artists = response.data;
+            }, function (response) {
+                httpErrorHandler(response);
+            });
+        }
+
+        $scope.get = function (id) {
+            var request = httpRequestBuilder("GET", "/api/artist/" + id, null);
+            $http(request).then(function (response) {
+                $scope.artists = [];
+                $scope.context = response.data;
             }, function (response) {
                 httpErrorHandler(response);
             });
@@ -82,7 +97,6 @@
             });
         }
 
-        $scope.init();
     }
 
 })();

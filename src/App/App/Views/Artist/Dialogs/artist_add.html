@@ -1,0 +1,53 @@
+﻿<md-dialog ng-controller="artistController" class="modal-dialog app-modal-window" aria-label="Add new artist" style="width: 500px;">
+    <form name="artistForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add new artist</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-content>
+                    <p class="md-body-1">All fields are required.</p>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Stagename</label>
+                            <input type="text" name="stageName" ng-model="artist.stageName" required md-maxlength="35">
+                            <div class="app-input-hint">The name used by the artist when producing or performing.</div>
+                            <div ng-messages="artistForm.stageName.$error" ng-show="artistForm.stageName.$dirty">
+                                <div ng-message="md-maxlength">The maximum length of stagename is 35 characters.</div>
+                            </div>
+                        </md-input-container>
+                    </section>
+                    <section layout="row" flex>
+                        <md-input-container class="md-block" flex="45">
+                            <label>Firstname</label>
+                            <input type="text" ng-model="artist.givenName" required>
+                        </md-input-container>
+                        <md-input-container class="md-block" flex="45">
+                            <label>Lastname</label>
+                            <input type="text" ng-model="artist.familyName" required>
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Country</label>
+                            <input type="text" ng-model="artist.country" required>
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Email</label>
+                            <input type="email" ng-model="artist.email" required>
+                        </md-input-container>
+                    </section>
+                </md-content>
+            </div>
+        </md-dialog-content>
+    </form>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="create(artist)"><md-icon>check</md-icon></md-button>
+        <md-button ng-controller="dialogController" ng-click="closeDialog()" class="md-primary">Close</md-button>
+    </md-dialog-actions>
+</md-dialog>

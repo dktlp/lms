@@ -1,0 +1,43 @@
+﻿<div ng-controller="artistController" ng-init="init()">
+
+    <div layout="row" flex>
+
+        <md-card flex="30">
+            <md-card-content>
+                <form>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>Search for artist(s)</label>
+                        <input type="text" id="artist-search-q" ng-model="q">
+                    </md-input-container>
+                    <md-button class="md-primary md-raised" ng-click="find(q)"><md-icon>search</md-icon></md-button>
+                </form>
+            </md-card-content>
+        </md-card>
+
+        <md-card flex>
+            <md-card-header>
+                <md-card-header-text layout="row" flex>
+                    <span class="md-title">Artist Management</span>
+                    <span flex></span>
+                    <md-button class="md-fab md-mini md-primary" md-colors="{background: 'Green-400'}" ng-controller="dialogController" ng-click="showDialog($event, '/app/views/artist/dialogs/artist_add.html')"><md-icon style="color:#ffffff;">add</md-icon></md-button>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-content id="artist-list">
+                <md-list flex>
+                    <md-subheader class="md-no-sticky">{{artists.length}} artist(s) found.</md-subheader>
+                    <md-list-item class="md-3-line" ng-repeat="artist in artists | orderBy: 'stageName'" ng-href="#/artist_overview?id={{artist.identifier}}">
+                        <div class="md-list-item-text" layout="column">
+                            <h3>{{artist.stageName}}</h3>
+                            <h4>{{artist.name.text}} ({{artist.address.country}})</h4>
+                            <p>Email: {{artist.email}}</p>
+                            <md-button class="md-secondary" md-colors="{background: 'Red-700'}" ng-click="delete($event, artist.identifier)"><md-icon style="color:#ffffff;">delete</md-icon></md-button>
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-card-content>
+        </md-card>
+
+    </div>
+
+</div>

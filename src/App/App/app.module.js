@@ -8,11 +8,11 @@
         .when("/", {
             templateUrl : "dashboard.html"
         })
-        .when("/artists", {
-            templateUrl : "artists.html"
+        .when("/artist_list", {
+            templateUrl: "/app/views/artist/artist_list.html"
         })
-        .when("/blue", {
-            templateUrl : "blue.html"
+        .when("/artist_overview", {
+            templateUrl: "/app/views/artist/artist_overview.html"
         })
     });
 

@@ -25,7 +25,9 @@
     <script src="app/app.config.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/scripts/http.tool.js"></script>
+    <script src="app/controllers/auth.controller.js"></script>
     <script src="app/controllers/dialog.controller.js"></script>
+    <script src="app/controllers/menu.controller.js"></script>
     <script src="app/controllers/artist.controller.js"></script>
 
 </head>
@@ -38,13 +40,26 @@
                 <img style="width: 200px;" src="content/images/labeleaze_logo.png" />
 
                 <md-button href="#/" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">dashboard</md-icon><br />Dashboard</md-button>
-                <md-button href="#/artists" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">person</md-icon><br />Artist Management</md-button>
+                <md-button href="#/artist_list" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">person</md-icon><br />Artist Management</md-button>
                 <md-button href="#/accounting" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">payment</md-icon><br />Accounting</md-button>
 
                 <span flex></span>
 
-                <md-button href="#/user" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">account_circle</md-icon><br />User</md-button>
                 <md-button href="#/settings" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">settings</md-icon><br />Settings</md-button>
+
+                <md-menu ng-controller="menuController">
+                    <md-button style="line-height: 24px; text-transform: none;" ng-click="openMenu($mdOpenMenu, $event)">
+                        <md-icon style="color:#ffffff;">account_circle</md-icon><br />User
+                    </md-button>
+                    <md-menu-content width="4">
+                        <md-menu-item>
+                            <md-button ng-controller="authController" ng-click="logout()">
+                                Log out
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+
             </div>
         </md-toolbar>
         <div md-colors="{background: 'BlueGrey-500'}" style="height: 4px;" flex></div>
