@@ -1,4 +1,4 @@
-﻿function httpRequestBuilder(method, url, data)
+﻿function httpRequestBuilder(method, url, data, cache)
 {
 	var auth = window.sessionStorage.getItem("auth-token");
 	var tenant = window.sessionStorage.getItem("tenant");
@@ -14,6 +14,7 @@
 	return request = {
 		method: method,
 		url: url,
+        cache: ((cache) ? cache : false),
 		headers: {
 			"Content-Type": "application/json",
 			"Authorization": (auth != "") ? "Bearer " + auth : "",

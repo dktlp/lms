@@ -58,11 +58,8 @@
                         <div class="md-list-item-text" layout="column">
                             <h4>{{account.name}}</h4>
                             <p>{{account.label.name}}</p>
-                            <p>${{account.balance}} (USD)</p>
-
-                            <!-- TODO: Resolve label name from URI -->
-
-                            <md-button class="md-secondary md-icon-button" ng-if="account.balance == 0" ng-click="null"><md-icon md-colors="{color: 'Red-700'}">delete</md-icon></md-button>
+                            <p>Balance: ${{account.balance}} (USD)</p>
+                            <md-button class="md-secondary md-icon-button" ng-if="account.balance == 0" ng-click="delete($event, account.identifier)"><md-icon md-colors="{color: 'Red-700'}">delete</md-icon></md-button>
                         </div>
                         <md-divider ng-if="!$last"></md-divider>
                     </md-list-item>

@@ -34,7 +34,7 @@
 
         $scope.resolveLabel = function (index, uri) {
             var deferred = $q.defer();
-            var request = httpRequestBuilder("GET", uri, null);
+            var request = httpRequestBuilder("GET", uri, null, true);
             $http(request).then(function (response) {
                 deferred.resolve({ "index": index, "label": response.data });
             }, function (response) {
@@ -65,6 +65,40 @@
                 $scope.accountForm.$setUntouched();
             }, function (response) {
                 httpErrorHandler(response);
+            });
+        }
+
+        $scope.delete = function (event, id) {
+            var confirm = $mdDialog.confirm()
+                  .title("Would you like to delete the account?")
+                  .textContent("The account and all related data will be deleted. Please notice that this action can not be undone.")
+                  .ariaLabel("Confirm")
+                  .targetEvent(event)
+                  .ok("Yes")
+                  .cancel("No");
+
+            $mdDialog.show(confirm).then(function () {
+                var request = httpRequestBuilder("DELETE", "/api/account/" + id, null);
+                $http(request).then(function (response) {
+                    var artistId = contextManagerService.get("artist.id");
+                    if (artistId)
+                        $scope.find(artistId);
+                }, function (response) {
+                    if (response.status == 409) {
+                        var alert = $mdDialog.alert()
+                            .title("Alert")
+                            .textContent("The account can not be deleted as there are transactions associated with it.")
+                            .ok("OK");
+
+                        $mdDialog
+                            .show(alert)
+                            .finally(function () {
+                                alert = null;
+                            });
+                    }
+                    else
+                        httpErrorHandler(response);
+                });
             });
         }
 

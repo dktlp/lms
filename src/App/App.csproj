@@ -78,6 +78,7 @@
     <Content Include="App\Views\Artist\Dialogs\artist_add.html" />
     <Content Include="App\Views\Artist\Dialogs\artist_edit.html" />
     <Content Include="error.html" />
+    <Content Include="forgot_password.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\angular-aria\angular-aria.min.js.map" />
