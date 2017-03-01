@@ -1,0 +1,38 @@
+﻿<md-dialog ng-controller="accountController" class="modal-dialog app-modal-window" aria-label="Add new account" style="width: 500px;">
+    <form name="accountForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add new account</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-content>
+                    <p class="md-body-1">All fields are required.</p>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Name</label>
+                            <input type="text" name="name" ng-model="context.name" required maxlength="32">
+                            <div class="app-input-hint">The name of the account, e.g. the catalog number associated with the release.</div>
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Label</label>
+                            <md-select ng-model="context.label" required>
+                                <span ng-controller="labelController" ng-init="init()" >
+                                    <md-option ng-repeat="label in labels" value="{{label.identifier}}">{{label.name}}</md-option>
+                                </span>
+                            </md-select>
+                        </md-input-container>
+                    </section>
+                </md-content>
+            </div>
+        </md-dialog-content>
+    </form>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="create()"><md-icon>check</md-icon></md-button>
+        <md-button ng-controller="dialogController" ng-click="closeDialog()" class="md-primary">Close</md-button>
+    </md-dialog-actions>
+</md-dialog>

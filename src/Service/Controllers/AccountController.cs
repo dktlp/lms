@@ -155,6 +155,7 @@ namespace LMS.Service.Controllers
             {
                 // Search q:
                 // q=name|ctx001;status|1;paramName|value
+                // q=artist:reference.uri|/api/artist/22
 
                 QueryByExampleBuilder<Account> queryBuilder = new QueryByExampleBuilder<Account>();
                 IRepository<Account> repository = RepositoryFactory<Account>.Create();

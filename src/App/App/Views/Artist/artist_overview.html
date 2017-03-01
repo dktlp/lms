@@ -52,8 +52,21 @@
                     <md-button class="md-fab md-mini" md-colors="{background: 'Green-400'}" ng-controller="dialogController" ng-click="showDialog($event, '/app/views/artist/dialogs/account_add.html')"><md-icon style="color:#ffffff;">add</md-icon></md-button>
                 </md-card-header-text>
             </md-card-header>
-            <md-card-content>
-                Xyz ... [get-data-from-account-controller]
+            <md-card-content ng-controller="accountController" ng-init="init()">
+                <md-list flex>
+                    <md-list-item class="md-3-line" ng-repeat="account in accounts | orderBy: 'name'">
+                        <div class="md-list-item-text" layout="column">
+                            <h4>{{account.name}}</h4>
+                            <p>{{account.label.name}}</p>
+                            <p>${{account.balance}} (USD)</p>
+
+                            <!-- TODO: Resolve label name from URI -->
+
+                            <md-button class="md-secondary md-icon-button" ng-if="account.balance == 0" ng-click="null"><md-icon md-colors="{color: 'Red-700'}">delete</md-icon></md-button>
+                        </div>
+                        <md-divider ng-if="!$last"></md-divider>
+                    </md-list-item>
+                </md-list>
             </md-card-content>
         </md-card>        
 
@@ -68,7 +81,7 @@
                 </md-card-header-text>
             </md-card-header>
             <md-card-content>
-                Xyz ... [get-data-from-invoice-controller]
+                <p><i>No data.</i></p>
             </md-card-content>
         </md-card>
 

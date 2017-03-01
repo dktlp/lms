@@ -17,7 +17,9 @@ namespace LMS.Service
 
         protected void Application_BeginRequest()
         {
-            Response.AppendHeader("Access-Control-Allow-Origin", Request.Headers.GetValues("Origin")[0]);
+            if (Request.Headers.GetValues("Origin") != null)
+                Response.AppendHeader("Access-Control-Allow-Origin", Request.Headers.GetValues("Origin")[0]);
+
             Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept, Authorization, LMS-Tenant-Identifier, LMS-App-Name, LMS-App-Version");
             Response.AddHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
             Response.AppendHeader("Access-Control-Allow-Credentials", "true");

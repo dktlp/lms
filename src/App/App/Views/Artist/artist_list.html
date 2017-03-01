@@ -30,10 +30,10 @@
                             <h3>{{artist.stageName}}</h3>
                             <h4>{{artist.name.text}} ({{artist.address.country}})</h4>
                             <p>Email: {{artist.email}}</p>
-                            <md-button class="md-secondary" md-colors="{background: 'Red-700'}" ng-click="delete($event, artist.identifier)"><md-icon style="color:#ffffff;">delete</md-icon></md-button>
+                            <md-button class="md-secondary md-icon-button" ng-click="delete($event, artist.identifier)"><md-icon md-colors="{color: 'Red-700'}">delete</md-icon></md-button>
                         </div>
+                        <md-divider ng-if="!$last"></md-divider>
                     </md-list-item>
-                    <md-divider></md-divider>
                 </md-list>
             </md-card-content>
         </md-card>

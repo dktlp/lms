@@ -13,33 +13,30 @@
                     <section layout="column" flex="90">
                         <md-input-container class="md-block">
                             <label>Stagename</label>
-                            <input type="text" name="stageName" ng-model="artist.stageName" required md-maxlength="35">
+                            <input type="text" name="stageName" ng-model="context.stageName" required maxlength="32">
                             <div class="app-input-hint">The name used by the artist when producing or performing.</div>
-                            <div ng-messages="artistForm.stageName.$error" ng-show="artistForm.stageName.$dirty">
-                                <div ng-message="md-maxlength">The maximum length of stagename is 35 characters.</div>
-                            </div>
                         </md-input-container>
                     </section>
                     <section layout="row" flex>
                         <md-input-container class="md-block" flex="45">
                             <label>Firstname</label>
-                            <input type="text" ng-model="artist.givenName" required>
+                            <input type="text" ng-model="context.givenName" required maxlength="64">
                         </md-input-container>
                         <md-input-container class="md-block" flex="45">
                             <label>Lastname</label>
-                            <input type="text" ng-model="artist.familyName" required>
+                            <input type="text" ng-model="context.familyName" required maxlength="64">
                         </md-input-container>
                     </section>
                     <section layout="column" flex="90">
                         <md-input-container class="md-block">
                             <label>Country</label>
-                            <input type="text" ng-model="artist.country" required>
+                            <input type="text" ng-model="context.country" required maxlength="32">
                         </md-input-container>
                     </section>
                     <section layout="column" flex="90">
                         <md-input-container class="md-block">
                             <label>Email</label>
-                            <input type="email" ng-model="artist.email" required>
+                            <input type="email" ng-model="context.email" required maxlength="128">
                         </md-input-container>
                     </section>
                 </md-content>
@@ -47,7 +44,7 @@
         </md-dialog-content>
     </form>
     <md-dialog-actions>
-        <md-button class="md-primary md-raised" ng-click="create(artist)"><md-icon>check</md-icon></md-button>
+        <md-button class="md-primary md-raised" ng-click="create()"><md-icon>check</md-icon></md-button>
         <md-button ng-controller="dialogController" ng-click="closeDialog()" class="md-primary">Close</md-button>
     </md-dialog-actions>
 </md-dialog>

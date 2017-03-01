@@ -1,0 +1,92 @@
+﻿<md-dialog ng-controller="artistController" ng-init="init()" class="modal-dialog app-modal-window" aria-label="Add new artist" style="width: 800px;">
+    <form name="artistForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Edit artist information</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-content layout="row" flex>
+
+                    <div>                        
+                        <p class="md-body-1">Fields marked with '*' are required.</p>                       
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>Stagename</label>
+                                <input type="text" name="stageName" ng-model="context.stageName" required maxlength="32">
+                                <div class="app-input-hint">The name used by the artist when producing or performing.</div>
+                            </md-input-container>
+                        </section>
+                        <section layout="row" flex>
+                            <md-input-container class="md-block" flex="45">
+                                <label>Firstname</label>
+                                <input type="text" ng-model="context.givenName" required maxlength="64">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex="45">
+                                <label>Lastname</label>
+                                <input type="text" ng-model="context.familyName" required maxlength="64">
+                            </md-input-container>
+                        </section>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>Email</label>
+                                <input type="email" ng-model="context.email" required maxlength="128">
+                            </md-input-container>
+                        </section>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>Telecom</label>
+                                <input type="text" ng-model="context.telecom" maxlength="32">
+                            </md-input-container>
+                        </section>
+                    </div>
+
+                    <div>
+                        <p class="md-body-1">&nbsp;</p>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>Address</label>
+                                <textarea ng-model="context.addressLines" maxlength="96"></textarea>
+                            </md-input-container>
+                        </section>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>District</label>
+                                <input type="text" ng-model="context.district" maxlength="32">
+                            </md-input-container>
+                        </section>
+                        <section layout="row" flex>
+                            <md-input-container class="md-block" flex="45">
+                                <label>Postal code</label>
+                                <input type="text" ng-model="context.postalCode" maxlength="16">
+                            </md-input-container>
+                            <md-input-container class="md-block" flex="45">
+                                <label>Citry</label>
+                                <input type="text" ng-model="context.city" maxlength="32">
+                            </md-input-container>
+                        </section>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>State</label>
+                                <input type="text" ng-model="context.state" maxlength="32">
+                            </md-input-container>
+                        </section>
+                        <section layout="column" flex="90">
+                            <md-input-container class="md-block">
+                                <label>Country</label>
+                                <input type="text" ng-model="context.country" required maxlength="32">
+                            </md-input-container>
+                        </section>
+                    </div>
+
+                </md-content>
+            </div>
+        </md-dialog-content>
+    </form>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="update()"><md-icon>check</md-icon></md-button>
+        <md-button ng-controller="dialogController" ng-click="closeDialog()" class="md-primary">Close</md-button>
+    </md-dialog-actions>
+</md-dialog>

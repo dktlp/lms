@@ -8,9 +8,12 @@
 	if (auth == null)
 		auth = "";
 
+	if (url.indexOf(REST_SERVER_HOSTNAME) == -1)
+	    url = REST_SERVER_HOSTNAME + url;
+
 	return request = {
 		method: method,
-		url: REST_SERVER_HOSTNAME + url,
+		url: url,
 		headers: {
 			"Content-Type": "application/json",
 			"Authorization": (auth != "") ? "Bearer " + auth : "",
