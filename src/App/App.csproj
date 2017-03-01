@@ -77,6 +77,8 @@
     <Content Include="App\Views\Artist\Dialogs\account_add.html" />
     <Content Include="App\Views\Artist\Dialogs\artist_add.html" />
     <Content Include="App\Views\Artist\Dialogs\artist_edit.html" />
+    <Content Include="App\Views\Label\Dialogs\label_add.html" />
+    <Content Include="App\Views\Label\label_list.html" />
     <Content Include="error.html" />
     <Content Include="forgot_password.html" />
     <Content Include="index.html" />

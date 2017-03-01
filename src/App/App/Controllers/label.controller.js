@@ -21,6 +21,31 @@
             });
         }
 
+        $scope.create = function () {
+            if ($scope.labelForm.$invalid)
+                return;
+
+            var data = {
+                "name": $scope.context.name,
+                "email": $scope.context.email,
+                "address": {
+                    "country": $scope.context.country
+                }
+            }
+
+            var request = httpRequestBuilder("POST", "/api/label/", data);
+            $http(request).then(function (response) {
+                $scope.labels.push(response.data);
+                $mdDialog.hide();
+
+                $scope.context = null;
+                $scope.labelForm.$setPristine();
+                $scope.labelForm.$setUntouched();
+            }, function (response) {
+                httpErrorHandler(response);
+            });
+        }
+
     }
 
 })();

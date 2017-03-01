@@ -1,0 +1,39 @@
+﻿<md-dialog ng-controller="labelController" class="modal-dialog app-modal-window" aria-label="Add new artist" style="width: 500px;">
+    <form name="labelForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add new label</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-content>
+                    <p class="md-body-1">All fields are required.</p>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Name</label>
+                            <input type="text" name="name" ng-model="context.name" required maxlength="64">
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Country</label>
+                            <input type="text" ng-model="context.country" required maxlength="32">
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Email</label>
+                            <input type="email" ng-model="context.email" required maxlength="128">
+                        </md-input-container>
+                    </section>
+                </md-content>
+            </div>
+        </md-dialog-content>
+    </form>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="create()"><md-icon>check</md-icon></md-button>
+        <md-button ng-controller="dialogController" ng-click="closeDialog()" class="md-primary">Close</md-button>
+    </md-dialog-actions>
+</md-dialog>

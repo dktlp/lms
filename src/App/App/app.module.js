@@ -14,6 +14,9 @@
         .when("/artist_overview", {
             templateUrl: "/app/views/artist/artist_overview.html"
         })
+        .when("/label_list", {
+            templateUrl: "/app/views/label/label_list.html"
+        })
     });
 
     app.config(function ($mdThemingProvider) {

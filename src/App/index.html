@@ -47,7 +47,19 @@
 
                 <span flex></span>
 
-                <md-button href="#/settings" style="line-height: 24px; text-transform: none;"><md-icon style="color:#ffffff;">settings</md-icon><br />Settings</md-button>
+                <md-menu ng-controller="menuController">
+                    <md-button style="line-height: 24px; text-transform: none;" ng-click="openMenu($mdOpenMenu, $event)">
+                        <md-icon style="color:#ffffff;">settings</md-icon><br />Settings
+                    </md-button>
+                    <md-menu-content width="4">
+                        <md-menu-item>
+                            <md-button ng-href="#/label_list">Labels</md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button ng-href="#/user_list">Users</md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
 
                 <md-menu ng-controller="menuController">
                     <md-button style="line-height: 24px; text-transform: none;" ng-click="openMenu($mdOpenMenu, $event)">
@@ -55,9 +67,7 @@
                     </md-button>
                     <md-menu-content width="4">
                         <md-menu-item>
-                            <md-button ng-controller="authController" ng-click="logout()">
-                                Log out
-                            </md-button>
+                            <md-button ng-controller="authController" ng-click="logout()">Log out</md-button>
                         </md-menu-item>
                     </md-menu-content>
                 </md-menu>
