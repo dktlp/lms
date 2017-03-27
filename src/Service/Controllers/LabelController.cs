@@ -10,6 +10,7 @@ using log4net;
 using LMS.Model;
 using LMS.Model.Resource;
 using LMS.Data;
+using LMS.Model.Composite;
 
 namespace LMS.Service.Controllers
 {
@@ -97,6 +98,13 @@ namespace LMS.Service.Controllers
 
             try
             {
+                // If account has any related resources, then account cannot be deleted.
+                // Related resource; Account
+                IRepository<Account> accountRepository = RepositoryFactory<Account>.Create();
+                List<Account> accounts = accountRepository.Find(new Account() { Label = new Reference(Reference.AccountUri, id) });
+                if (accounts != null && accounts.Count > 0)
+                    return Conflict();
+
                 IRepository<Label> repository = RepositoryFactory<Label>.Create();
                 repository.Remove(id);
             }

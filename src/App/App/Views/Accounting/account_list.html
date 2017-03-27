@@ -1,0 +1,50 @@
+﻿<div ng-controller="accountController" ng-init="setContext(null);init()">
+
+    <div layout="row" flex>
+
+        <md-card flex="30">
+            <md-card-content>
+                <form>
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>Filter by artist or account name</label>
+                        <input type="text" ng-model="q">
+                    </md-input-container>
+                </form>
+            </md-card-content>
+        </md-card>
+
+        <md-card flex>
+            <md-card-header>
+                <md-card-header-text layout="row" flex>
+                    <span class="md-title">Accounts</span>
+                </md-card-header-text>
+            </md-card-header>
+            <md-card-content>
+                <md-list flex>
+                    <md-list-item class="md-2-line" ng-repeat="account in accounts | orderBy: ['artist.stageName', 'name'] | filter: q as results">
+                        <div class="md-list-item-text" layout="column">
+                            <h3 style="font-weight: 900; margin-top: 12px; margin-bottom: 12px;" ng-if="accounts[$index - 1].artist.identifier!=accounts[$index].artist.identifier">{{account.artist.stageName}}</h3>
+                            <h4>{{account.name}}</h4>
+                            <p>Balance: ${{account.balance | number:2}} (USD)</p>
+                            <md-button class="md-secondary md-icon-button" ng-controller="dialogController" ng-click="setContext(account);showDialog($event, '/app/views/accounting/dialogs/sales_add.html')">
+                                <md-tooltip md-direction="left">Add sales to account</md-tooltip>
+                                <md-icon md-colors="{color: 'BlueGrey-500'}">add_box</md-icon>
+                            </md-button>
+                            <md-button class="md-secondary md-icon-button" ng-controller="dialogController" ng-click="setContext(account);showDialog($event, '/app/views/accounting/dialogs/expense_add.html')">
+                                <md-tooltip md-direction="left">Add expense to account</md-tooltip>
+                                <md-icon md-colors="{color: 'Red-500'}">indeterminate_check_box</md-icon>
+                            </md-button>
+                            <md-button class="md-secondary md-icon-button" ng-controller="dialogController" ng-click="setContext(account);showDialog($event, '/app/views/accounting/dialogs/payment_add.html')">
+                                <md-tooltip md-direction="left">Add payment to account</md-tooltip>
+                                <md-icon md-colors="{color: 'Green-500'}">attach_money</md-icon>
+                            </md-button>
+                        </div>
+                        <md-divider ng-if="!$last"></md-divider>
+                    </md-list-item>
+                </md-list>
+            </md-card-content>
+        </md-card>
+
+    </div>
+
+</div>

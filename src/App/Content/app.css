@@ -35,3 +35,10 @@
     width: auto;
     vertical-align: text-top;
 }
+
+/* AngularJS overrides */
+
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: #607D8B !important;
+    background-color: #607D8B !important;
+}

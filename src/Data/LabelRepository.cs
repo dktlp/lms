@@ -143,8 +143,9 @@ namespace LMS.Data
                             item.Address.State = reader.GetString(reader.GetOrdinal("state"));
                         if (!reader.IsDBNull(reader.GetOrdinal("country")))
                             item.Address.Country = reader.GetString(reader.GetOrdinal("country"));
+
                         if (!reader.IsDBNull(reader.GetOrdinal("telecom")))
-                            item.Address.Country = reader.GetString(reader.GetOrdinal("telecom"));
+                            item.Telecom = reader.GetString(reader.GetOrdinal("telecom"));
 
                         Log.Debug(String.Format("Label.Id={0} found", item.Id));
 

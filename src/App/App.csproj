@@ -73,11 +73,17 @@
     <Content Include="App\Controllers\auth.controller.js" />
     <Content Include="App\Controllers\label.controller.js" />
     <Content Include="App\Controllers\menu.controller.js" />
+    <Content Include="App\Views\Accounting\accounting_overview.html" />
+    <Content Include="App\Views\Accounting\account_list.html" />
+    <Content Include="App\Views\Accounting\Dialogs\expense_add.html" />
+    <Content Include="App\Views\Accounting\Dialogs\payment_add.html" />
+    <Content Include="App\Views\Accounting\Dialogs\sales_add.html" />
     <Content Include="App\Views\Artist\artist_overview.html" />
     <Content Include="App\Views\Artist\Dialogs\account_add.html" />
     <Content Include="App\Views\Artist\Dialogs\artist_add.html" />
     <Content Include="App\Views\Artist\Dialogs\artist_edit.html" />
     <Content Include="App\Views\Label\Dialogs\label_add.html" />
+    <Content Include="App\Views\Label\Dialogs\label_edit.html" />
     <Content Include="App\Views\Label\label_list.html" />
     <Content Include="error.html" />
     <Content Include="forgot_password.html" />

@@ -1,0 +1,41 @@
+﻿<md-dialog ng-controller="accountController" ng-init="init()" class="modal-dialog app-modal-window" aria-label="Add sales and/or licensing to account" style="width: 500px;">
+    <form name="transactionForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Add sales and/or licensing to account</h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <md-content class="md-padding">
+                    <p class="md-body-1">Add <b>sales and/or licensing</b> to {{context.name}} associated with {{context.artist.stageName}}.</p>
+                    <section layout="row" flex>
+                        <md-input-container class="md-block" flex="45">
+                            <label>Amount</label>
+                            <input type="number" ng-model="context.amount" required min="0">
+                            <div class="app-input-hint">The amount must be a positive number.</div>
+                        </md-input-container>
+                        <md-input-container class="md-block" flex="45">
+                            <label>Quarter</label>
+                            <md-select ng-model="context.quarter" required>
+                                <md-option ng-repeat="quarter in quarters" ng-value="quarter">{{quarter}}</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </section>
+                    <section layout="column" flex="90">
+                        <md-input-container class="md-block">
+                            <label>Description</label>
+                            <input type="text" ng-model="context.description" maxlength="128">
+                        </md-input-container>
+                    </section>
+                    <p class="md-body-1">All fields marked with '*' are required.</p>
+                </md-content>
+            </div>
+        </md-dialog-content>
+    </form>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="setContext(null);createTransaction('sales')"><md-icon>check</md-icon></md-button>
+        <md-button ng-controller="dialogController" ng-click="setContext(null);closeDialog()" class="md-primary">Close</md-button>
+    </md-dialog-actions>
+</md-dialog>

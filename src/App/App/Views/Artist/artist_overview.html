@@ -58,7 +58,7 @@
                         <div class="md-list-item-text" layout="column">
                             <h4>{{account.name}}</h4>
                             <p>{{account.label.name}}</p>
-                            <p>Balance: ${{account.balance}} (USD)</p>
+                            <p>Balance: ${{account.balance | number:2 }} (USD)</p>
                             <md-button class="md-secondary md-icon-button" ng-if="account.balance == 0" ng-click="delete($event, account.identifier)"><md-icon md-colors="{color: 'Red-700'}">delete</md-icon></md-button>
                         </div>
                         <md-divider ng-if="!$last"></md-divider>
